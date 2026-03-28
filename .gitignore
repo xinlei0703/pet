@@ -1,0 +1,10 @@
+# 构建脚本和临时文件
+*.py
+*.pdf
+*.txt
+*.json
+*.ps1
+nul
+.claude/
+PET音频/
+temp_*.js
