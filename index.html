@@ -1352,7 +1352,7 @@ function renderStory(day) {
   words.forEach(w => { wordMap[w.word.toLowerCase()] = w; });
   const sorted = words.map(w => w.word).sort((a, b) => b.length - a.length);
   const highlighted = highlightWords(story.en, sorted, wordMap);
-  const audioSrc = encodeURI(`PET音频/${day}/Reading.mp3`);
+  const audioSrc = `audio/day${day.replace('Day ','')}.mp3`;
   navigate('story');
   document.getElementById('page-story').innerHTML = `
     <div class="top-bar">
