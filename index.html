@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>PET 背单词</title>
+<title>读故事背单词</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -608,7 +608,7 @@ function renderHome() {
   document.getElementById('page-home').innerHTML = `
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
       <div><div style="font-size:13px;color:var(--text-secondary);font-weight:500">欢迎回来</div>
-      <div style="font-size:26px;font-weight:800;letter-spacing:-0.02em">PET 背单词</div></div>
+      <div style="font-size:26px;font-weight:800;letter-spacing:-0.02em">读故事背单词</div></div>
       <div style="width:44px;height:44px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:18px">${streak.count}</div>
     </div>
     <div class="card" style="background:var(--gradient);color:white;border:none;padding:24px">
@@ -1323,7 +1323,7 @@ function renderSettings() {
       <button class="btn btn-block" style="color:var(--danger);border:2px solid var(--danger-light);border-radius:var(--radius-sm)" onclick="if(confirm('确定要清除所有学习记录吗？此操作不可恢复！')){localStorage.clear();location.reload();}">清除所有数据</button>
     </div>
     <div style="text-align:center;color:var(--text-secondary);font-size:11px;margin-top:24px;font-weight:500;letter-spacing:0.02em">
-      PET 背单词 v1.0 · ${getAllWords().length} 词
+      读故事背单词 v1.0 · ${getAllWords().length} 词
     </div>`;
 }
 function setDailyNew(n) { settings.dailyNew = n; saveAll(); renderSettings(); }
