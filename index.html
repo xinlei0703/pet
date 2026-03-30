@@ -30,6 +30,22 @@
   --shadow: 0 4px 20px rgba(0,0,0,0.25);
   --shadow-lg: 0 10px 40px rgba(0,0,0,0.4);
 }
+[data-theme="dark"] .mg-tile-en {
+  background: linear-gradient(145deg, #1e1b4b, #312e81);
+  border-color: #6366f1; color: #a5b4fc;
+}
+[data-theme="dark"] .mg-tile-cn {
+  background: linear-gradient(145deg, #431407, #7c2d12);
+  border-color: #f97316; color: #fdba74;
+}
+[data-theme="dark"] .mg-tile-en.selected {
+  background: linear-gradient(145deg, #312e81, #4338ca);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.4), 0 6px 20px rgba(99,102,241,0.3);
+}
+[data-theme="dark"] .mg-tile-cn.selected {
+  background: linear-gradient(145deg, #7c2d12, #9a3412);
+  box-shadow: 0 0 0 3px rgba(249,115,22,0.4), 0 6px 20px rgba(249,115,22,0.3);
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -374,6 +390,242 @@ body {
   font-size: 12px; color: var(--text-secondary); line-height: 1.6;
   margin-top: 4px; font-style: italic;
 }
+/* 闯关地图 */
+.stage-map {
+  display: flex; gap: 0; overflow-x: auto; padding: 16px 4px 12px;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+.stage-map::-webkit-scrollbar { display: none; }
+.stage-node-wrap {
+  display: flex; align-items: center; flex-shrink: 0;
+}
+.stage-node {
+  width: 52px; height: 52px; border-radius: 50%; display: flex;
+  flex-direction: column; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800; cursor: pointer;
+  transition: all 0.3s; position: relative; border: 3px solid var(--border);
+  background: var(--card); color: var(--text-secondary);
+}
+.stage-node.done {
+  border-color: var(--primary); background: var(--primary-light); color: var(--primary-dark);
+}
+.stage-node.current {
+  border-color: var(--primary); background: var(--gradient); color: white;
+  box-shadow: 0 0 0 4px rgba(16,185,129,0.2);
+  animation: stagePulse 2s ease-in-out infinite;
+}
+.stage-node.locked {
+  opacity: 0.4; cursor: default;
+}
+.stage-line {
+  width: 20px; height: 3px; background: var(--border); flex-shrink: 0;
+}
+.stage-line.done { background: var(--primary); }
+.stage-stars {
+  font-size: 9px; letter-spacing: -1px; margin-top: 1px; line-height: 1;
+}
+@keyframes stagePulse {
+  0%,100% { box-shadow: 0 0 0 4px rgba(16,185,129,0.2); }
+  50% { box-shadow: 0 0 0 8px rgba(16,185,129,0.1); }
+}
+/* 关卡选择 */
+.stage-card {
+  padding: 20px; border-radius: var(--radius); background: var(--card);
+  border: 2px solid var(--border); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 16px;
+  transition: all 0.2s; cursor: pointer;
+}
+.stage-card.unlocked:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.stage-card.locked { opacity: 0.45; cursor: default; }
+.stage-card.cleared { border-color: var(--primary); background: var(--primary-light); }
+.stage-icon {
+  width: 48px; height: 48px; border-radius: 50%; display: flex;
+  align-items: center; justify-content: center; font-size: 24px;
+  flex-shrink: 0;
+}
+.stage-card-stars { font-size: 18px; margin-left: auto; }
+/* 通关庆祝 */
+.celebrate-stars { font-size: 48px; margin: 16px 0 8px; letter-spacing: 4px; }
+.celebrate-msg { font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; }
+@keyframes starPop {
+  0% { transform: scale(0) rotate(-30deg); opacity: 0; }
+  60% { transform: scale(1.3) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.star-anim { display: inline-block; animation: starPop 0.4s ease-out both; }
+.star-anim:nth-child(2) { animation-delay: 0.15s; }
+.star-anim:nth-child(3) { animation-delay: 0.3s; }
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0); opacity: 1; }
+  100% { transform: translateY(-60px) rotate(360deg); opacity: 0; }
+}
+.confetti-wrap {
+  position: relative; height: 0; overflow: visible;
+}
+.confetti-dot {
+  position: absolute; width: 8px; height: 8px; border-radius: 50%;
+  animation: confetti 1s ease-out both;
+}
+/* 单词消消乐小游戏 */
+.mg-timer-bar {
+  height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; margin-bottom: 16px;
+}
+.mg-timer-fill {
+  height: 100%; border-radius: 99px; transition: width 1s linear;
+  background: linear-gradient(90deg, var(--primary), #3b82f6, var(--accent));
+}
+.mg-timer-fill.low { background: linear-gradient(90deg, var(--danger), #f97316); animation: timerPulse 0.5s ease-in-out infinite; }
+@keyframes timerPulse { 0%,100% { opacity:1; } 50% { opacity:0.6; } }
+.mg-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+  perspective: 800px;
+}
+.mg-tile {
+  padding: 10px 6px; border-radius: 16px;
+  border: 2.5px solid transparent; text-align: center; cursor: pointer;
+  font-weight: 700; transition: all 0.25s cubic-bezier(0.22,1,0.36,1);
+  min-height: 68px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  word-break: break-word; line-height: 1.3; position: relative;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+.mg-tile::before {
+  content: ''; position: absolute; inset: -1px; border-radius: 17px;
+  z-index: -1; opacity: 0.5;
+}
+/* 英文卡片 - 蓝紫色系 */
+.mg-tile-en {
+  background: linear-gradient(145deg, #eef2ff, #e0e7ff);
+  border-color: #a5b4fc; color: #4338ca; font-size: 16px;
+}
+.mg-tile-en::before { background: linear-gradient(145deg, #c7d2fe, #a5b4fc); }
+.mg-tile-en::after {
+  content: '🔤'; position: absolute; top: 3px; right: 5px;
+  font-size: 10px; opacity: 0.5;
+}
+/* 中文卡片 - 橙粉色系 */
+.mg-tile-cn {
+  background: linear-gradient(145deg, #fff7ed, #ffedd5);
+  border-color: #fdba74; color: #c2410c; font-size: 13px;
+}
+.mg-tile-cn::before { background: linear-gradient(145deg, #fed7aa, #fdba74); }
+.mg-tile-cn::after {
+  content: '🀄'; position: absolute; top: 3px; right: 5px;
+  font-size: 10px; opacity: 0.5;
+}
+.mg-tile:active { transform: scale(0.93); }
+.mg-tile.selected {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.mg-tile-en.selected {
+  border-color: #6366f1; background: linear-gradient(145deg, #e0e7ff, #c7d2fe);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.25), 0 6px 20px rgba(99,102,241,0.2);
+}
+.mg-tile-cn.selected {
+  border-color: #f97316; background: linear-gradient(145deg, #ffedd5, #fed7aa);
+  box-shadow: 0 0 0 3px rgba(249,115,22,0.25), 0 6px 20px rgba(249,115,22,0.2);
+}
+.mg-tile.matched {
+  animation: tileVanish 0.5s cubic-bezier(0.22,1,0.36,1) forwards;
+  pointer-events: none;
+}
+@keyframes tileVanish {
+  0% { transform: scale(1); opacity: 1; }
+  30% { transform: scale(1.15) rotate(3deg); opacity: 1; }
+  60% { transform: scale(1.1) rotate(-2deg); border-color: var(--success); }
+  100% { transform: scale(0) rotate(20deg); opacity: 0; }
+}
+.mg-tile.wrong {
+  animation: tileWrong 0.5s ease-out;
+}
+.mg-tile-en.wrong { border-color: var(--danger); background: linear-gradient(145deg, #fee2e2, #fecaca); }
+.mg-tile-cn.wrong { border-color: var(--danger); background: linear-gradient(145deg, #fee2e2, #fecaca); }
+@keyframes tileWrong {
+  0%,100% { transform: translateX(0); }
+  15% { transform: translateX(-8px) rotate(-3deg); }
+  30% { transform: translateX(8px) rotate(3deg); }
+  45% { transform: translateX(-5px) rotate(-1deg); }
+  60% { transform: translateX(5px) rotate(1deg); }
+  75% { transform: translateX(-2px); }
+}
+/* 入场动画 */
+.mg-tile-enter {
+  animation: tileEnter 0.4s cubic-bezier(0.22,1,0.36,1) both;
+}
+@keyframes tileEnter {
+  0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.mg-score-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 8px; padding: 0 2px;
+}
+/* 飘分动画 */
+.mg-float-score {
+  position: fixed; pointer-events: none; z-index: 300;
+  font-weight: 800; font-size: 22px;
+  animation: floatUp 0.9s cubic-bezier(0.22,1,0.36,1) forwards;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0) scale(0.5); }
+  30% { opacity: 1; transform: translateY(-20px) scale(1.2); }
+  100% { opacity: 0; transform: translateY(-70px) scale(0.8); }
+}
+/* combo 条 */
+.mg-combo {
+  text-align: center; font-size: 14px; font-weight: 800; min-height: 24px;
+  margin-bottom: 8px; transition: all 0.3s;
+}
+.mg-combo.fire { color: #ef4444; animation: comboFire 0.3s ease-out; }
+@keyframes comboFire {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+/* 轮次过渡 */
+.mg-round-clear {
+  position: fixed; inset: 0; z-index: 250; display: flex;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.3); backdrop-filter: blur(4px);
+  animation: fadeIn 0.2s ease-out;
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.mg-round-text {
+  font-size: 36px; font-weight: 800; color: white;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  animation: roundPop 0.6s cubic-bezier(0.22,1,0.36,1);
+}
+@keyframes roundPop {
+  0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+  60% { transform: scale(1.2) rotate(3deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+/* 紧张脉搏 */
+.mg-urgent { animation: urgentPulse 1s ease-in-out infinite; }
+@keyframes urgentPulse {
+  0%,100% { box-shadow: inset 0 0 0 0 transparent; }
+  50% { box-shadow: inset 0 0 30px rgba(239,68,68,0.1); }
+}
+/* 屏幕闪红 */
+.mg-flash-red { animation: flashRed 0.3s ease-out; }
+@keyframes flashRed {
+  0% { box-shadow: inset 0 0 60px rgba(239,68,68,0.4); }
+  100% { box-shadow: inset 0 0 0 transparent; }
+}
+/* 结算评级 */
+.mg-rank {
+  font-size: 64px; font-weight: 900; margin: 12px 0;
+  background: linear-gradient(135deg, #f59e0b, #ec4899, #8b5cf6);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; animation: rankPop 0.8s cubic-bezier(0.22,1,0.36,1);
+}
+@keyframes rankPop {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  50% { transform: scale(1.3) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); }
+}
 </style>
 </head>
 <body>
@@ -386,6 +638,8 @@ body {
 <div id="page-syllable" class="page"></div>
 <div id="page-spell" class="page"></div>
 <div id="page-quiz" class="page"></div>
+<div id="page-stages" class="page"></div>
+<div id="page-minigame" class="page"></div>
 <div id="page-stats" class="page"></div>
 <div id="page-settings" class="page"></div>
 <!-- 底部导航 -->
@@ -439,12 +693,47 @@ const settings = LS.get('pet_settings', { dailyNew: 20, theme: 'light' });
 const progress = LS.get('pet_progress', {});
 const dailyStats = LS.get('pet_daily_stats', {});
 const streak = LS.get('pet_streak', { last: '', count: 0 });
+const stageProgress = LS.get('pet_stage_progress', {});
 function saveAll() {
   LS.set('pet_settings', settings);
   LS.set('pet_progress', progress);
   LS.set('pet_daily_stats', dailyStats);
   LS.set('pet_streak', streak);
+  LS.set('pet_stage_progress', stageProgress);
 }
+function getStars(correct, total) {
+  if (total === 0) return 3;
+  const pct = correct / total;
+  return pct >= 0.8 ? 3 : pct >= 0.6 ? 2 : 1;
+}
+function getStageInfo(day) {
+  const s = stageProgress[day] || {};
+  const info = { know: s.know || 0, syllable: s.syllable || 0, spell: s.spell || 0 };
+  // 根据实际学习进度补充未记录的通关状态
+  const words = WORD_DATA.wordlist[day]?.words || [];
+  if (words.length && !info.know) {
+    if (words.every(w => getProgress(w).know.level >= 1)) info.know = 1;
+  }
+  if (words.length && !info.syllable) {
+    const sylWords = words.filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+    if (sylWords.length && sylWords.every(w => getProgress(w).syllable.level >= 1)) info.syllable = 1;
+  }
+  if (words.length && !info.spell) {
+    const spWords = words.filter(w => !w.word.includes(' ') && w.word.length <= 15);
+    if (spWords.length && spWords.every(w => getProgress(w).spell.level >= 1)) info.spell = 1;
+  }
+  return info;
+}
+function saveStage(day, type, stars) {
+  if (!stageProgress[day]) stageProgress[day] = { know: 0, syllable: 0, spell: 0 };
+  stageProgress[day][type] = Math.max(stageProgress[day][type] || 0, stars);
+  saveAll();
+}
+function getDayTotalStars(day) {
+  const s = getStageInfo(day);
+  return s.know + s.syllable + s.spell;
+}
+let currentStageDay = null;
 function today() { return new Date().toISOString().slice(0, 10); }
 function getWordId(w) { return w.word.toLowerCase().replace(/\s+/g, '_'); }
 function getProgress(w) {
@@ -454,20 +743,26 @@ function getProgress(w) {
     spell: { level: 0, next: 0, correct: 0, wrong: 0 },
     syllable: { level: 0, next: 0, correct: 0, wrong: 0 }
   };
-  // 兼容旧数据
+  // 兼容旧数据：将旧版进度同步到三个维度
   if (progress[id].level !== undefined) {
     const old = progress[id];
+    const d = { level: old.level, next: old.next, correct: old.correct, wrong: old.wrong };
     progress[id] = {
-      know: { level: old.level, next: old.next, correct: old.correct, wrong: old.wrong },
-      spell: { level: 0, next: 0, correct: 0, wrong: 0 },
-      syllable: { level: 0, next: 0, correct: 0, wrong: 0 }
+      know: { ...d },
+      spell: { ...d },
+      syllable: { ...d }
     };
   }
   return progress[id];
 }
-/* 错词间隔插入：隔3-5个词后再出现 */
+/* 错词间隔插入：隔5-8个词后再出现，每词最多重试2次 */
+const retryCount = new Map();
 function insertRetry(queue, idx, word) {
-  const gap = 3 + Math.floor(Math.random() * 3); // 3-5
+  const key = word.word || word;
+  const cnt = (retryCount.get(key) || 0) + 1;
+  retryCount.set(key, cnt);
+  if (cnt > 2) return; // 最多重试2次
+  const gap = 5 + Math.floor(Math.random() * 4); // 5-8
   const pos = Math.min(idx + 1 + gap, queue.length);
   queue.splice(pos, 0, word);
 }
@@ -605,6 +900,9 @@ function renderHome() {
   const curDay = getCurrentDay();
   const curWords = WORD_DATA.wordlist[curDay]?.words || [];
   const curKnown = curWords.filter(w => getProgress(w).know.level >= 1).length;
+  const curStageInfo = getStageInfo(curDay);
+  const curCleared = (curStageInfo.know > 0 ? 1 : 0) + (curStageInfo.syllable > 0 ? 1 : 0) + (curStageInfo.spell > 0 ? 1 : 0);
+  const curStarsHtml = '⭐'.repeat(curCleared) + '☆'.repeat(3 - curCleared);
   document.getElementById('page-home').innerHTML = `
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
       <div><div style="font-size:13px;color:var(--text-secondary);font-weight:500">欢迎回来</div>
@@ -617,6 +915,7 @@ function renderHome() {
           <div style="font-size:12px;opacity:0.8;font-weight:500;letter-spacing:0.05em;text-transform:uppercase">当前进度</div>
           <div style="font-size:32px;font-weight:800;margin:4px 0;letter-spacing:-0.02em">${curDay}</div>
           <div style="font-size:13px;opacity:0.85">${curKnown}/${curWords.length} 已认识</div>
+          <div style="font-size:18px;margin-top:6px;letter-spacing:2px">${curStarsHtml}</div>
         </div>
         <div style="text-align:right">
           <div style="font-size:12px;opacity:0.8;font-weight:500;letter-spacing:0.05em;text-transform:uppercase">今日已学</div>
@@ -667,6 +966,13 @@ function renderHome() {
         <button class="btn btn-outline btn-block" style="padding:12px 6px;flex-direction:column;gap:4px;font-size:12px;opacity:0.4" disabled>拼写 0</button>
       </div>
     </div>`}
+    <div class="card" style="padding:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-weight:700;font-size:15px">闯关进度</span>
+        <span style="font-size:12px;color:var(--text-secondary)">${Object.keys(WORD_DATA.wordlist).filter(k => getDayTotalStars(k) > 0).length}/28</span>
+      </div>
+      <div class="stage-map" id="stage-map">${renderStageMap(curDay)}</div>
+    </div>
     <button class="btn btn-primary btn-block btn-lg" onclick="startDayLearn('${curDay}')" style="margin-bottom:16px">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       学习 ${curDay}
@@ -681,12 +987,105 @@ function renderHome() {
         <span style="font-size:13px">学习统计</span>
       </button>
     </div>`;
+  setTimeout(() => {
+    const map = document.getElementById('stage-map');
+    const cur = map?.querySelector('.stage-node.current');
+    if (cur && map) cur.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+  }, 100);
+}
+function renderStageMap(curDay) {
+  const keys = Object.keys(WORD_DATA.wordlist);
+  const curNum = getDayNum(curDay);
+  return keys.map((key, i) => {
+    const num = getDayNum(key);
+    const info = getStageInfo(key);
+    const clearedCount = (info.know > 0 ? 1 : 0) + (info.syllable > 0 ? 1 : 0) + (info.spell > 0 ? 1 : 0);
+    const isDone = clearedCount > 0;
+    const isCur = key === curDay;
+    const isLocked = num > curNum && !isDone;
+    const cls = isCur ? 'current' : isDone ? 'done' : isLocked ? 'locked' : '';
+    const starsHtml = clearedCount > 0 ? `<div class="stage-stars">${'⭐'.repeat(clearedCount)}</div>` : '';
+    const line = i < keys.length - 1 ? `<div class="stage-line${isDone ? ' done' : ''}"></div>` : '';
+    const click = isLocked ? '' : `onclick="startDayLearn('${key}')"`;
+    return `<div class="stage-node-wrap"><div class="stage-node ${cls}" ${click}><span>${num}</span>${starsHtml}</div>${line}</div>`;
+  }).join('');
 }
 function startDayLearn(day) {
   const words = WORD_DATA.wordlist[day]?.words || [];
   if (!words.length) return;
-  // 先学认识/不认识，再拼写，再音节
-  showUnitMenu('wordlist', day);
+  currentStageDay = day;
+  navigate('stages');
+  renderStages(day);
+}
+function renderStages(day) {
+  const info = getStageInfo(day);
+  const words = WORD_DATA.wordlist[day]?.words || [];
+  const stages = [
+    { type: 'know', name: '认识闯关', icon: '🧠', desc: '认识/不认识', bg: 'var(--primary-light)', stars: info.know },
+    { type: 'syllable', name: '音节闯关', icon: '🧩', desc: '音节拼接', bg: 'var(--accent-light)', stars: info.syllable },
+    { type: 'spell', name: '拼写闯关', icon: '✍️', desc: '单词拼写（无提示）', bg: 'var(--warning-light)', stars: info.spell }
+  ];
+  let html = `<div class="top-bar">
+    <button class="close-btn" onclick="navigate('home')">✕</button>
+    <div style="flex:1;font-weight:700;font-size:18px;text-align:center">${day}</div>
+    <div style="width:36px"></div>
+  </div>
+  <div class="card" style="text-align:center;padding:24px;background:var(--gradient);color:white;border:none">
+    <div style="font-size:14px;opacity:0.85">闯关模式</div>
+    <div style="font-size:28px;font-weight:800;margin:4px 0">${day}</div>
+    <div style="font-size:13px;opacity:0.8">${words.length} 个单词 · 3 个关卡</div>
+  </div>`;
+  stages.forEach((s, i) => {
+    const cleared = s.stars > 0;
+    const prevCleared = i === 0 || stages[i-1].stars > 0;
+    const unlocked = prevCleared;
+    const cls = cleared ? 'cleared' : unlocked ? 'unlocked' : 'locked';
+    const starsHtml = cleared ? '⭐'.repeat(s.stars) + '☆'.repeat(3 - s.stars) : '☆☆☆';
+    const lockIcon = !unlocked ? '🔒' : '';
+    const onclick = unlocked ? `onclick="startStage('${day}','${s.type}')"` : '';
+    html += `<div class="stage-card ${cls}" ${onclick}>
+      <div class="stage-icon" style="background:${s.bg}">${lockIcon || s.icon}</div>
+      <div style="flex:1">
+        <div style="font-weight:700;font-size:15px">第${i+1}关：${s.name}</div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:2px">${s.desc}</div>
+      </div>
+      <div class="stage-card-stars">${starsHtml}</div>
+    </div>`;
+  });
+  const allCleared = stages.every(s => s.stars > 0);
+  if (allCleared) {
+    const total = info.know + info.spell + info.quiz;
+    html += `<div style="text-align:center;margin-top:8px;padding:16px;color:var(--primary);font-weight:700;font-size:15px">
+      🎉 ${day} 已通关！总计 ${'⭐'.repeat(total)} (${total}/9)
+    </div>
+    <button class="btn btn-block btn-lg" onclick="startMiniGame('${day}')" style="margin-bottom:12px;background:linear-gradient(135deg,#f59e0b,#ec4899);color:white;box-shadow:0 4px 14px rgba(236,72,153,0.3)">
+      🎮 通关奖励：单词消消乐
+    </button>`;
+  }
+  html += `<button class="btn btn-outline btn-block" style="margin-top:12px" onclick="showUnitMenu('wordlist','${day}')">自由练习模式</button>`;
+  document.getElementById('page-stages').innerHTML = html;
+}
+function startStage(day, type) {
+  currentStageDay = day;
+  const words = WORD_DATA.wordlist[day]?.words || [];
+  if (type === 'know') {
+    startLearnSession(words);
+  } else if (type === 'syllable') {
+    startSyllableSession('wordlist', day);
+  } else if (type === 'spell') {
+    startSpellSession('wordlist', day);
+  }
+}
+function generateConfetti() {
+  const colors = ['#10b981','#f59e0b','#8b5cf6','#ef4444','#3b82f6','#ec4899'];
+  let dots = '';
+  for (let i = 0; i < 12; i++) {
+    const c = colors[i % colors.length];
+    const x = Math.random() * 200 - 100;
+    const d = 0.2 + Math.random() * 0.6;
+    dots += `<div class="confetti-dot" style="background:${c};left:calc(50% + ${x}px);animation-delay:${d}s"></div>`;
+  }
+  return `<div class="confetti-wrap">${dots}</div>`;
 }
 function startQuickLearn() {
   const curDay = getCurrentDay();
@@ -695,24 +1094,31 @@ function startQuickLearn() {
 function startReview() {
   const review = getReviewWords();
   if (review.length === 0) { alert('暂无需要复习的单词'); return; }
+  currentStageDay = null;
   startLearnSession(review);
 }
 function startSyllableReview() {
   const review = getSyllableReviewWords();
   if (review.length === 0) { alert('暂无需要复习的音节'); return; }
+  currentStageDay = null;
   syllableQueue = shuffle(review);
+  sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   syllableIdx = 0; updateStreak(); navigate('syllable'); renderSyllable();
 }
 function startSpellReview() {
   const review = getSpellReviewWords();
   if (review.length === 0) { alert('暂无需要复习的拼写'); return; }
+  currentStageDay = null;
   spellQueue = shuffle(review);
+  sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   spellIdx = 0; updateStreak(); navigate('spell'); renderSpell();
 }
 /* ===== 认识/不认识学习流程 ===== */
 let learnQueue = [], learnIdx = 0, learnRevealed = false, learnHintUsed = false;
+let sessionCorrect = 0, sessionWrong = 0;
 function startLearnSession(words) {
   learnQueue = [...words]; learnIdx = 0; learnRevealed = false;
+  sessionCorrect = 0; sessionWrong = 0;
   updateStreak();
   navigate('learn');
   renderLearnCard();
@@ -740,6 +1146,7 @@ function renderLearnCard() {
     ${levelTag}
     <div class="learn-word" style="margin-top:12px">${w.word}</div>
     <div class="learn-phonetic">${w.phonetic ? '/' + w.phonetic + '/' : ''}</div>
+    <div style="font-size:13px;color:var(--text-secondary);margin-bottom:4px">${w.pos || ''}</div>
     <div style="display:flex;gap:12px;margin-bottom:4px">
       <button class="btn" style="background:none;color:var(--primary);font-size:14px" onclick="speak('${w.word.replace(/'/g,"\\'")}')">🔊 发音</button>
       ${w.example ? `<button class="btn" style="background:none;color:var(--warning);font-size:14px" onclick="showExampleHint()">💡 例句提示</button>` : ''}
@@ -749,9 +1156,14 @@ function renderLearnCard() {
     </div>
     <div id="learn-detail" style="display:none;width:100%;margin-top:16px">
       ${visualHtml}
-      <div class="learn-pos">${w.pos}</div>
       <div class="learn-meaning">${w.meaning}</div>
       <div class="learn-example" style="margin-top:12px">${w.exampleType === 'book' ? '📖' : '✏️'} ${w.example}</div>
+      <div style="margin-top:4px">
+        ${hasWordRoot(w.word) ? `<button class="root-btn" onclick="toggleWordRoot('${w.word.replace(/'/g,"\\'")}')">🌱 词根拓展</button>` : ''}
+        ${hasWordPhrase(w.word) ? `<button class="phrase-btn" onclick="toggleWordPhrase('${w.word.replace(/'/g,"\\'")}')">📝 词组拓展</button>` : ''}
+      </div>
+      <div id="root-panel-slot"></div>
+      <div id="phrase-panel-slot"></div>
     </div>
     <div class="learn-btns" id="learn-btns">
       <button class="btn btn-danger" onclick="learnAnswer(false)">不认识</button>
@@ -767,23 +1179,13 @@ function learnAnswer(known) {
   const card = document.getElementById('learn-card');
   const p = getProgress(w);
   if (known && !learnRevealed) {
-    if (learnHintUsed) {
-      scheduleNext(p.know, 'hint');
-      updateDailyStats(true);
-      card.classList.add('feedback-correct');
-      insertRetry(learnQueue, learnIdx, w);
-    } else if (p.know.level === 0 && p.know.correct === 0 && p.know.wrong === 0) {
-      // 第一次见就认识，直接标记为已掌握，不进入复习
-      p.know.level = 6; p.know.correct = 1; p.know.next = '9999-12-31';
-      saveAll();
-      updateDailyStats(true);
-      card.classList.add('feedback-correct');
-    } else {
-      scheduleNext(p.know, true);
-      updateDailyStats(true);
-      card.classList.add('feedback-correct');
-    }
-    setTimeout(() => { learnIdx++; renderLearnCard(); }, 300);
+    // 点击认识：先显示中文释义让用户确认
+    document.getElementById('learn-detail').style.display = 'block';
+    document.getElementById('learn-btns').innerHTML = `
+      <button class="btn btn-danger" onclick="learnConfirm(false)">记错了</button>
+      <button class="btn btn-primary" onclick="learnConfirm(true)">确认认识</button>`;
+    learnRevealed = true;
+    speak(w.word);
   } else if (!known && !learnRevealed) {
     document.getElementById('learn-detail').style.display = 'block';
     document.getElementById('learn-btns').innerHTML =
@@ -793,7 +1195,39 @@ function learnAnswer(known) {
     card.classList.add('feedback-wrong');
     scheduleNext(p.know, false);
     updateDailyStats(false);
+    sessionWrong++;
     insertRetry(learnQueue, learnIdx, w);
+  }
+}
+function learnConfirm(correct) {
+  const w = learnQueue[learnIdx];
+  const card = document.getElementById('learn-card');
+  const p = getProgress(w);
+  if (correct) {
+    if (learnHintUsed) {
+      scheduleNext(p.know, 'hint');
+      updateDailyStats(true);
+      insertRetry(learnQueue, learnIdx, w);
+    } else if (p.know.level === 0 && p.know.correct === 0 && p.know.wrong === 0) {
+      p.know.level = 6; p.know.correct = 1; p.know.next = '9999-12-31';
+      saveAll();
+      updateDailyStats(true);
+    } else {
+      scheduleNext(p.know, true);
+      updateDailyStats(true);
+    }
+    card.classList.add('feedback-correct');
+    sessionCorrect++;
+    setTimeout(() => { learnIdx++; renderLearnCard(); }, 300);
+  } else {
+    card.classList.remove('feedback-correct');
+    card.classList.add('feedback-wrong');
+    scheduleNext(p.know, false);
+    updateDailyStats(false);
+    sessionWrong++;
+    insertRetry(learnQueue, learnIdx, w);
+    document.getElementById('learn-btns').innerHTML =
+      '<button class="btn btn-primary btn-block" onclick="learnNext()">下一个</button>';
   }
 }
 function learnNext() { learnIdx++; renderLearnCard(); }
@@ -921,17 +1355,25 @@ function toggleWordPhrase(word) {
   </div>`;
 }
 function finishLearnSession() {
-  const ds = dailyStats[today()] || { reviewed: 0, correct: 0, wrong: 0 };
+  const total = sessionCorrect + sessionWrong;
+  const stars = getStars(sessionCorrect, total);
+  const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
+  if (currentStageDay) saveStage(currentStageDay, 'know', stars);
+  const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
+  const confettiHtml = stars === 3 ? generateConfetti() : '';
+  const backTarget = currentStageDay ? `navigate('stages');renderStages('${currentStageDay}')` : "navigate('home')";
   document.getElementById('page-learn').innerHTML = `
     <div class="card" style="text-align:center;padding:48px 24px">
-      <div class="finish-icon">🎉</div>
-      <h2 style="font-size:22px;font-weight:800;margin-bottom:6px">学习完成！</h2>
-      <p style="color:var(--text-secondary);margin-bottom:28px;font-size:14px">本轮学习结束</p>
-      <div style="display:flex;justify-content:center;gap:40px;margin-bottom:28px">
-        <div><div class="stat-num" style="color:var(--success)">${ds.correct}</div><div class="stat-label">正确</div></div>
-        <div><div class="stat-num" style="color:var(--danger)">${ds.wrong}</div><div class="stat-label">错误</div></div>
+      ${confettiHtml}
+      <div class="finish-icon">🧠</div>
+      <h2 style="font-size:22px;font-weight:800;margin-bottom:6px">认识闯关完成！</h2>
+      <div class="celebrate-stars">${'<span class="star-anim">⭐</span>'.repeat(stars)}${'<span class="star-anim" style="opacity:0.2">☆</span>'.repeat(3-stars)}</div>
+      <div class="celebrate-msg">正确率 ${pct}% · ${msgs[stars-1]}</div>
+      <div style="display:flex;justify-content:center;gap:40px;margin-bottom:24px">
+        <div><div class="stat-num" style="color:var(--success)">${sessionCorrect}</div><div class="stat-label">正确</div></div>
+        <div><div class="stat-num" style="color:var(--danger)">${sessionWrong}</div><div class="stat-label">错误</div></div>
       </div>
-      <button class="btn btn-primary btn-block" onclick="navigate('home')">返回首页</button>
+      <button class="btn btn-primary btn-block" onclick="${backTarget}">${currentStageDay ? '返回关卡' : '返回首页'}</button>
     </div>`;
 }
 /* ===== 音节拼接游戏 ===== */
@@ -940,12 +1382,14 @@ function startSyllableGame() {
   const all = getAllWords().filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
   syllableQueue = shuffle(all).slice(0, 15);
   if (!syllableQueue.length) { alert('没有可用的单词'); return; }
+  sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   syllableIdx = 0; navigate('syllable'); renderSyllable();
 }
 function startSyllableSession(section, unit) {
   const words = getUnitWords(section, unit).filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
   syllableQueue = shuffle(words).slice(0, 20);
   if (!syllableQueue.length) { alert('该单元没有可拆分的单词'); return; }
+  sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   syllableIdx = 0; navigate('syllable'); renderSyllable();
 }
 function shuffle(arr) { const a = [...arr]; for (let i = a.length-1; i > 0; i--) { const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
@@ -967,6 +1411,7 @@ function renderSyllable() {
     <div class="card" style="text-align:center;min-height:350px">
       <p style="color:var(--text-secondary);margin-bottom:8px">拼出这个单词</p>
       <div class="learn-meaning" style="margin-bottom:4px">${w.meaning}</div>
+      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:4px">${w.pos || ''}</div>
       <div class="syllable-result" id="syl-result" style="margin:20px 0;color:var(--primary)"></div>
       <div class="syllable-pool" id="syl-pool">
         ${pool.map((s, i) => `<button class="syllable-btn" data-syl="${s}" data-idx="${i}" onclick="pickSyllable(this)">${s}</button>`).join('')}
@@ -999,23 +1444,39 @@ function checkSyllable() {
   const p = getProgress(w);
   if (correct) {
     scheduleNext(p.syllable, true); updateDailyStats(true);
+    sessionCorrect++;
     document.getElementById('syl-result').style.color = 'var(--success)';
     speak(w.word);
     setTimeout(() => { syllableIdx++; renderSyllable(); }, 800);
   } else {
     scheduleNext(p.syllable, false); updateDailyStats(false);
-    document.getElementById('syl-result').style.color = 'var(--danger)';
-    document.getElementById('syl-result').textContent = w.word;
+    sessionWrong++;
+    const res = document.getElementById('syl-result');
+    res.style.color = 'var(--danger)';
+    res.innerHTML = `${w.word}<br><button class="btn btn-primary" style="margin-top:12px;width:100%" onclick="syllableIdx++;renderSyllable()">学会了</button>`;
     insertRetry(syllableQueue, syllableIdx, w);
-    setTimeout(() => { syllableIdx++; renderSyllable(); }, 1500);
   }
 }
 function finishSyllable() {
+  const total = sessionCorrect + sessionWrong;
+  const stars = getStars(sessionCorrect, total);
+  const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
+  if (currentStageDay) saveStage(currentStageDay, 'syllable', stars);
+  const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
+  const confettiHtml = stars === 3 ? generateConfetti() : '';
+  const backTarget = currentStageDay ? `navigate('stages');renderStages('${currentStageDay}')` : "navigate('home')";
   document.getElementById('page-syllable').innerHTML = `
     <div class="card" style="text-align:center;padding:48px 24px">
+      ${confettiHtml}
       <div class="finish-icon" style="background:var(--accent-light)">🧩</div>
-      <h2 style="font-size:22px;font-weight:800">音节拼接完成！</h2>
-      <button class="btn btn-primary btn-block" style="margin-top:28px" onclick="navigate('home')">返回首页</button>
+      <h2 style="font-size:22px;font-weight:800;margin-bottom:6px">音节闯关完成！</h2>
+      <div class="celebrate-stars">${'<span class="star-anim">⭐</span>'.repeat(stars)}${'<span class="star-anim" style="opacity:0.2">☆</span>'.repeat(3-stars)}</div>
+      <div class="celebrate-msg">正确率 ${pct}% · ${msgs[stars-1]}</div>
+      <div style="display:flex;justify-content:center;gap:40px;margin-bottom:24px">
+        <div><div class="stat-num" style="color:var(--success)">${sessionCorrect}</div><div class="stat-label">正确</div></div>
+        <div><div class="stat-num" style="color:var(--danger)">${sessionWrong}</div><div class="stat-label">错误</div></div>
+      </div>
+      <button class="btn btn-primary btn-block" onclick="${backTarget}">${currentStageDay ? '返回关卡' : '返回首页'}</button>
     </div>`;
 }
 /* ===== 拼写练习 ===== */
@@ -1024,12 +1485,14 @@ function startSpell() {
   const all = getAllWords().filter(w => !w.word.includes(' ') && w.word.length <= 15);
   spellQueue = shuffle(all).slice(0, 15);
   if (!spellQueue.length) { alert('没有可用的单词'); return; }
+  sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   spellIdx = 0; navigate('spell'); renderSpell();
 }
 function startSpellSession(section, unit) {
   const words = getUnitWords(section, unit).filter(w => !w.word.includes(' ') && w.word.length <= 15);
   spellQueue = shuffle(words);
   if (!spellQueue.length) { alert('该单元没有可拼写的单词'); return; }
+  sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   spellIdx = 0; navigate('spell'); renderSpell();
 }
 function renderSpell() {
@@ -1037,6 +1500,7 @@ function renderSpell() {
   const w = spellQueue[spellIdx];
   const hint = w.word[0] + '_'.repeat(w.word.length - 2) + w.word[w.word.length - 1];
   const pct = Math.round((spellIdx / spellQueue.length) * 100);
+  const isStageMode = !!currentStageDay;
   document.getElementById('page-spell').innerHTML = `
     <div class="top-bar">
       <button class="close-btn" onclick="navigate('home')">✕</button>
@@ -1046,7 +1510,8 @@ function renderSpell() {
     <div class="card" style="text-align:center;min-height:300px">
       <p style="color:var(--text-secondary);margin-bottom:8px">拼写这个单词</p>
       <div class="learn-meaning" style="margin-bottom:4px">${w.meaning}</div>
-      <div style="color:var(--text-secondary);font-size:14px;margin:8px 0">提示: ${hint}</div>
+      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:4px">${w.pos || ''}</div>
+      ${isStageMode ? '' : `<div style="color:var(--text-secondary);font-size:14px;margin:8px 0">提示: ${hint}</div>`}
       <button class="btn" style="background:none;color:var(--primary);font-size:14px;margin-bottom:16px" onclick="speak('${w.word.replace(/'/g,"\\'")}')">🔊 听发音</button>
       <input class="spell-input" id="spell-input" type="text" autocomplete="off" autocapitalize="off" placeholder="输入单词..." onkeydown="if(event.key==='Enter')checkSpell()">
       <div id="spell-feedback" style="margin-top:12px;min-height:40px"></div>
@@ -1062,22 +1527,43 @@ function checkSpell() {
   const fb = document.getElementById('spell-feedback');
   if (correct) {
     scheduleNext(p.spell, true); updateDailyStats(true);
+    sessionCorrect++;
     fb.innerHTML = `<span style="color:var(--success);font-size:18px;font-weight:600">✓ 正确！</span>`;
     speak(w.word);
     setTimeout(() => { spellIdx++; renderSpell(); }, 800);
   } else {
     scheduleNext(p.spell, false); updateDailyStats(false);
-    fb.innerHTML = `<span style="color:var(--danger);font-size:16px">✗ 正确答案: <strong>${w.word}</strong></span>`;
+    sessionWrong++;
+    fb.innerHTML = `<span style="color:var(--danger);font-size:16px">✗ 正确答案: <strong>${w.word}</strong></span>
+      <button class="btn btn-primary" style="margin-top:12px;width:100%" onclick="spellIdx++;renderSpell()">学会了</button>`;
     insertRetry(spellQueue, spellIdx, w);
-    setTimeout(() => { spellIdx++; renderSpell(); }, 2000);
   }
 }
 function finishSpell() {
+  const total = sessionCorrect + sessionWrong;
+  const stars = getStars(sessionCorrect, total);
+  const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
+  if (currentStageDay) saveStage(currentStageDay, 'spell', stars);
+  const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
+  const confettiHtml = stars === 3 ? generateConfetti() : '';
+  const info = currentStageDay ? getStageInfo(currentStageDay) : null;
+  const allCleared = info && info.know > 0 && info.syllable > 0 && info.spell > 0;
+  const dayCompleteHtml = allCleared ? `<div style="margin:12px 0;padding:12px;background:var(--primary-light);border-radius:var(--radius-sm);color:var(--primary-dark);font-weight:700">🎉 ${currentStageDay} 全部通关！</div>
+    <button class="btn btn-block" onclick="startMiniGame('${currentStageDay}')" style="margin-bottom:12px;background:linear-gradient(135deg,#f59e0b,#ec4899);color:white;box-shadow:0 4px 14px rgba(236,72,153,0.3);font-size:15px">🎮 领取奖励：单词消消乐</button>` : '';
+  const backTarget = currentStageDay ? `navigate('stages');renderStages('${currentStageDay}')` : "navigate('home')";
   document.getElementById('page-spell').innerHTML = `
     <div class="card" style="text-align:center;padding:48px 24px">
+      ${confettiHtml}
       <div class="finish-icon" style="background:var(--warning-light)">✍️</div>
-      <h2 style="font-size:22px;font-weight:800">拼写练习完成！</h2>
-      <button class="btn btn-primary btn-block" style="margin-top:28px" onclick="navigate('home')">返回首页</button>
+      <h2 style="font-size:22px;font-weight:800;margin-bottom:6px">拼写闯关完成！</h2>
+      <div class="celebrate-stars">${'<span class="star-anim">⭐</span>'.repeat(stars)}${'<span class="star-anim" style="opacity:0.2">☆</span>'.repeat(3-stars)}</div>
+      <div class="celebrate-msg">正确率 ${pct}% · ${msgs[stars-1]}</div>
+      ${dayCompleteHtml}
+      <div style="display:flex;justify-content:center;gap:40px;margin-bottom:24px">
+        <div><div class="stat-num" style="color:var(--success)">${sessionCorrect}</div><div class="stat-label">正确</div></div>
+        <div><div class="stat-num" style="color:var(--danger)">${sessionWrong}</div><div class="stat-label">错误</div></div>
+      </div>
+      <button class="btn btn-primary btn-block" onclick="${backTarget}">${currentStageDay ? '返回关卡' : '返回首页'}</button>
     </div>`;
 }
 /* ===== 选择题测验 ===== */
@@ -1087,6 +1573,7 @@ function startQuizSession(section, unit) {
   quizQueue = shuffle(words);
   quizMode = Math.random() > 0.5 ? 'en2cn' : 'cn2en';
   if (!quizQueue.length) { alert('该单元没有单词'); return; }
+  sessionCorrect = 0; sessionWrong = 0;
   quizIdx = 0; navigate('quiz'); renderQuiz();
 }
 function renderQuiz() {
@@ -1110,6 +1597,7 @@ function renderQuiz() {
     <div class="card" style="text-align:center;padding-bottom:12px">
       <p style="color:var(--text-secondary);margin-bottom:8px">${isEn2Cn ? '选择正确的中文释义' : '选择正确的英文单词'}</p>
       <div style="font-size:28px;font-weight:700;margin:16px 0">${isEn2Cn ? w.word : w.meaning}</div>
+      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:4px">${w.pos || ''}</div>
       ${isEn2Cn && w.phonetic ? `<div class="learn-phonetic">/${w.phonetic}/</div>` : ''}
       <button class="btn" style="background:none;color:var(--primary);font-size:14px" onclick="speak('${w.word.replace(/'/g,"\\'")}')">🔊</button>
     </div>
@@ -1130,19 +1618,276 @@ function answerQuiz(btn, correctWord, selectedWord) {
   });
   if (correct) {
     scheduleNext(p.know, true); updateDailyStats(true);
+    sessionCorrect++;
     speak(w.word);
   } else {
     scheduleNext(p.know, false); updateDailyStats(false);
+    sessionWrong++;
     quizQueue.push(w);
   }
   setTimeout(() => { quizIdx++; renderQuiz(); }, correct ? 800 : 1500);
 }
 function finishQuiz() {
+  const total = sessionCorrect + sessionWrong;
+  const stars = getStars(sessionCorrect, total);
+  const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
+  const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
+  const confettiHtml = stars === 3 ? generateConfetti() : '';
   document.getElementById('page-quiz').innerHTML = `
     <div class="card" style="text-align:center;padding:48px 24px">
+      ${confettiHtml}
       <div class="finish-icon">📝</div>
-      <h2 style="font-size:22px;font-weight:800">测验完成！</h2>
-      <button class="btn btn-primary btn-block" style="margin-top:28px" onclick="navigate('home')">返回首页</button>
+      <h2 style="font-size:22px;font-weight:800;margin-bottom:6px">测验完成！</h2>
+      <div class="celebrate-stars">${'<span class="star-anim">⭐</span>'.repeat(stars)}${'<span class="star-anim" style="opacity:0.2">☆</span>'.repeat(3-stars)}</div>
+      <div class="celebrate-msg">正确率 ${pct}% · ${msgs[stars-1]}</div>
+      <div style="display:flex;justify-content:center;gap:40px;margin-bottom:24px">
+        <div><div class="stat-num" style="color:var(--success)">${sessionCorrect}</div><div class="stat-label">正确</div></div>
+        <div><div class="stat-num" style="color:var(--danger)">${sessionWrong}</div><div class="stat-label">错误</div></div>
+      </div>
+      <button class="btn btn-primary btn-block" onclick="navigate('home')">返回首页</button>
+    </div>`;
+}
+/* ===== 单词消消乐小游戏 ===== */
+let mgTimer = null, mgTimeLeft = 180, mgScore = 0, mgSelected = null, mgPairs = [];
+let mgRound = 0, mgTotalRounds = 0, mgCombo = 0, mgMaxCombo = 0, mgMatchCount = 0, mgMissCount = 0;
+function getWeakWords() {
+  const all = getAllWords();
+  const scored = all.map(w => {
+    const p = getProgress(w);
+    const k = p.know, s = p.spell;
+    const errRate = (k.wrong + s.wrong) / Math.max(1, k.correct + k.wrong + s.correct + s.wrong);
+    const lvScore = Math.max(0, 6 - (k.level || 0));
+    return { word: w, score: lvScore * 2 + errRate * 10 };
+  });
+  scored.sort((a, b) => b.score - a.score);
+  return scored.filter(s => s.score > 0).map(s => s.word);
+}
+function startMiniGame(day) {
+  let pool = [];
+  if (day) {
+    const dayWords = WORD_DATA.wordlist[day]?.words || [];
+    pool = dayWords.filter(w => {
+      const p = getProgress(w);
+      return p.know.level < 6 || p.spell.level < 6 || p.know.wrong > 0 || p.spell.wrong > 0;
+    });
+  }
+  if (pool.length < 6) pool = getWeakWords();
+  if (pool.length < 6) pool = shuffle(getAllWords());
+  pool = shuffle(pool);
+  mgTimeLeft = 180; mgScore = 0; mgRound = 0;
+  mgCombo = 0; mgMaxCombo = 0; mgMatchCount = 0; mgMissCount = 0;
+  mgTotalRounds = Math.min(5, Math.ceil(pool.length / 6));
+  mgPairs = pool.slice(0, mgTotalRounds * 6);
+  navigate('minigame');
+  renderMgRound();
+  startMgTimer();
+}
+function startMgTimer() {
+  clearInterval(mgTimer);
+  mgTimer = setInterval(() => {
+    mgTimeLeft--;
+    const bar = document.getElementById('mg-timer-fill');
+    if (bar) {
+      bar.style.width = (mgTimeLeft / 180 * 100) + '%';
+      if (mgTimeLeft <= 60) bar.classList.add('low');
+    }
+    const lbl = document.getElementById('mg-time-label');
+    if (lbl) {
+      const m = Math.floor(mgTimeLeft / 60), s = mgTimeLeft % 60;
+      lbl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+      if (mgTimeLeft <= 30) lbl.style.color = 'var(--danger)';
+    }
+    const page = document.getElementById('page-minigame');
+    if (mgTimeLeft <= 30 && page) page.classList.add('mg-urgent');
+    if (mgTimeLeft <= 0) { clearInterval(mgTimer); finishMiniGame(); }
+  }, 1000);
+}
+function renderMgRound() {
+  const start = mgRound * 6, end = start + 6;
+  const words = mgPairs.slice(start, end);
+  if (words.length < 3) { finishMiniGame(); return; }
+  mgSelected = null;
+  const enTiles = words.map((w, i) => ({ id: 'en_' + i, text: w.word, type: 'en', idx: i }));
+  const cnTiles = words.map((w, i) => ({ id: 'cn_' + i, text: w.meaning, type: 'cn', idx: i }));
+  const tiles = shuffle([...enTiles, ...cnTiles]);
+  window._mgWords = words;
+  const m = Math.floor(mgTimeLeft / 60), s = mgTimeLeft % 60;
+  const comboText = mgCombo >= 2 ? `🔥 ${mgCombo} COMBO` : '';
+  const comboColor = mgCombo >= 5 ? '#ef4444' : mgCombo >= 3 ? '#f59e0b' : 'var(--primary)';
+  let html = `<div class="top-bar">
+    <button class="close-btn" onclick="clearInterval(mgTimer);navigate('home')">✕</button>
+    <div style="flex:1;font-weight:700;font-size:16px;text-align:center">🎮 单词消消乐</div>
+    <div style="width:36px"></div>
+  </div>
+  <div class="mg-score-bar">
+    <span style="font-size:13px;color:var(--text-secondary)">第 ${mgRound+1}/${mgTotalRounds} 轮</span>
+    <span id="mg-score-lbl" style="font-weight:800;font-size:20px;color:var(--primary)">${mgScore}</span>
+    <span id="mg-time-label" style="font-size:14px;font-weight:800;color:${mgTimeLeft<=30?'var(--danger)':'var(--text-secondary)'}">${m}:${s<10?'0':''}${s}</span>
+  </div>
+  <div class="mg-combo" id="mg-combo" style="color:${comboColor}">${comboText}</div>
+  <div class="mg-timer-bar"><div class="mg-timer-fill${mgTimeLeft<=60?' low':''}" id="mg-timer-fill" style="width:${mgTimeLeft/180*100}%"></div></div>
+  <div style="text-align:center;margin-bottom:10px">
+    <span style="font-size:11px;padding:3px 10px;border-radius:99px;background:#eef2ff;color:#6366f1;font-weight:600;margin-right:6px">🔤 英文</span>
+    <span style="font-size:11px;padding:3px 10px;border-radius:99px;background:#fff7ed;color:#ea580c;font-weight:600">🀄 中文</span>
+  </div>
+  <div class="mg-grid" id="mg-grid">`;
+  tiles.forEach((t, ti) => {
+    const cls = t.type === 'en' ? 'mg-tile-en' : 'mg-tile-cn';
+    const delay = ti * 0.05;
+    html += `<div class="mg-tile ${cls} mg-tile-enter" id="tile-${t.id}" data-id="${t.id}" data-type="${t.type}" data-idx="${t.idx}" onclick="mgTap(this)" style="animation-delay:${delay}s">${t.text}</div>`;
+  });
+  html += '</div>';
+  document.getElementById('page-minigame').innerHTML = html;
+}
+function mgTap(el) {
+  if (el.classList.contains('matched')) return;
+  const id = el.dataset.id, type = el.dataset.type, idx = parseInt(el.dataset.idx);
+  if (mgSelected && mgSelected.id === id) {
+    el.classList.remove('selected'); mgSelected = null; return;
+  }
+  if (!mgSelected) {
+    el.classList.add('selected');
+    mgSelected = { id, type, idx, el };
+    return;
+  }
+  if (mgSelected.type === type) {
+    mgSelected.el.classList.remove('selected');
+    el.classList.add('selected');
+    mgSelected = { id, type, idx, el };
+    return;
+  }
+  // 配对判定
+  if (mgSelected.idx === idx) {
+    // 正确配对
+    mgCombo++;
+    mgMatchCount++;
+    if (mgCombo > mgMaxCombo) mgMaxCombo = mgCombo;
+    const comboMult = mgCombo >= 5 ? 3 : mgCombo >= 3 ? 2 : 1;
+    const pts = 10 * comboMult;
+    mgScore += pts;
+    el.classList.add('matched'); mgSelected.el.classList.add('matched');
+    const w = window._mgWords[idx];
+    if (w) speak(w.word);
+    // 飘分动画
+    const rect = el.getBoundingClientRect();
+    mgFloatScore(rect.left + rect.width/2, rect.top, '+' + pts, 'var(--primary)');
+    if (mgCombo >= 3) {
+      setTimeout(() => mgFloatScore(rect.left + rect.width/2, rect.top - 30, mgCombo + ' COMBO!',
+        mgCombo >= 5 ? '#ef4444' : '#f59e0b'), 150);
+    }
+    mgSelected = null;
+    updateMgScore();
+    updateMgCombo();
+    const allMatched = document.querySelectorAll('.mg-tile:not(.matched)').length === 0;
+    if (allMatched) {
+      const bonus = 30 + mgCombo * 5;
+      mgScore += bonus;
+      updateMgScore();
+      mgRound++;
+      showRoundClear(bonus);
+    }
+  } else {
+    // 错误配对
+    mgCombo = 0;
+    mgMissCount++;
+    const penalty = Math.min(5, mgScore);
+    mgScore = Math.max(0, mgScore - penalty);
+    el.classList.add('wrong'); mgSelected.el.classList.add('wrong');
+    const prev = mgSelected.el;
+    mgSelected = null;
+    updateMgScore();
+    updateMgCombo();
+    // 屏幕闪红
+    const page = document.getElementById('page-minigame');
+    page.classList.add('mg-flash-red');
+    if (penalty > 0) {
+      const rect = el.getBoundingClientRect();
+      mgFloatScore(rect.left + rect.width/2, rect.top, '-' + penalty, 'var(--danger)');
+    }
+    setTimeout(() => {
+      el.classList.remove('wrong','selected');
+      prev.classList.remove('wrong','selected');
+      page.classList.remove('mg-flash-red');
+    }, 500);
+  }
+}
+function mgFloatScore(x, y, text, color) {
+  const el = document.createElement('div');
+  el.className = 'mg-float-score';
+  el.style.left = x + 'px';
+  el.style.top = y + 'px';
+  el.style.color = color;
+  el.textContent = text;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 900);
+}
+function updateMgScore() {
+  const el = document.getElementById('mg-score-lbl');
+  if (el) { el.textContent = mgScore; el.style.transform = 'scale(1.3)'; setTimeout(() => el.style.transform = '', 200); }
+}
+function updateMgCombo() {
+  const el = document.getElementById('mg-combo');
+  if (!el) return;
+  if (mgCombo >= 2) {
+    const color = mgCombo >= 5 ? '#ef4444' : mgCombo >= 3 ? '#f59e0b' : 'var(--primary)';
+    el.style.color = color;
+    el.innerHTML = (mgCombo >= 5 ? '🔥🔥 ' : mgCombo >= 3 ? '🔥 ' : '✨ ') + mgCombo + ' COMBO';
+    el.classList.add('fire');
+    setTimeout(() => el.classList.remove('fire'), 300);
+  } else {
+    el.innerHTML = '';
+  }
+}
+function showRoundClear(bonus) {
+  const rating = mgMissCount === 0 && mgRound <= 1 ? 'PERFECT ✨' : mgMissCount <= 1 ? 'GREAT! 🎉' : 'GOOD 👍';
+  const overlay = document.createElement('div');
+  overlay.className = 'mg-round-clear';
+  overlay.innerHTML = `<div style="text-align:center">
+    <div class="mg-round-text">${rating}</div>
+    <div style="color:white;font-size:16px;margin-top:8px;opacity:0.9">+${bonus} 奖励分</div>
+  </div>`;
+  document.body.appendChild(overlay);
+  setTimeout(() => {
+    overlay.remove();
+    if (mgRound >= mgTotalRounds) {
+      finishMiniGame();
+    } else {
+      renderMgRound();
+    }
+  }, 1200);
+}
+function finishMiniGame() {
+  clearInterval(mgTimer);
+  document.getElementById('page-minigame').classList.remove('mg-urgent');
+  const timeUsed = 180 - mgTimeLeft;
+  const m = Math.floor(timeUsed / 60), s = timeUsed % 60;
+  // 评级: S/A/B/C
+  const rank = mgScore >= 250 ? 'S' : mgScore >= 150 ? 'A' : mgScore >= 80 ? 'B' : 'C';
+  const rankMsg = { S: '单词大师！', A: '表现优秀！', B: '继续加油！', C: '多多练习！' };
+  const accuracy = mgMatchCount + mgMissCount > 0 ? Math.round(mgMatchCount / (mgMatchCount + mgMissCount) * 100) : 0;
+  document.getElementById('page-minigame').innerHTML = `
+    <div class="card" style="text-align:center;padding:40px 24px">
+      ${generateConfetti()}
+      <div style="font-size:14px;color:var(--text-secondary);font-weight:600;letter-spacing:0.1em">GAME OVER</div>
+      <div class="mg-rank">${rank}</div>
+      <div style="font-size:15px;color:var(--text-secondary);margin-bottom:20px">${rankMsg[rank]}</div>
+      <div style="font-size:44px;font-weight:800;color:var(--primary);margin-bottom:4px">${mgScore}</div>
+      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:20px">总得分</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px">
+        <div class="card" style="padding:12px;margin:0;box-shadow:none;border:1px solid var(--border)">
+          <div style="font-size:22px;font-weight:800;color:var(--warning)">${mgMaxCombo}</div>
+          <div style="font-size:11px;color:var(--text-secondary);margin-top:2px">最高连击</div>
+        </div>
+        <div class="card" style="padding:12px;margin:0;box-shadow:none;border:1px solid var(--border)">
+          <div style="font-size:22px;font-weight:800;color:var(--success)">${accuracy}%</div>
+          <div style="font-size:11px;color:var(--text-secondary);margin-top:2px">准确率</div>
+        </div>
+        <div class="card" style="padding:12px;margin:0;box-shadow:none;border:1px solid var(--border)">
+          <div style="font-size:22px;font-weight:800">${m}:${s<10?'0':''}${s}</div>
+          <div style="font-size:11px;color:var(--text-secondary);margin-top:2px">用时</div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="navigate('home')">返回首页</button>
     </div>`;
 }
 function renderUnits() {
@@ -1210,6 +1955,7 @@ function renderUnits() {
 function showUnitMenu(section, unit) {
   const words = getUnitWords(section, unit);
   if (!words.length) return;
+  currentStageDay = null;
   const modal = document.createElement('div');
   modal.className = 'modal-overlay';
   modal.onclick = e => { if (e.target === modal) modal.remove(); };
@@ -1444,6 +2190,29 @@ function toggleStoryCn() {
   if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
 }
 /* ===== 初始化 ===== */
+// 批量迁移旧数据：确保所有旧格式进度同步到三个维度
+(function migrateOldProgress() {
+  let changed = false;
+  for (const id of Object.keys(progress)) {
+    if (progress[id].level !== undefined) {
+      const old = progress[id];
+      const d = { level: old.level, next: old.next, correct: old.correct, wrong: old.wrong };
+      progress[id] = { know: { ...d }, spell: { ...d }, syllable: { ...d } };
+      changed = true;
+    }
+  }
+  // 根据迁移后的进度补充 stageProgress
+  if (changed) {
+    for (const day of Object.keys(WORD_DATA.wordlist)) {
+      if (stageProgress[day]) continue;
+      const info = getStageInfo(day);
+      if (info.know > 0 || info.syllable > 0 || info.spell > 0) {
+        stageProgress[day] = { know: info.know, syllable: info.syllable, spell: info.spell };
+      }
+    }
+    saveAll();
+  }
+})();
 document.documentElement.setAttribute('data-theme', settings.theme);
 navigate('home');
 </script>
