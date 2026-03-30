@@ -798,10 +798,16 @@ function insertRetry(queue, idx, word) {
   queue.splice(pos, 0, word);
 }
 function speak(word) {
-  if (!window.speechSynthesis) return;
-  const u = new SpeechSynthesisUtterance(word);
-  u.lang = 'en-US'; u.rate = 0.85;
-  speechSynthesis.cancel(); speechSynthesis.speak(u);
+  // 优先用系统语音合成
+  if (window.speechSynthesis && speechSynthesis.getVoices().length > 0) {
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US'; u.rate = 0.85;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+    return;
+  }
+  // 备选：有道在线发音
+  const audio = new Audio(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`);
+  audio.play().catch(() => {});
 }
 function getAllWords() {
   const all = [];
