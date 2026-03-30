@@ -2288,22 +2288,19 @@ async function handleLogin() {
   errEl.style.display = 'none';
   btn.textContent = '登录中...';
   btn.disabled = true;
+  // 先保存登录状态，确保一定能进入
+  currentUser = { name, className, userId: getUserId(name, className) };
+  localStorage.setItem('pet_user', JSON.stringify(currentUser));
+  // 尝试云端同步，5秒超时
   try {
-    // 3秒超时，超时则跳过云端同步直接进入
-    const timeout = new Promise((_, reject) => setTimeout(() => reject('timeout'), 3000));
-    await Promise.race([loginUser(name, className), timeout]).catch(() => {
-      currentUser = { name, className, userId: getUserId(name, className) };
-      localStorage.setItem('pet_user', JSON.stringify(currentUser));
-    });
-    showApp();
+    const timeout = new Promise((_, reject) => setTimeout(() => reject('timeout'), 5000));
+    await Promise.race([loginUser(name, className), timeout]);
   } catch (e) {
-    errEl.textContent = '登录失败，请检查网络后重试';
-    errEl.style.display = 'block';
-    console.error(e);
-  } finally {
-    btn.textContent = '开始学习';
-    btn.disabled = false;
+    console.warn('云端同步跳过:', e);
   }
+  btn.textContent = '开始学习';
+  btn.disabled = false;
+  showApp();
 }
 
 // 启动
