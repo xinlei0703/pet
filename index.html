@@ -2273,6 +2273,15 @@ function showLogin() {
   document.querySelector('.nav-bar').style.display = 'none';
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-login').classList.add('active');
+  // 回填上次登录的姓名和班级
+  const last = localStorage.getItem('pet_last_user');
+  if (last) {
+    try {
+      const u = JSON.parse(last);
+      document.getElementById('login-name').value = u.name || '';
+      document.getElementById('login-class').value = u.className || '';
+    } catch {}
+  }
 }
 
 async function handleLogin() {
@@ -2286,6 +2295,7 @@ async function handleLogin() {
     return;
   }
   errEl.style.display = 'none';
+  localStorage.setItem('pet_last_user', JSON.stringify({ name, className }));
   btn.textContent = '登录中...';
   btn.disabled = true;
   // 先保存登录状态，确保一定能进入
