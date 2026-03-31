@@ -1106,7 +1106,9 @@ function startStage(day, type) {
   currentStageDay = day;
   const words = WORD_DATA.wordlist[day]?.words || [];
   if (type === 'know') {
-    startLearnSession(words);
+    const remaining = words.filter(w => getProgress(w).know.level < 1);
+    if (!remaining.length) { alert('认识闯关已全部完成！'); return; }
+    startLearnSession(remaining);
   } else if (type === 'syllable') {
     startSyllableSession('wordlist', day);
   } else if (type === 'spell') {
@@ -1423,8 +1425,9 @@ function startSyllableGame() {
   syllableIdx = 0; navigate('syllable'); renderSyllable();
 }
 function startSyllableSession(section, unit) {
-  const words = getUnitWords(section, unit).filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
-  syllableQueue = shuffle(words).slice(0, 20);
+  const allWords = getUnitWords(section, unit).filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+  const remaining = allWords.filter(w => getProgress(w).syllable.level < 1);
+  syllableQueue = shuffle(remaining.length ? remaining : allWords).slice(0, 20);
   if (!syllableQueue.length) { alert('该单元没有可拆分的单词'); return; }
   sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   syllableIdx = 0; navigate('syllable'); renderSyllable();
@@ -1526,8 +1529,9 @@ function startSpell() {
   spellIdx = 0; navigate('spell'); renderSpell();
 }
 function startSpellSession(section, unit) {
-  const words = getUnitWords(section, unit).filter(w => !w.word.includes(' ') && w.word.length <= 15);
-  spellQueue = shuffle(words);
+  const allWords = getUnitWords(section, unit).filter(w => !w.word.includes(' ') && w.word.length <= 15);
+  const remaining = allWords.filter(w => getProgress(w).spell.level < 1);
+  spellQueue = shuffle(remaining.length ? remaining : allWords);
   if (!spellQueue.length) { alert('该单元没有可拼写的单词'); return; }
   sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   spellIdx = 0; navigate('spell'); renderSpell();
