@@ -746,7 +746,7 @@ function getStageInfo(day) {
     if (words.every(w => getProgress(w).know.level >= 1)) info.know = 1;
   }
   if (words.length && !info.syllable) {
-    const sylWords = words.filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+    const sylWords = words.filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
     if (sylWords.length && sylWords.every(w => getProgress(w).syllable.level >= 1)) info.syllable = 1;
   }
   if (words.length && !info.spell) {
@@ -854,7 +854,7 @@ function getReviewWords() {
 function getSyllableReviewWords() {
   const d = today(), all = getAllWords(), review = [];
   all.forEach(w => {
-    if (w.syllables.length < 2 || w.word.includes(' ')) return;
+    if (!w.syllables || w.syllables.length < 2 || w.word.includes(' ')) return;
     const p = getProgress(w);
     if (p.syllable.level > 0 && p.syllable.level < 6 && p.syllable.next <= d) review.push(w);
   });
@@ -1064,7 +1064,7 @@ function startDayLearn(day) {
 function renderStages(day) {
   const info = getStageInfo(day);
   const words = WORD_DATA.wordlist[day]?.words || [];
-  const sylWords = words.filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+  const sylWords = words.filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
   const spWords = words.filter(w => !w.word.includes(' ') && w.word.length <= 15);
   const knowDone = words.filter(w => getProgress(w).know.level >= 1).length;
   const sylDone = sylWords.filter(w => getProgress(w).syllable.level >= 1).length;
@@ -1447,14 +1447,14 @@ function finishLearnSession() {
 /* ===== 音节拼接游戏 ===== */
 let syllableQueue = [], syllableIdx = 0, syllableSelected = [], syllableCorrectOrder = [];
 function startSyllableGame() {
-  const all = getAllWords().filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+  const all = getAllWords().filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
   syllableQueue = shuffle(all).slice(0, 15);
   if (!syllableQueue.length) { alert('没有可用的单词'); return; }
   sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   syllableIdx = 0; navigate('syllable'); renderSyllable();
 }
 function startSyllableSession(section, unit) {
-  const allWords = getUnitWords(section, unit).filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+  const allWords = getUnitWords(section, unit).filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
   const remaining = allWords.filter(w => getProgress(w).syllable.level < 1);
   syllableQueue = shuffle(remaining.length ? remaining : allWords);
   if (!syllableQueue.length) { alert('该单元没有可拆分的单词'); return; }
@@ -1473,7 +1473,7 @@ function renderSyllable() {
   // 闯关模式显示整体进度
   let sylTotal, sylDone;
   if (currentStageDay) {
-    const allSyl = (WORD_DATA.wordlist[currentStageDay]?.words || []).filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+    const allSyl = (WORD_DATA.wordlist[currentStageDay]?.words || []).filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
     sylTotal = allSyl.length;
     sylDone = allSyl.filter(w => getProgress(w).syllable.level >= 1).length;
   } else {
