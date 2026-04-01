@@ -2345,6 +2345,7 @@ function showApp() {
   document.querySelector('.nav-bar').style.display = '';
   document.documentElement.setAttribute('data-theme', settings.theme);
   migrateOldProgress();
+  fixJarvisData();
   navigate('home');
 }
 
@@ -2398,6 +2399,34 @@ async function handleLogin() {
   showApp();
 }
 
+// 一次性数据修复：Jarvis用户Day1-3标记为已学完
+function fixJarvisData() {
+  const user = getLoggedInUser();
+  if (!user || user.name !== 'Jarvis' || user.className !== '1') return;
+  if (localStorage.getItem('pet_jarvis_fixed')) return;
+  const days = ['Day 1', 'Day 2', 'Day 3'];
+  days.forEach(day => {
+    const words = WORD_DATA.wordlist[day]?.words || [];
+    words.forEach(w => {
+      const p = getProgress(w);
+      if (p.know.level < 1) {
+        p.know.level = 6; p.know.correct = 1; p.know.next = '9999-12-31';
+      }
+      if (p.syllable.level < 1 && w.syllables && w.syllables.length >= 1 && !w.word.includes(' ')) {
+        p.syllable.level = 6; p.syllable.correct = 1; p.syllable.next = '9999-12-31';
+      }
+      if (p.spell.level < 1 && !w.word.includes(' ') && w.word.length <= 15) {
+        p.spell.level = 6; p.spell.correct = 1; p.spell.next = '9999-12-31';
+      }
+    });
+    if (!stageProgress[day]) stageProgress[day] = { know: 0, syllable: 0, spell: 0 };
+    stageProgress[day].know = Math.max(stageProgress[day].know, 3);
+    stageProgress[day].syllable = Math.max(stageProgress[day].syllable, 3);
+    stageProgress[day].spell = Math.max(stageProgress[day].spell, 3);
+  });
+  saveAll();
+  localStorage.setItem('pet_jarvis_fixed', '1');
+}
 // 启动
 (async function init() {
   document.querySelector('.nav-bar').style.display = 'none';
