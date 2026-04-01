@@ -886,6 +886,45 @@ function getLearningCount() {
   }
   return c;
 }
+function showWordList(type) {
+  const all = getAllWords();
+  let words, title, color;
+  if (type === 'mastered') {
+    words = all.filter(w => (getProgress(w).know.level || 0) >= 6);
+    title = '已掌握'; color = 'var(--success)';
+  } else if (type === 'learning') {
+    words = all.filter(w => { const lv = getProgress(w).know.level || 0; return lv > 0 && lv < 6; });
+    title = '学习中'; color = 'var(--warning)';
+  } else {
+    words = all.filter(w => (getProgress(w).know.level || 0) === 0);
+    title = '待学习'; color = 'var(--text-secondary)';
+  }
+  const grouped = {};
+  words.forEach(w => {
+    const unit = w.unit || '未分类';
+    if (!grouped[unit]) grouped[unit] = [];
+    grouped[unit].push(w);
+  });
+  let listHtml = '';
+  for (const [unit, ws] of Object.entries(grouped)) {
+    listHtml += `<div style="font-size:13px;font-weight:700;color:var(--text-secondary);margin:12px 0 6px;padding:0 4px">${unit} (${ws.length})</div>`;
+    listHtml += ws.map(w => `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--bg);border-radius:8px;margin-bottom:4px;cursor:pointer" onclick="speak('${w.word.replace(/'/g,"\\'")}')">
+      <div><span style="font-weight:600">${w.word}</span> <span style="font-size:12px;color:var(--text-secondary)">${w.pos || ''}</span></div>
+      <div style="font-size:13px;color:var(--text-secondary)">${w.meaning}</div>
+    </div>`).join('');
+  }
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay';
+  modal.onclick = e => { if (e.target === modal) modal.remove(); };
+  modal.innerHTML = `<div class="modal" style="max-height:80vh;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div style="font-size:18px;font-weight:800;color:${color}">${title} (${words.length})</div>
+      <button style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--text-secondary)" onclick="this.closest('.modal-overlay').remove()">✕</button>
+    </div>
+    <div style="overflow-y:auto;flex:1">${listHtml || '<div style="text-align:center;color:var(--text-secondary);padding:20px">暂无单词</div>'}</div>
+  </div>`;
+  document.body.appendChild(modal);
+}
 function updateDailyStats(correct, word, dimName) {
   const d = today();
   if (!dailyStats[d]) dailyStats[d] = { learned: 0, reviewed: 0, correct: 0, wrong: 0 };
@@ -978,9 +1017,9 @@ function renderHome() {
       </div>
       <div class="progress-bar" style="margin-bottom:16px"><div class="progress-fill" style="width:${pct}%"></div></div>
       <div style="display:flex;justify-content:space-around;text-align:center">
-        <div><div class="stat-num" style="color:var(--text-secondary)">${total - mastered - learning}</div><div class="stat-label">待学习</div></div>
-        <div><div class="stat-num" style="color:var(--warning)">${learning}</div><div class="stat-label">学习中</div></div>
-        <div><div class="stat-num" style="color:var(--success)">${mastered}</div><div class="stat-label">已掌握</div></div>
+        <div style="cursor:pointer" onclick="showWordList('notstarted')"><div class="stat-num" style="color:var(--text-secondary)">${total - mastered - learning}</div><div class="stat-label">待学习</div></div>
+        <div style="cursor:pointer" onclick="showWordList('learning')"><div class="stat-num" style="color:var(--warning)">${learning}</div><div class="stat-label">学习中</div></div>
+        <div style="cursor:pointer" onclick="showWordList('mastered')"><div class="stat-num" style="color:var(--success)">${mastered}</div><div class="stat-label">已掌握</div></div>
       </div>
     </div>
     ${(reviewCount + sylReviewCount + spellReviewCount) > 0 ? `<div class="card" style="background:linear-gradient(135deg,#FFF3E0,#FFE0B2);border:2px solid var(--warning);padding:18px">
@@ -2093,9 +2132,9 @@ function renderStats() {
   html += `<div class="card">
     <div style="display:flex;justify-content:space-around;text-align:center">
       <div><div class="stat-num">${total}</div><div class="stat-label">总词汇</div></div>
-      <div><div class="stat-num" style="color:var(--success)">${mastered}</div><div class="stat-label">已掌握</div></div>
-      <div><div class="stat-num" style="color:var(--warning)">${learning}</div><div class="stat-label">学习中</div></div>
-      <div><div class="stat-num" style="color:var(--text-secondary)">${notStarted}</div><div class="stat-label">未学习</div></div>
+      <div style="cursor:pointer" onclick="showWordList('mastered')"><div class="stat-num" style="color:var(--success)">${mastered}</div><div class="stat-label">已掌握</div></div>
+      <div style="cursor:pointer" onclick="showWordList('learning')"><div class="stat-num" style="color:var(--warning)">${learning}</div><div class="stat-label">学习中</div></div>
+      <div style="cursor:pointer" onclick="showWordList('notstarted')"><div class="stat-num" style="color:var(--text-secondary)">${notStarted}</div><div class="stat-label">未学习</div></div>
     </div>
   </div>`;
   const todayStat = dailyStats[today()] || { learned: 0, reviewed: 0, correct: 0, wrong: 0 };
