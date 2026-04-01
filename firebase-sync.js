@@ -42,19 +42,14 @@ async function loginUser(name, className) {
   const doc = await db.collection('users').doc(userId).get();
   if (doc.exists) {
     const data = doc.data();
-    if (data.pet_progress) {
-      Object.keys(progress).forEach(k => delete progress[k]);
-      Object.assign(progress, data.pet_progress);
-    }
-    if (data.pet_daily_stats) {
-      Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
-      Object.assign(dailyStats, data.pet_daily_stats);
-    }
+    // 先清空本地数据，再用云端数据填充，避免残留数据干扰
+    Object.keys(progress).forEach(k => delete progress[k]);
+    Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
+    Object.keys(stageProgress).forEach(k => delete stageProgress[k]);
+    if (data.pet_progress) Object.assign(progress, data.pet_progress);
+    if (data.pet_daily_stats) Object.assign(dailyStats, data.pet_daily_stats);
     if (data.pet_streak) Object.assign(streak, data.pet_streak);
-    if (data.pet_stage_progress) {
-      Object.keys(stageProgress).forEach(k => delete stageProgress[k]);
-      Object.assign(stageProgress, data.pet_stage_progress);
-    }
+    if (data.pet_stage_progress) Object.assign(stageProgress, data.pet_stage_progress);
     if (data.pet_settings) Object.assign(settings, data.pet_settings);
     LS.set('pet_settings', settings);
     LS.set('pet_progress', progress);
@@ -71,8 +66,8 @@ async function loginUser(name, className) {
 
 async function syncToFirestore() {
   if (!firebaseReady || !currentUser) return;
-  // 未从云端同步过且本地进度为空时，不上传，防止覆盖云端数据
-  if (!cloudSynced && Object.keys(progress).length === 0) return;
+  // 未从云端同步过，不允许上传，防止本地空/旧数据覆盖云端
+  if (!cloudSynced) return;
   await db.collection('users').doc(currentUser.userId).set({
     name: currentUser.name,
     className: currentUser.className,
@@ -86,7 +81,21 @@ async function syncToFirestore() {
 }
 
 function logoutUser() {
+  // 退出前先同步一次
+  syncToFirestore().catch(() => {});
   currentUser = null;
   cloudSynced = false;
+  // 清除本地学习数据，防止残留数据污染下一个用户
   localStorage.removeItem('pet_user');
+  localStorage.removeItem('pet_progress');
+  localStorage.removeItem('pet_daily_stats');
+  localStorage.removeItem('pet_streak');
+  localStorage.removeItem('pet_stage_progress');
+  localStorage.removeItem('pet_settings');
+  // 重置内存中的数据对象
+  Object.keys(progress).forEach(k => delete progress[k]);
+  Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
+  Object.keys(stageProgress).forEach(k => delete stageProgress[k]);
+  Object.assign(streak, { last: '', count: 0 });
+  Object.assign(settings, { dailyNew: 20, theme: 'light' });
 }

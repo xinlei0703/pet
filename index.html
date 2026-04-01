@@ -746,7 +746,7 @@ function getStageInfo(day) {
     if (words.every(w => getProgress(w).know.level >= 1)) info.know = 1;
   }
   if (words.length && !info.syllable) {
-    const sylWords = words.filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
+    const sylWords = words.filter(w => w.syllables && w.syllables.length >= 1 && !w.word.includes(' '));
     if (sylWords.length && sylWords.every(w => getProgress(w).syllable.level >= 1)) info.syllable = 1;
   }
   if (words.length && !info.spell) {
@@ -854,7 +854,7 @@ function getReviewWords() {
 function getSyllableReviewWords() {
   const d = today(), all = getAllWords(), review = [];
   all.forEach(w => {
-    if (!w.syllables || w.syllables.length < 2 || w.word.includes(' ')) return;
+    if (!w.syllables || w.syllables.length < 1 || w.word.includes(' ')) return;
     const p = getProgress(w);
     if (p.syllable.level > 0 && p.syllable.level < 6 && p.syllable.next <= d) review.push(w);
   });
@@ -1064,7 +1064,7 @@ function startDayLearn(day) {
 function renderStages(day) {
   const info = getStageInfo(day);
   const words = WORD_DATA.wordlist[day]?.words || [];
-  const sylWords = words.filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
+  const sylWords = words.filter(w => w.syllables && w.syllables.length >= 1 && !w.word.includes(' '));
   const spWords = words.filter(w => !w.word.includes(' ') && w.word.length <= 15);
   const knowDone = words.filter(w => getProgress(w).know.level >= 1).length;
   const sylDone = sylWords.filter(w => getProgress(w).syllable.level >= 1).length;
@@ -1426,7 +1426,11 @@ function finishLearnSession() {
   const total = sessionCorrect + sessionWrong;
   const stars = getStars(sessionCorrect, total);
   const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
-  if (currentStageDay) saveStage(currentStageDay, 'know', stars);
+  if (currentStageDay) {
+    const allWords = WORD_DATA.wordlist[currentStageDay]?.words || [];
+    const allDone = allWords.every(w => getProgress(w).know.level >= 1);
+    if (allDone) saveStage(currentStageDay, 'know', stars);
+  }
   const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
   const confettiHtml = stars === 3 ? generateConfetti() : '';
   const backTarget = currentStageDay ? `navigate('stages');renderStages('${currentStageDay}')` : "navigate('home')";
@@ -1447,14 +1451,14 @@ function finishLearnSession() {
 /* ===== 音节拼接游戏 ===== */
 let syllableQueue = [], syllableIdx = 0, syllableSelected = [], syllableCorrectOrder = [];
 function startSyllableGame() {
-  const all = getAllWords().filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
+  const all = getAllWords().filter(w => w.syllables && w.syllables.length >= 1 && !w.word.includes(' '));
   syllableQueue = shuffle(all).slice(0, 15);
   if (!syllableQueue.length) { alert('没有可用的单词'); return; }
   sessionCorrect = 0; sessionWrong = 0; retryCount.clear();
   syllableIdx = 0; navigate('syllable'); renderSyllable();
 }
 function startSyllableSession(section, unit) {
-  const allWords = getUnitWords(section, unit).filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
+  const allWords = getUnitWords(section, unit).filter(w => w.syllables && w.syllables.length >= 1 && !w.word.includes(' '));
   const remaining = allWords.filter(w => getProgress(w).syllable.level < 1);
   syllableQueue = shuffle(remaining.length ? remaining : allWords);
   if (!syllableQueue.length) { alert('该单元没有可拆分的单词'); return; }
@@ -1473,7 +1477,7 @@ function renderSyllable() {
   // 闯关模式显示整体进度
   let sylTotal, sylDone;
   if (currentStageDay) {
-    const allSyl = (WORD_DATA.wordlist[currentStageDay]?.words || []).filter(w => w.syllables && w.syllables.length >= 2 && !w.word.includes(' '));
+    const allSyl = (WORD_DATA.wordlist[currentStageDay]?.words || []).filter(w => w.syllables && w.syllables.length >= 1 && !w.word.includes(' '));
     sylTotal = allSyl.length;
     sylDone = allSyl.filter(w => getProgress(w).syllable.level >= 1).length;
   } else {
@@ -1540,7 +1544,11 @@ function finishSyllable() {
   const total = sessionCorrect + sessionWrong;
   const stars = getStars(sessionCorrect, total);
   const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
-  if (currentStageDay) saveStage(currentStageDay, 'syllable', stars);
+  if (currentStageDay) {
+    const allSyl = (WORD_DATA.wordlist[currentStageDay]?.words || []).filter(w => w.syllables && w.syllables.length >= 1 && !w.word.includes(' '));
+    const allDone = allSyl.every(w => getProgress(w).syllable.level >= 1);
+    if (allDone) saveStage(currentStageDay, 'syllable', stars);
+  }
   const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
   const confettiHtml = stars === 3 ? generateConfetti() : '';
   const backTarget = currentStageDay ? `navigate('stages');renderStages('${currentStageDay}')` : "navigate('home')";
@@ -1633,7 +1641,11 @@ function finishSpell() {
   const total = sessionCorrect + sessionWrong;
   const stars = getStars(sessionCorrect, total);
   const pct = total ? Math.round(sessionCorrect / total * 100) : 100;
-  if (currentStageDay) saveStage(currentStageDay, 'spell', stars);
+  if (currentStageDay) {
+    const allSp = (WORD_DATA.wordlist[currentStageDay]?.words || []).filter(w => !w.word.includes(' ') && w.word.length <= 15);
+    const allDone = allSp.every(w => getProgress(w).spell.level >= 1);
+    if (allDone) saveStage(currentStageDay, 'spell', stars);
+  }
   const msgs = ['继续加油！', '表现不错！', '太棒了，完美通关！'];
   const confettiHtml = stars === 3 ? generateConfetti() : '';
   const info = currentStageDay ? getStageInfo(currentStageDay) : null;
@@ -1988,7 +2000,7 @@ function renderUnits() {
     const total = words.length;
     const knowCount = words.filter(w => getProgress(w).know.level >= 1).length;
     const spellCount = words.filter(w => getProgress(w).spell.level >= 1).length;
-    const sylWords = words.filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+    const sylWords = words.filter(w => w.syllables.length >= 1 && !w.word.includes(' '));
     const sylCount = sylWords.filter(w => getProgress(w).syllable.level >= 1).length;
     const sylTotal = sylWords.length;
     const isCurrent = key === curDay;
@@ -2024,7 +2036,7 @@ function renderUnits() {
     const u = WORD_DATA.pretest[key];
     const total = u.words.length;
     const knowCount = u.words.filter(w => getProgress(w).know.level >= 1).length;
-    const sylWords = u.words.filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+    const sylWords = u.words.filter(w => w.syllables.length >= 1 && !w.word.includes(' '));
     const sylCount = sylWords.filter(w => getProgress(w).syllable.level >= 1).length;
     const sylTotal = sylWords.length;
     const spellCount = u.words.filter(w => getProgress(w).spell.level >= 1).length;
@@ -2125,7 +2137,7 @@ function renderStats() {
     const words = val.words, t = words.length;
     const kn = words.filter(w => getProgress(w).know.level >= 1).length;
     const sp = words.filter(w => getProgress(w).spell.level >= 1).length;
-    const sylWords = words.filter(w => w.syllables.length >= 2 && !w.word.includes(' '));
+    const sylWords = words.filter(w => w.syllables.length >= 1 && !w.word.includes(' '));
     const sy = sylWords.filter(w => getProgress(w).syllable.level >= 1).length;
     const st = sylWords.length;
     html += `<div style="margin-bottom:12px">
@@ -2376,9 +2388,9 @@ async function handleLogin() {
     await Promise.race([loginPromise, timeout]);
   } catch (e) {
     console.warn('云端同步跳过:', e);
-    // 超时后继续在后台等待，成功后刷新页面
+    // 后台继续等待同步，成功后刷新整个页面
     loginPromise.then(() => {
-      if (currentPage === 'home') renderHome();
+      location.reload();
     }).catch(() => {});
   }
   btn.textContent = '开始学习';
@@ -2397,8 +2409,9 @@ async function handleLogin() {
       await Promise.race([loginPromise, timeout]);
     } catch (e) {
       console.warn('云端同步跳过，使用本地数据:', e);
+      // 后台继续等待同步，成功后刷新整个页面
       loginPromise.then(() => {
-        if (currentPage === 'home') renderHome();
+        location.reload();
       }).catch(() => {});
     }
     showApp();
