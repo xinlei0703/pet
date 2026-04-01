@@ -2,6 +2,7 @@
 let db = null;
 let currentUser = null;
 let firebaseReady = false;
+let cloudSynced = false; // 标记是否已从云端成功同步过数据
 
 // 初始化 Firebase（如果 SDK 加载成功）
 try {
@@ -60,7 +61,9 @@ async function loginUser(name, className) {
     LS.set('pet_daily_stats', dailyStats);
     LS.set('pet_streak', streak);
     LS.set('pet_stage_progress', stageProgress);
+    cloudSynced = true;
   } else {
+    cloudSynced = true;
     await syncToFirestore();
   }
   return currentUser;
@@ -68,6 +71,8 @@ async function loginUser(name, className) {
 
 async function syncToFirestore() {
   if (!firebaseReady || !currentUser) return;
+  // 未从云端同步过且本地进度为空时，不上传，防止覆盖云端数据
+  if (!cloudSynced && Object.keys(progress).length === 0) return;
   await db.collection('users').doc(currentUser.userId).set({
     name: currentUser.name,
     className: currentUser.className,
@@ -82,5 +87,6 @@ async function syncToFirestore() {
 
 function logoutUser() {
   currentUser = null;
+  cloudSynced = false;
   localStorage.removeItem('pet_user');
 }

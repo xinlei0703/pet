@@ -11,8 +11,7 @@ const WORD_DATA = {
           "example": "She filled the basin with warm water to wash her face.",
           "exampleType": "auto",
           "syllables": [
-            "ba",
-            "sin"
+            "basin"
           ]
         },
         {
@@ -23,8 +22,7 @@ const WORD_DATA = {
           "example": "The accident left him blind in one eye.",
           "exampleType": "auto",
           "syllables": [
-            "bl",
-            "ind"
+            "blind"
           ]
         },
         {
@@ -35,8 +33,8 @@ const WORD_DATA = {
           "example": "He carried a bucket of water from the well to the garden.",
           "exampleType": "auto",
           "syllables": [
-            "bu",
-            "cket"
+            "buck",
+            "et"
           ]
         },
         {
@@ -47,8 +45,8 @@ const WORD_DATA = {
           "example": "She lit a candle when the power went out during the storm.",
           "exampleType": "auto",
           "syllables": [
-            "ca",
-            "ndle"
+            "can",
+            "dle"
           ]
         },
         {
@@ -59,8 +57,8 @@ const WORD_DATA = {
           "example": "We keep old wine bottles in the cellar.",
           "exampleType": "auto",
           "syllables": [
-            "ce",
-            "llar"
+            "cel",
+            "lar"
           ]
         },
         {
@@ -71,8 +69,8 @@ const WORD_DATA = {
           "example": "There are five channels to choose!",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "nnel"
+            "chan",
+            "nel"
           ]
         },
         {
@@ -106,8 +104,7 @@ const WORD_DATA = {
           "example": "Waiter: How about grilled meat?",
           "exampleType": "book",
           "syllables": [
-            "gr",
-            "ill"
+            "grill"
           ]
         },
         {
@@ -118,8 +115,8 @@ const WORD_DATA = {
           "example": "She learned to handle difficult customers at her first job.",
           "exampleType": "auto",
           "syllables": [
-            "ha",
-            "ndle"
+            "han",
+            "dle"
           ]
         },
         {
@@ -142,7 +139,8 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "hi",
-            "-fi"
+            "",
+            "fi"
           ]
         },
         {
@@ -186,8 +184,7 @@ const WORD_DATA = {
           "example": "Nowadays, when switching on this tiny machine, we are able to connect with the large world.",
           "exampleType": "book",
           "syllables": [
-            "swi",
-            "tch"
+            "switch"
           ]
         },
         {
@@ -220,9 +217,7 @@ const WORD_DATA = {
           "example": "She babysits for her neighbour's children every Friday evening.",
           "exampleType": "auto",
           "syllables": [
-            "ba",
-            "by",
-            "sit"
+            "babysit"
           ]
         },
         {
@@ -244,8 +239,7 @@ const WORD_DATA = {
           "example": "Do you have a lighter? I need to light this candle.",
           "exampleType": "auto",
           "syllables": [
-            "li",
-            "ghter"
+            "lighter"
           ]
         },
         {
@@ -256,8 +250,7 @@ const WORD_DATA = {
           "example": "Nowadays, people are busy and lonely.",
           "exampleType": "book",
           "syllables": [
-            "lo",
-            "ne",
+            "lone",
             "ly"
           ]
         },
@@ -303,8 +296,9 @@ const WORD_DATA = {
           "example": "Whafs more, there's an annual neighbourhood safety and development plan carried out by the local community, and everyone can get involved.",
           "exampleType": "book",
           "syllables": [
-            "ann",
-            "ual"
+            "an",
+            "nu",
+            "al"
           ]
         },
         {
@@ -315,8 +309,7 @@ const WORD_DATA = {
           "example": "My father shaves every morning before going to work.",
           "exampleType": "auto",
           "syllables": [
-            "sha",
-            "ve"
+            "shave"
           ]
         },
         {
@@ -327,8 +320,7 @@ const WORD_DATA = {
           "example": "Someone knocked on the door, but nobody was there.",
           "exampleType": "auto",
           "syllables": [
-            "kn",
-            "ock"
+            "knock"
           ]
         },
         {
@@ -361,8 +353,7 @@ const WORD_DATA = {
           "example": "The baby fell asleep in her mother's arms.",
           "exampleType": "auto",
           "syllables": [
-            "asl",
-            "eep"
+            "asleep"
           ]
         },
         {
@@ -384,8 +375,7 @@ const WORD_DATA = {
           "example": "The survey showed that male students prefer science subjects.",
           "exampleType": "auto",
           "syllables": [
-            "ma",
-            "le"
+            "male"
           ]
         },
         {
@@ -412,9 +402,8 @@ const WORD_DATA = {
           "example": "Can you translate this sentence into Chinese for me?",
           "exampleType": "auto",
           "syllables": [
-            "tra",
-            "nsla",
-            "te"
+            "trans",
+            "late"
           ]
         },
         {
@@ -425,8 +414,8 @@ const WORD_DATA = {
           "example": "Al helps our world become smart and can translation tools to talk with the local people, which can reduce translators5 work with high accuracy.",
           "exampleType": "book",
           "syllables": [
-            "tra",
-            "nsla",
+            "trans",
+            "la",
             "tion"
           ]
         },
@@ -438,8 +427,9 @@ const WORD_DATA = {
           "example": "I'm reading a biography of Albert Einstein.",
           "exampleType": "auto",
           "syllables": [
-            "bio",
-            "gra",
+            "bi",
+            "og",
+            "ra",
             "phy"
           ]
         },
@@ -451,8 +441,7 @@ const WORD_DATA = {
           "example": "I respect his career very much.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "re"
+            "care"
           ]
         },
         {
@@ -463,8 +452,7 @@ const WORD_DATA = {
           "example": "He made several careless mistakes in the exam.",
           "exampleType": "auto",
           "syllables": [
-            "ca",
-            "re",
+            "care",
             "less"
           ]
         },
@@ -476,10 +464,9 @@ const WORD_DATA = {
           "example": "We celebrated her birthday with a big party.",
           "exampleType": "auto",
           "syllables": [
-            "ce",
-            "le",
-            "bra",
-            "te"
+            "cel",
+            "e",
+            "brate"
           ]
         },
         {
@@ -490,8 +477,8 @@ const WORD_DATA = {
           "example": "The whole town joined in the New Year celebration.",
           "exampleType": "auto",
           "syllables": [
-            "ce",
-            "le",
+            "cel",
+            "e",
             "bra",
             "tion"
           ]
@@ -504,8 +491,8 @@ const WORD_DATA = {
           "example": "However, all electrical appliances such as the water heater, microwave, freezer, dishwasher and kettle are included, and the air conditioning and central heating also work well, so I can save a lot.",
           "exampleType": "book",
           "syllables": [
-            "ce",
-            "ntral"
+            "cen",
+            "tral"
           ]
         },
         {
@@ -516,7 +503,8 @@ const WORD_DATA = {
           "example": "The teacher drew a diagram on the board to explain the process.",
           "exampleType": "auto",
           "syllables": [
-            "dia",
+            "di",
+            "a",
             "gram"
           ]
         },
@@ -539,8 +527,8 @@ const WORD_DATA = {
           "example": "Smoking has a bad effect on your health.",
           "exampleType": "auto",
           "syllables": [
-            "eff",
-            "ect"
+            "ef",
+            "fect"
           ]
         },
         {
@@ -553,7 +541,8 @@ const WORD_DATA = {
           "syllables": [
             "ex",
             "am",
-            "iner"
+            "in",
+            "er"
           ]
         },
         {
@@ -564,8 +553,7 @@ const WORD_DATA = {
           "example": "He gave a false name to the police.",
           "exampleType": "auto",
           "syllables": [
-            "fa",
-            "lse"
+            "false"
           ]
         },
         {
@@ -576,8 +564,9 @@ const WORD_DATA = {
           "example": "Three of your answers were incorrect — please check them again.",
           "exampleType": "auto",
           "syllables": [
-            "inc",
-            "orrect"
+            "in",
+            "cor",
+            "rect"
           ]
         },
         {
@@ -588,11 +577,11 @@ const WORD_DATA = {
           "example": "This course is for intermediate learners who already know basic grammar.",
           "exampleType": "auto",
           "syllables": [
-            "int",
-            "erm",
-            "ed",
-            "ia",
-            "te"
+            "in",
+            "ter",
+            "me",
+            "di",
+            "ate"
           ]
         },
         {
@@ -604,8 +593,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "nu",
-            "ncia",
+            "nun",
+            "ci",
+            "a",
             "tion"
           ]
         },
@@ -618,8 +608,8 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "po",
-            "li",
-            "ti",
+            "lit",
+            "i",
             "cal"
           ]
         },
@@ -631,8 +621,8 @@ const WORD_DATA = {
           "example": "She has no interest in politics and never watches the news.",
           "exampleType": "auto",
           "syllables": [
-            "po",
-            "li",
+            "pol",
+            "i",
             "tics"
           ]
         },
@@ -644,9 +634,9 @@ const WORD_DATA = {
           "example": "Online registration for the course closes on Friday.",
           "exampleType": "auto",
           "syllables": [
-            "re",
-            "gi",
-            "stra",
+            "reg",
+            "is",
+            "tra",
             "tion"
           ]
         },
@@ -671,8 +661,8 @@ const WORD_DATA = {
           "example": "Today a talented writer will come to share his ideas about how to write a short essay.",
           "exampleType": "book",
           "syllables": [
-            "ta",
-            "lent"
+            "tal",
+            "ent"
           ]
         },
         {
@@ -683,8 +673,7 @@ const WORD_DATA = {
           "example": "Listen and read the phrases aloud.",
           "exampleType": "book",
           "syllables": [
-            "phra",
-            "se"
+            "phrase"
           ]
         },
         {
@@ -706,9 +695,9 @@ const WORD_DATA = {
           "example": "The teacher asked us to underline the key words in the text.",
           "exampleType": "auto",
           "syllables": [
-            "und",
-            "erl",
-            "ine"
+            "un",
+            "der",
+            "line"
           ]
         },
         {
@@ -730,9 +719,8 @@ const WORD_DATA = {
           "example": "My roommate and I take turns cleaning the kitchen.",
           "exampleType": "auto",
           "syllables": [
-            "roo",
-            "mma",
-            "te"
+            "room",
+            "mate"
           ]
         },
         {
@@ -803,8 +791,8 @@ const WORD_DATA = {
           "example": "This coffee is too bitter — can I add some sugar?",
           "exampleType": "auto",
           "syllables": [
-            "bi",
-            "tter"
+            "bit",
+            "ter"
           ]
         },
         {
@@ -815,8 +803,7 @@ const WORD_DATA = {
           "example": "He bought a bunch of bananas from the market.",
           "exampleType": "auto",
           "syllables": [
-            "bu",
-            "nch"
+            "bunch"
           ]
         },
         {
@@ -827,8 +814,8 @@ const WORD_DATA = {
           "example": "We usually have lunch in the school canteen.",
           "exampleType": "auto",
           "syllables": [
-            "ca",
-            "nteen"
+            "can",
+            "teen"
           ]
         },
         {
@@ -872,8 +859,7 @@ const WORD_DATA = {
           "example": "Some people are allergic to peanuts.",
           "exampleType": "auto",
           "syllables": [
-            "pea",
-            "nut"
+            "peanut"
           ]
         },
         {
@@ -884,9 +870,7 @@ const WORD_DATA = {
           "example": "Heat the milk in a saucepan over low heat.",
           "exampleType": "auto",
           "syllables": [
-            "sau",
-            "ce",
-            "pan"
+            "saucepan"
           ]
         },
         {
@@ -897,10 +881,11 @@ const WORD_DATA = {
           "example": "My sister is a vegetarian — she never eats meat.",
           "exampleType": "auto",
           "syllables": [
-            "ve",
-            "ge",
-            "ta",
-            "rian"
+            "veg",
+            "e",
+            "tar",
+            "i",
+            "an"
           ]
         },
         {
@@ -911,8 +896,8 @@ const WORD_DATA = {
           "example": "She carried a basket full of fresh fruit from the garden.",
           "exampleType": "auto",
           "syllables": [
-            "ba",
-            "sket"
+            "bas",
+            "ket"
           ]
         },
         {
@@ -923,8 +908,7 @@ const WORD_DATA = {
           "example": "I bought a dozen eggs from the supermarket.",
           "exampleType": "auto",
           "syllables": [
-            "do",
-            "zen"
+            "dozen"
           ]
         },
         {
@@ -946,9 +930,8 @@ const WORD_DATA = {
           "example": "Their explanations are that robots may replace humans one day and increase unemployment rates.",
           "exampleType": "book",
           "syllables": [
-            "incr",
-            "ea",
-            "se"
+            "in",
+            "crease"
           ]
         },
         {
@@ -959,8 +942,8 @@ const WORD_DATA = {
           "example": "Pour the liquid into a clean glass bottle.",
           "exampleType": "auto",
           "syllables": [
-            "li",
-            "quid"
+            "liq",
+            "uid"
           ]
         },
         {
@@ -993,8 +976,8 @@ const WORD_DATA = {
           "example": "Mix the powder with water to make a paste.",
           "exampleType": "auto",
           "syllables": [
-            "po",
-            "wder"
+            "pow",
+            "der"
           ]
         },
         {
@@ -1041,8 +1024,7 @@ const WORD_DATA = {
           "example": "In fact, there is such a “genius” in my family who studies well but sometimes has no common sense at all 一 my elder brother, George.",
           "exampleType": "book",
           "syllables": [
-            "se",
-            "nse"
+            "sense"
           ]
         },
         {
@@ -1053,8 +1035,7 @@ const WORD_DATA = {
           "example": "The food at that restaurant was just so-so — nothing special.",
           "exampleType": "auto",
           "syllables": [
-            "so",
-            "-so"
+            "so-so"
           ]
         },
         {
@@ -1099,8 +1080,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "cu",
-            "cu",
-            "mber"
+            "cum",
+            "ber"
           ]
         },
         {
@@ -1111,8 +1092,7 @@ const WORD_DATA = {
           "example": "On the other hand, some people disagree with this opinion because they think the advantages of robots weigh more than the disadvantages.",
           "exampleType": "book",
           "syllables": [
-            "we",
-            "igh"
+            "weigh"
           ]
         },
         {
@@ -1134,8 +1114,8 @@ const WORD_DATA = {
           "example": "The customer made a complaint about the cold food.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "mplaint"
+            "com",
+            "plaint"
           ]
         },
         {
@@ -1146,8 +1126,7 @@ const WORD_DATA = {
           "example": "Good evening, madam. May I take your order?",
           "exampleType": "auto",
           "syllables": [
-            "ma",
-            "dam"
+            "madam"
           ]
         },
         {
@@ -1158,8 +1137,8 @@ const WORD_DATA = {
           "example": "She waved her hand in greeting as I walked in.",
           "exampleType": "auto",
           "syllables": [
-            "gree",
-            "ting"
+            "greet",
+            "ing"
           ]
         },
         {
@@ -1170,8 +1149,8 @@ const WORD_DATA = {
           "example": "The colour is unusual and gorgeous.",
           "exampleType": "book",
           "syllables": [
-            "go",
-            "rgeous"
+            "gor",
+            "geous"
           ]
         }
       ]
@@ -1187,8 +1166,8 @@ const WORD_DATA = {
           "example": "Is there a cashpoint near here? I need to withdraw some money.",
           "exampleType": "auto",
           "syllables": [
-            "ca",
-            "shpoint"
+            "cash",
+            "point"
           ]
         },
         {
@@ -1210,8 +1189,8 @@ const WORD_DATA = {
           "example": "Man: Have you ever travelled with a backpack?",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "ckpack"
+            "back",
+            "pack"
           ]
         },
         {
@@ -1255,9 +1234,9 @@ const WORD_DATA = {
           "example": "He pulled out a handkerchief and wiped his forehead.",
           "exampleType": "auto",
           "syllables": [
-            "ha",
-            "ndke",
-            "rchief"
+            "hand",
+            "ker",
+            "chief"
           ]
         },
         {
@@ -1268,8 +1247,8 @@ const WORD_DATA = {
           "example": "I need to do the laundry — all my shirts are dirty.",
           "exampleType": "auto",
           "syllables": [
-            "lau",
-            "ndry"
+            "laun",
+            "dry"
           ]
         },
         {
@@ -1280,10 +1259,7 @@ const WORD_DATA = {
           "example": "My grandmother still wears old-fashioned dresses from the 1960s.",
           "exampleType": "auto",
           "syllables": [
-            "old-f",
-            "ash",
-            "io",
-            "ned"
+            "old-fashioned"
           ]
         },
         {
@@ -1294,8 +1270,9 @@ const WORD_DATA = {
           "example": "Pack enough underpants for the whole trip.",
           "exampleType": "auto",
           "syllables": [
-            "und",
-            "erpants"
+            "un",
+            "der",
+            "pants"
           ]
         },
         {
@@ -1306,9 +1283,9 @@ const WORD_DATA = {
           "example": "You should wear warm underwear in winter.",
           "exampleType": "auto",
           "syllables": [
-            "und",
-            "erw",
-            "ear"
+            "un",
+            "der",
+            "wear"
           ]
         },
         {
@@ -1319,8 +1296,8 @@ const WORD_DATA = {
           "example": "I know what you did for me is far beyond that.",
           "exampleType": "book",
           "syllables": [
-            "bey",
-            "ond"
+            "be",
+            "yond"
           ]
         },
         {
@@ -1353,8 +1330,8 @@ const WORD_DATA = {
           "example": "A large quantity of food was wasted at the party.",
           "exampleType": "auto",
           "syllables": [
-            "qua",
-            "nti",
+            "quan",
+            "ti",
             "ty"
           ]
         },
@@ -1400,10 +1377,8 @@ const WORD_DATA = {
           "example": "The baby weighs about three kilogrammes at birth.",
           "exampleType": "auto",
           "syllables": [
-            "ki",
-            "lo",
-            "gra",
-            "mme"
+            "kilo",
+            "gramme"
           ]
         },
         {
@@ -1425,8 +1400,8 @@ const WORD_DATA = {
           "example": "And spaceships need to be parked in reserved parking spaces.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "rking"
+            "park",
+            "ing"
           ]
         },
         {
@@ -1437,8 +1412,7 @@ const WORD_DATA = {
           "example": "The newspaper costs fifty pence.",
           "exampleType": "auto",
           "syllables": [
-            "pe",
-            "nce"
+            "pence"
           ]
         },
         {
@@ -1449,8 +1423,9 @@ const WORD_DATA = {
           "example": "He prefers dancing like hip hop whilst I would like to draw pictures quietly.",
           "exampleType": "book",
           "syllables": [
-            "quie",
-            "tly"
+            "qui",
+            "et",
+            "ly"
           ]
         },
         {
@@ -1461,10 +1436,9 @@ const WORD_DATA = {
           "example": "Please put your signature at the bottom of the form.",
           "exampleType": "auto",
           "syllables": [
-            "si",
-            "gna",
-            "tu",
-            "re"
+            "sig",
+            "na",
+            "ture"
           ]
         },
         {
@@ -1475,8 +1449,7 @@ const WORD_DATA = {
           "example": "We bought fresh vegetables from a stall at the market.",
           "exampleType": "auto",
           "syllables": [
-            "st",
-            "all"
+            "stall"
           ]
         },
         {
@@ -1487,8 +1460,8 @@ const WORD_DATA = {
           "example": "They will be left to the buyer.",
           "exampleType": "book",
           "syllables": [
-            "bu",
-            "yer"
+            "buy",
+            "er"
           ]
         },
         {
@@ -1516,9 +1489,7 @@ const WORD_DATA = {
           "example": "The city has a vibrant nightlife with many clubs and bars.",
           "exampleType": "auto",
           "syllables": [
-            "ni",
-            "ghtli",
-            "fe"
+            "nightlife"
           ]
         },
         {
@@ -1529,8 +1500,7 @@ const WORD_DATA = {
           "example": "Take a torch with you — it will be dark in the cave.",
           "exampleType": "auto",
           "syllables": [
-            "to",
-            "rch"
+            "torch"
           ]
         },
         {
@@ -1553,8 +1523,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "be",
-            "ha",
-            "viour"
+            "hav",
+            "iour"
           ]
         },
         {
@@ -1565,8 +1535,7 @@ const WORD_DATA = {
           "example": "We visited the famous cathedral in the centre of the old town.",
           "exampleType": "auto",
           "syllables": [
-            "ca",
-            "the",
+            "cathe",
             "dral"
           ]
         },
@@ -1578,8 +1547,7 @@ const WORD_DATA = {
           "example": "I was very grateful that our school didn't cancel it.",
           "exampleType": "book",
           "syllables": [
-            "gra",
-            "te",
+            "grate",
             "ful"
           ]
         },
@@ -1591,9 +1559,9 @@ const WORD_DATA = {
           "example": "Historical buildings.",
           "exampleType": "book",
           "syllables": [
-            "hi",
-            "sto",
-            "ri",
+            "his",
+            "tor",
+            "i",
             "cal"
           ]
         },
@@ -1605,8 +1573,8 @@ const WORD_DATA = {
           "example": "The kitten was playing with a ball of wool on the floor.",
           "exampleType": "auto",
           "syllables": [
-            "ki",
-            "tten"
+            "kit",
+            "ten"
           ]
         },
         {
@@ -1640,8 +1608,8 @@ const WORD_DATA = {
           "example": "But my dear reader, I wonder how you will finish the story as an .",
           "exampleType": "book",
           "syllables": [
-            "rea",
-            "der"
+            "read",
+            "er"
           ]
         },
         {
@@ -1666,8 +1634,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "rou",
-            "ti",
-            "ne"
+            "tine"
           ]
         },
         {
@@ -1679,8 +1646,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "si",
-            "le",
-            "nce"
+            "lence"
           ]
         },
         {
@@ -1691,8 +1657,7 @@ const WORD_DATA = {
           "example": "The children were silent during the exam.",
           "exampleType": "auto",
           "syllables": [
-            "si",
-            "lent"
+            "silent"
           ]
         },
         {
@@ -1703,8 +1668,8 @@ const WORD_DATA = {
           "example": "The soundtrack of this film won an award at the ceremony.",
           "exampleType": "auto",
           "syllables": [
-            "sou",
-            "ndtrack"
+            "sound",
+            "track"
           ]
         },
         {
@@ -1715,8 +1680,8 @@ const WORD_DATA = {
           "example": "There is a bronze statue of the king in the town square.",
           "exampleType": "auto",
           "syllables": [
-            "sta",
-            "tue"
+            "stat",
+            "ue"
           ]
         },
         {
@@ -1739,9 +1704,10 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "un",
-            "int",
-            "er",
-            "esting"
+            "in",
+            "ter",
+            "est",
+            "ing"
           ]
         },
         {
@@ -1752,8 +1718,8 @@ const WORD_DATA = {
           "example": "But something changed on Ballet Exam Days.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "llet"
+            "bal",
+            "let"
           ]
         },
         {
@@ -1764,8 +1730,7 @@ const WORD_DATA = {
           "example": "There is a decline in the amount of wood usage.",
           "exampleType": "book",
           "syllables": [
-            "am",
-            "ount"
+            "amount"
           ]
         },
         {
@@ -1776,8 +1741,8 @@ const WORD_DATA = {
           "example": "If you subtract 5 from 12, you get 7.",
           "exampleType": "auto",
           "syllables": [
-            "su",
-            "btract"
+            "sub",
+            "tract"
           ]
         },
         {
@@ -1788,8 +1753,8 @@ const WORD_DATA = {
           "example": "The rider fell off the horse during the race.",
           "exampleType": "auto",
           "syllables": [
-            "ri",
-            "der"
+            "rid",
+            "er"
           ]
         },
         {
@@ -1811,8 +1776,7 @@ const WORD_DATA = {
           "example": "It makes people lose some skills.",
           "exampleType": "book",
           "syllables": [
-            "sk",
-            "ill"
+            "skill"
           ]
         },
         {
@@ -1823,8 +1787,7 @@ const WORD_DATA = {
           "example": "Use the past tense when talking about things that already happened.",
           "exampleType": "auto",
           "syllables": [
-            "te",
-            "nse"
+            "tense"
           ]
         },
         {
@@ -1835,9 +1798,7 @@ const WORD_DATA = {
           "example": "She wrote the letter on her best notepaper.",
           "exampleType": "auto",
           "syllables": [
-            "no",
-            "te",
-            "pa",
+            "notepa",
             "per"
           ]
         },
@@ -1849,8 +1810,8 @@ const WORD_DATA = {
           "example": "Singing and dancing. 3.",
           "exampleType": "book",
           "syllables": [
-            "da",
-            "ncing"
+            "danc",
+            "ing"
           ]
         }
       ]
@@ -1867,7 +1828,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "cu",
-            "rious"
+            "ri",
+            "ous"
           ]
         },
         {
@@ -1878,9 +1840,9 @@ const WORD_DATA = {
           "example": "As for the weekend plan, my original plan was to ride horses in the countryside.",
           "exampleType": "book",
           "syllables": [
-            "or",
-            "ig",
-            "inal"
+            "orig",
+            "i",
+            "nal"
           ]
         },
         {
@@ -1891,10 +1853,9 @@ const WORD_DATA = {
           "example": "Try to stay positive even when things are difficult.",
           "exampleType": "auto",
           "syllables": [
-            "po",
-            "si",
-            "ti",
-            "ve"
+            "pos",
+            "i",
+            "tive"
           ]
         },
         {
@@ -1905,9 +1866,8 @@ const WORD_DATA = {
           "example": "The country will hold a general election next month.",
           "exampleType": "auto",
           "syllables": [
-            "el",
-            "ect",
-            "ion"
+            "elec",
+            "tion"
           ]
         },
         {
@@ -1942,7 +1902,8 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "en",
-            "emy"
+            "e",
+            "my"
           ]
         },
         {
@@ -1953,8 +1914,8 @@ const WORD_DATA = {
           "example": "There is a hidden garden behind the old house.",
           "exampleType": "auto",
           "syllables": [
-            "hi",
-            "dden"
+            "hid",
+            "den"
           ]
         },
         {
@@ -1978,8 +1939,8 @@ const WORD_DATA = {
           "example": "We were much annoyed at it.",
           "exampleType": "book",
           "syllables": [
-            "ann",
-            "oy"
+            "an",
+            "noy"
           ]
         },
         {
@@ -1990,8 +1951,7 @@ const WORD_DATA = {
           "example": "Everyone was shocked when they heard the news.",
           "exampleType": "auto",
           "syllables": [
-            "sho",
-            "cked"
+            "shocked"
           ]
         },
         {
@@ -2002,8 +1962,8 @@ const WORD_DATA = {
           "example": "The shocking news spread quickly across the country.",
           "exampleType": "auto",
           "syllables": [
-            "sho",
-            "cking"
+            "shock",
+            "ing"
           ]
         },
         {
@@ -2014,9 +1974,9 @@ const WORD_DATA = {
           "example": "It was surprising to see so many people at the park on a weekday.",
           "exampleType": "auto",
           "syllables": [
-            "su",
-            "rpri",
-            "sing"
+            "sur",
+            "pris",
+            "ing"
           ]
         },
         {
@@ -2027,10 +1987,9 @@ const WORD_DATA = {
           "example": "They celebrated their 10th wedding anniversary with a big party.",
           "exampleType": "auto",
           "syllables": [
-            "ann",
-            "iv",
-            "ers",
-            "ary"
+            "an",
+            "niver",
+            "sary"
           ]
         },
         {
@@ -2041,9 +2000,9 @@ const WORD_DATA = {
           "example": "Yunnan has many famous tourist attractions, such as Erhai Lake and Dali Ancient City.",
           "exampleType": "book",
           "syllables": [
-            "attr",
-            "act",
-            "ion"
+            "at",
+            "trac",
+            "tion"
           ]
         },
         {
@@ -2054,8 +2013,7 @@ const WORD_DATA = {
           "example": "The manager gave a brief speech before the meeting started.",
           "exampleType": "auto",
           "syllables": [
-            "br",
-            "ief"
+            "brief"
           ]
         },
         {
@@ -2066,8 +2024,8 @@ const WORD_DATA = {
           "example": "You need to put a comma between these two words.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "mma"
+            "com",
+            "ma"
           ]
         },
         {
@@ -2078,8 +2036,8 @@ const WORD_DATA = {
           "example": "Several readers left comments under the article.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "mment"
+            "com",
+            "ment"
           ]
         },
         {
@@ -2090,8 +2048,8 @@ const WORD_DATA = {
           "example": "The team consists of five boys and three girls.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "nsist"
+            "con",
+            "sist"
           ]
         },
         {
@@ -2113,8 +2071,8 @@ const WORD_DATA = {
           "example": "How convenient it is! 2.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nve",
+            "con",
+            "ve",
             "nient"
           ]
         },
@@ -2137,9 +2095,9 @@ const WORD_DATA = {
           "example": "The teacher made a correction to the student's essay.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "rre",
-            "ction"
+            "cor",
+            "rec",
+            "tion"
           ]
         },
         {
@@ -2150,8 +2108,7 @@ const WORD_DATA = {
           "example": "Last Sunday, he asked his friends to play basketball for a competition on the court.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "urt"
+            "court"
           ]
         },
         {
@@ -2162,8 +2119,8 @@ const WORD_DATA = {
           "example": "Please check the contents of your bag before leaving.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "ntents"
+            "con",
+            "tents"
           ]
         },
         {
@@ -2174,8 +2131,7 @@ const WORD_DATA = {
           "example": "All the students voted for the class president yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "vo",
-            "te"
+            "vote"
           ]
         },
         {
@@ -2208,8 +2164,9 @@ const WORD_DATA = {
           "example": "An elderly woman sat on the bench feeding the pigeons.",
           "exampleType": "auto",
           "syllables": [
-            "eld",
-            "erly"
+            "el",
+            "der",
+            "ly"
           ]
         },
         {
@@ -2220,8 +2177,7 @@ const WORD_DATA = {
           "example": "I doubt whether he will come to the party tonight.",
           "exampleType": "auto",
           "syllables": [
-            "do",
-            "ubt"
+            "doubt"
           ]
         },
         {
@@ -2243,10 +2199,10 @@ const WORD_DATA = {
           "example": "British people typically drink tea in the afternoon.",
           "exampleType": "auto",
           "syllables": [
-            "ty",
-            "pi",
-            "ca",
-            "lly"
+            "typ",
+            "i",
+            "cal",
+            "ly"
           ]
         }
       ]
@@ -2262,8 +2218,7 @@ const WORD_DATA = {
           "example": "Her shiny new shoes caught everyone's attention.",
           "exampleType": "auto",
           "syllables": [
-            "shi",
-            "ny"
+            "shiny"
           ]
         },
         {
@@ -2274,8 +2229,8 @@ const WORD_DATA = {
           "example": "Ifs my stamp album and ifs introducing the stamp's background/1 he answered with a laugh. “A new hobby?",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "ckground"
+            "back",
+            "ground"
           ]
         },
         {
@@ -2286,8 +2241,8 @@ const WORD_DATA = {
           "example": "We made a model house out of cardboard for the art project.",
           "exampleType": "auto",
           "syllables": [
-            "ca",
-            "rdboard"
+            "card",
+            "board"
           ]
         },
         {
@@ -2310,9 +2265,9 @@ const WORD_DATA = {
           "example": "From: Frank Subject: Arrangements during the Spring Festival Dear Michael, How are you?",
           "exampleType": "book",
           "syllables": [
-            "arr",
-            "ang",
-            "ement"
+            "ar",
+            "range",
+            "ment"
           ]
         },
         {
@@ -2334,8 +2289,8 @@ const WORD_DATA = {
           "example": "At 129 该故萼巧记PET核心词汇 参考译导 the same time, I smelt something burning.",
           "exampleType": "book",
           "syllables": [
-            "bu",
-            "rning"
+            "burn",
+            "ing"
           ]
         },
         {
@@ -2346,9 +2301,8 @@ const WORD_DATA = {
           "example": "Please write your initials at the bottom of each page.",
           "exampleType": "auto",
           "syllables": [
-            "in",
-            "it",
-            "ial"
+            "ini",
+            "tial"
           ]
         },
         {
@@ -2359,8 +2313,8 @@ const WORD_DATA = {
           "example": "Shanghai is in the eastern part of China.",
           "exampleType": "auto",
           "syllables": [
-            "ea",
-            "stern"
+            "east",
+            "ern"
           ]
         },
         {
@@ -2371,8 +2325,8 @@ const WORD_DATA = {
           "example": "The sun sets in the western sky every evening.",
           "exampleType": "auto",
           "syllables": [
-            "we",
-            "stern"
+            "west",
+            "ern"
           ]
         },
         {
@@ -2383,8 +2337,8 @@ const WORD_DATA = {
           "example": "The firefighter, our lecturer, was called to perform an urgent task.",
           "exampleType": "book",
           "syllables": [
-            "urg",
-            "ent"
+            "ur",
+            "gent"
           ]
         },
         {
@@ -2395,9 +2349,8 @@ const WORD_DATA = {
           "example": "Time is the most valuable thing we have.",
           "exampleType": "auto",
           "syllables": [
-            "va",
-            "lua",
-            "ble"
+            "valu",
+            "able"
           ]
         },
         {
@@ -2408,8 +2361,8 @@ const WORD_DATA = {
           "example": "Have you seen the latest version of this app?",
           "exampleType": "auto",
           "syllables": [
-            "ve",
-            "rsion"
+            "ver",
+            "sion"
           ]
         },
         {
@@ -2420,8 +2373,8 @@ const WORD_DATA = {
           "example": "She felt unwell and had to leave school early.",
           "exampleType": "auto",
           "syllables": [
-            "unw",
-            "ell"
+            "un",
+            "well"
           ]
         },
         {
@@ -2432,8 +2385,8 @@ const WORD_DATA = {
           "example": "They update robots to recover bugs on a regular basis.",
           "exampleType": "book",
           "syllables": [
-            "upd",
-            "ate"
+            "up",
+            "date"
           ]
         },
         {
@@ -2455,10 +2408,10 @@ const WORD_DATA = {
           "example": "I am very familiar with the British education system and I'd love to give you a basic introduction.",
           "exampleType": "book",
           "syllables": [
-            "intr",
-            "od",
-            "uct",
-            "ion"
+            "in",
+            "tro",
+            "duc",
+            "tion"
           ]
         },
         {
@@ -2469,8 +2422,8 @@ const WORD_DATA = {
           "example": "My mother asked me to help with the ironing.",
           "exampleType": "auto",
           "syllables": [
-            "ir",
-            "oning"
+            "iron",
+            "ing"
           ]
         },
         {
@@ -2481,9 +2434,9 @@ const WORD_DATA = {
           "example": "We have put the vases on the chest of drawers in our living room—they perfectly match the rug and cushions.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rfe",
-            "ctly"
+            "per",
+            "fect",
+            "ly"
           ]
         },
         {
@@ -2494,8 +2447,7 @@ const WORD_DATA = {
           "example": "The instructions were plain and easy to follow.",
           "exampleType": "auto",
           "syllables": [
-            "pl",
-            "ain"
+            "plain"
           ]
         },
         {
@@ -2506,8 +2458,7 @@ const WORD_DATA = {
           "example": "Just tell me your favourite types of movies and I can find them for you.",
           "exampleType": "book",
           "syllables": [
-            "ty",
-            "pe"
+            "type"
           ]
         },
         {
@@ -2518,8 +2469,8 @@ const WORD_DATA = {
           "example": "The temperature dropped slightly during the night.",
           "exampleType": "auto",
           "syllables": [
-            "sli",
-            "ghtly"
+            "slight",
+            "ly"
           ]
         },
         {
@@ -2531,8 +2482,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "mea",
-            "su",
-            "re"
+            "sure"
           ]
         },
         {
@@ -2592,10 +2542,8 @@ const WORD_DATA = {
           "example": "We hired a babysitter to look after the children while we went out.",
           "exampleType": "auto",
           "syllables": [
-            "ba",
-            "by",
-            "si",
-            "tter"
+            "babysit",
+            "ter"
           ]
         },
         {
@@ -2606,8 +2554,7 @@ const WORD_DATA = {
           "example": "Now, I am freed from heavy housework and have time to rest. 2.",
           "exampleType": "book",
           "syllables": [
-            "hou",
-            "se",
+            "house",
             "work"
           ]
         },
@@ -2619,8 +2566,8 @@ const WORD_DATA = {
           "example": "The butcher cut the meat into thin slices for us.",
           "exampleType": "auto",
           "syllables": [
-            "bu",
-            "tcher"
+            "butch",
+            "er"
           ]
         },
         {
@@ -2631,8 +2578,7 @@ const WORD_DATA = {
           "example": "I went to the butcher's to buy some sausages for dinner.",
           "exampleType": "auto",
           "syllables": [
-            "bu",
-            "tcher's"
+            "butcher's"
           ]
         },
         {
@@ -2643,8 +2589,9 @@ const WORD_DATA = {
           "example": "But why are there so many customs officers?",
           "exampleType": "book",
           "syllables": [
-            "off",
-            "icer"
+            "of",
+            "fi",
+            "cer"
           ]
         },
         {
@@ -2655,7 +2602,8 @@ const WORD_DATA = {
           "example": "Li Bai was one of the greatest poets in Chinese history.",
           "exampleType": "auto",
           "syllables": [
-            "poet"
+            "po",
+            "et"
           ]
         },
         {
@@ -2667,10 +2615,9 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "po",
-            "li",
-            "ce",
-            "wo",
-            "man"
+            "lice",
+            "wom",
+            "an"
           ]
         },
         {
@@ -2681,9 +2628,7 @@ const WORD_DATA = {
           "example": "The politician gave a speech about education reform.",
           "exampleType": "auto",
           "syllables": [
-            "po",
-            "li",
-            "ti",
+            "politi",
             "cian"
           ]
         },
@@ -2695,8 +2640,8 @@ const WORD_DATA = {
           "example": "The president of the company made an important announcement.",
           "exampleType": "auto",
           "syllables": [
-            "pre",
-            "si",
+            "pres",
+            "i",
             "dent"
           ]
         },
@@ -2708,11 +2653,10 @@ const WORD_DATA = {
           "example": "The sales assistant helped me find the right size.",
           "exampleType": "auto",
           "syllables": [
-            "sa",
-            "le",
-            "sa",
-            "ssi",
-            "stant"
+            "sale",
+            "sas",
+            "sis",
+            "tant"
           ]
         },
         {
@@ -2734,8 +2678,7 @@ const WORD_DATA = {
           "example": "Workers demanded higher wages and better conditions.",
           "exampleType": "auto",
           "syllables": [
-            "wa",
-            "ge"
+            "wage"
           ]
         },
         {
@@ -2746,8 +2689,8 @@ const WORD_DATA = {
           "example": "She works in banking and deals with international accounts.",
           "exampleType": "auto",
           "syllables": [
-            "ba",
-            "nking"
+            "bank",
+            "ing"
           ]
         },
         {
@@ -2758,8 +2701,8 @@ const WORD_DATA = {
           "example": "I need to buy a new hairdryer — my old one is broken.",
           "exampleType": "auto",
           "syllables": [
-            "hai",
-            "rdryer"
+            "hairdry",
+            "er"
           ]
         },
         {
@@ -2770,8 +2713,8 @@ const WORD_DATA = {
           "example": "Maybe I can even be a keeper in the zoo.",
           "exampleType": "book",
           "syllables": [
-            "kee",
-            "per"
+            "keep",
+            "er"
           ]
         },
         {
@@ -2782,8 +2725,8 @@ const WORD_DATA = {
           "example": "She told me to go to the women's section and maybe I could find something special but inexpensive for my mother.",
           "exampleType": "book",
           "syllables": [
-            "se",
-            "ction"
+            "sec",
+            "tion"
           ]
         },
         {
@@ -2817,8 +2760,8 @@ const WORD_DATA = {
           "example": "After the person on the other side answered the phone, they would transfer the line to the person who dialed.",
           "exampleType": "book",
           "syllables": [
-            "tra",
-            "nsfer"
+            "trans",
+            "fer"
           ]
         },
         {
@@ -2830,8 +2773,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "un",
-            "empl",
-            "oy",
+            "em",
+            "ploy",
             "ment"
           ]
         },
@@ -2854,8 +2797,7 @@ const WORD_DATA = {
           "example": "We are so much alike that it is impossible to tell one from the other.",
           "exampleType": "book",
           "syllables": [
-            "al",
-            "ike"
+            "alike"
           ]
         },
         {
@@ -2866,9 +2808,8 @@ const WORD_DATA = {
           "example": "My grandfather has a thick grey moustache.",
           "exampleType": "auto",
           "syllables": [
-            "mou",
-            "sta",
-            "che"
+            "mous",
+            "tache"
           ]
         },
         {
@@ -2879,8 +2820,7 @@ const WORD_DATA = {
           "example": "The European Union has 27 member countries.",
           "exampleType": "auto",
           "syllables": [
-            "un",
-            "ion"
+            "union"
           ]
         },
         {
@@ -2891,9 +2831,9 @@ const WORD_DATA = {
           "example": "The astronaut spent six months on the International Space Station.",
           "exampleType": "auto",
           "syllables": [
-            "astr",
-            "on",
-            "aut"
+            "as",
+            "tro",
+            "naut"
           ]
         },
         {
@@ -2904,8 +2844,9 @@ const WORD_DATA = {
           "example": "These friends came from different professions, such as architects, firefighters, scientists, lecturers, and professors.",
           "exampleType": "book",
           "syllables": [
-            "arch",
-            "itect"
+            "ar",
+            "chi",
+            "tect"
           ]
         },
         {
@@ -2916,10 +2857,10 @@ const WORD_DATA = {
           "example": "She is studying architecture at university and hopes to design buildings.",
           "exampleType": "auto",
           "syllables": [
-            "arch",
-            "it",
-            "ect",
-            "ure"
+            "ar",
+            "chi",
+            "tec",
+            "ture"
           ]
         },
         {
@@ -2941,9 +2882,8 @@ const WORD_DATA = {
           "example": "His father served in the air force for twenty years.",
           "exampleType": "auto",
           "syllables": [
-            "ai",
-            "rfo",
-            "rce"
+            "air",
+            "force"
           ]
         },
         {
@@ -2954,9 +2894,7 @@ const WORD_DATA = {
           "example": "The well-dressed man walked into the restaurant with confidence.",
           "exampleType": "auto",
           "syllables": [
-            "we",
-            "ll-dre",
-            "ssed"
+            "well-dressed"
           ]
         },
         {
@@ -2967,8 +2905,8 @@ const WORD_DATA = {
           "example": "You won't pass the exam unless you study harder.",
           "exampleType": "auto",
           "syllables": [
-            "unl",
-            "ess"
+            "un",
+            "less"
           ]
         },
         {
@@ -2979,9 +2917,9 @@ const WORD_DATA = {
           "example": "Honestly, I think we should try a different approach.",
           "exampleType": "auto",
           "syllables": [
-            "ho",
-            "ne",
-            "stly"
+            "hon",
+            "est",
+            "ly"
           ]
         },
         {
@@ -2992,7 +2930,7 @@ const WORD_DATA = {
           "example": "Please send your CV to the company by email.",
           "exampleType": "auto",
           "syllables": [
-            "cv"
+            "CV"
           ]
         },
         {
@@ -3030,7 +2968,7 @@ const WORD_DATA = {
           "example": "The DJ played great music at the party last night.",
           "exampleType": "auto",
           "syllables": [
-            "dj"
+            "DJ"
           ]
         },
         {
@@ -3041,7 +2979,8 @@ const WORD_DATA = {
           "example": "She wrote a beautiful poem about the seasons.",
           "exampleType": "auto",
           "syllables": [
-            "poem"
+            "po",
+            "em"
           ]
         },
         {
@@ -3053,8 +2992,8 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "pre",
-            "se",
-            "nter"
+            "sen",
+            "ter"
           ]
         },
         {
@@ -3066,8 +3005,8 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "ro",
-            "ma",
-            "ntic"
+            "man",
+            "tic"
           ]
         },
         {
@@ -3078,8 +3017,8 @@ const WORD_DATA = {
           "example": "She took a selfie with her friends in front of the Eiffel Tower.",
           "exampleType": "auto",
           "syllables": [
-            "se",
-            "lfie"
+            "self",
+            "ie"
           ]
         },
         {
@@ -3090,8 +3029,7 @@ const WORD_DATA = {
           "example": "I stayed up all night reading an exciting thriller.",
           "exampleType": "auto",
           "syllables": [
-            "thri",
-            "ller"
+            "thriller"
           ]
         },
         {
@@ -3102,9 +3040,9 @@ const WORD_DATA = {
           "example": "In addition, there is no store room in my home.",
           "exampleType": "book",
           "syllables": [
-            "add",
-            "it",
-            "ion"
+            "ad",
+            "di",
+            "tion"
           ]
         },
         {
@@ -3116,8 +3054,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "di",
-            "vi",
-            "de"
+            "vide"
           ]
         },
         {
@@ -3128,9 +3065,8 @@ const WORD_DATA = {
           "example": "He won a million pounds in the national lottery.",
           "exampleType": "auto",
           "syllables": [
-            "lo",
-            "tte",
-            "ry"
+            "lot",
+            "tery"
           ]
         },
         {
@@ -3141,8 +3077,8 @@ const WORD_DATA = {
           "example": "The nightclub was full of people dancing to loud music.",
           "exampleType": "auto",
           "syllables": [
-            "ni",
-            "ghtclub"
+            "night",
+            "club"
           ]
         },
         {
@@ -3153,9 +3089,9 @@ const WORD_DATA = {
           "example": "You need to get permission from your parents before going on the trip.",
           "exampleType": "auto",
           "syllables": [
-            "pe",
-            "rmi",
-            "ssion"
+            "per",
+            "mis",
+            "sion"
           ]
         },
         {
@@ -3166,8 +3102,8 @@ const WORD_DATA = {
           "example": "Smoking is not permitted inside the building.",
           "exampleType": "auto",
           "syllables": [
-            "pe",
-            "rmit"
+            "per",
+            "mit"
           ]
         },
         {
@@ -3178,10 +3114,9 @@ const WORD_DATA = {
           "example": "The children sleep in separate rooms.",
           "exampleType": "auto",
           "syllables": [
-            "se",
-            "pa",
-            "ra",
-            "te"
+            "sep",
+            "a",
+            "rate"
           ]
         },
         {
@@ -3192,9 +3127,8 @@ const WORD_DATA = {
           "example": "Yours sincerely is a common way to end a formal letter.",
           "exampleType": "auto",
           "syllables": [
-            "si",
-            "nce",
-            "re",
+            "sin",
+            "cere",
             "ly"
           ]
         },
@@ -3206,8 +3140,8 @@ const WORD_DATA = {
           "example": "They were talking about how many hours they rehearsed every single day.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "ngle"
+            "sin",
+            "gle"
           ]
         },
         {
@@ -3218,8 +3152,7 @@ const WORD_DATA = {
           "example": "We exchanged relieved glances until the vet gave a satisfied smile and the cat recovered.",
           "exampleType": "book",
           "syllables": [
-            "smi",
-            "le"
+            "smile"
           ]
         },
         {
@@ -3230,8 +3163,7 @@ const WORD_DATA = {
           "example": "The baby's skin was soft and smooth.",
           "exampleType": "auto",
           "syllables": [
-            "smo",
-            "oth"
+            "smooth"
           ]
         },
         {
@@ -3266,8 +3198,7 @@ const WORD_DATA = {
           "example": "However5 after I entered primary school, I was under some stress.",
           "exampleType": "book",
           "syllables": [
-            "str",
-            "ess"
+            "stress"
           ]
         },
         {
@@ -3278,8 +3209,8 @@ const WORD_DATA = {
           "example": "Although it's a bit stressful to pay off the house loan, I'm super excited about having my own property!",
           "exampleType": "book",
           "syllables": [
-            "stre",
-            "ssful"
+            "stress",
+            "ful"
           ]
         },
         {
@@ -3290,9 +3221,8 @@ const WORD_DATA = {
           "example": "The boxing club usually sunbathes on__ .",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "nba",
-            "the"
+            "sun",
+            "bathe"
           ]
         },
         {
@@ -3303,8 +3233,7 @@ const WORD_DATA = {
           "example": "He was humming a cheerful tune on his way to school.",
           "exampleType": "auto",
           "syllables": [
-            "tu",
-            "ne"
+            "tune"
           ]
         },
         {
@@ -3315,8 +3244,8 @@ const WORD_DATA = {
           "example": "He learned to play the trumpet when he was ten years old.",
           "exampleType": "auto",
           "syllables": [
-            "tru",
-            "mpet"
+            "trum",
+            "pet"
           ]
         },
         {
@@ -3327,8 +3256,7 @@ const WORD_DATA = {
           "example": "In his youth, he travelled around the world.",
           "exampleType": "auto",
           "syllables": [
-            "yo",
-            "uth"
+            "youth"
           ]
         },
         {
@@ -3339,9 +3267,7 @@ const WORD_DATA = {
           "example": "The famous film-maker won an award for his latest movie.",
           "exampleType": "auto",
           "syllables": [
-            "fi",
-            "lm-ma",
-            "ker"
+            "film-maker"
           ]
         },
         {
@@ -3401,9 +3327,8 @@ const WORD_DATA = {
           "example": "You see this announcement in an English-language magazine.",
           "exampleType": "book",
           "syllables": [
-            "ann",
-            "ou",
-            "nce",
+            "an",
+            "nounce",
             "ment"
           ]
         },
@@ -3448,9 +3373,9 @@ const WORD_DATA = {
           "example": "You can exchange currency at the airport when you arrive.",
           "exampleType": "manual",
           "syllables": [
-            "cu",
-            "rre",
-            "ncy"
+            "cur",
+            "ren",
+            "cy"
           ]
         },
         {
@@ -3461,8 +3386,8 @@ const WORD_DATA = {
           "example": "But why are there so many customs officers?",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "stoms"
+            "cus",
+            "toms"
           ]
         },
         {
@@ -3518,8 +3443,7 @@ const WORD_DATA = {
           "example": "The bus fare has gone up again this year.",
           "exampleType": "manual",
           "syllables": [
-            "fa",
-            "re"
+            "fare"
           ]
         },
         {
@@ -3530,8 +3454,8 @@ const WORD_DATA = {
           "example": "We took the ferry across the river to the island.",
           "exampleType": "manual",
           "syllables": [
-            "fe",
-            "rry"
+            "fer",
+            "ry"
           ]
         },
         {
@@ -3542,8 +3466,8 @@ const WORD_DATA = {
           "example": "Hold the handlebars tightly when you ride downhill.",
           "exampleType": "manual",
           "syllables": [
-            "ha",
-            "ndle",
+            "han",
+            "dle",
             "bar"
           ]
         },
@@ -3555,10 +3479,10 @@ const WORD_DATA = {
           "example": "You must go through immigration when you arrive in a new country.",
           "exampleType": "manual",
           "syllables": [
-            "imm",
-            "igr",
-            "at",
-            "ion"
+            "im",
+            "mi",
+            "gra",
+            "tion"
           ]
         },
         {
@@ -3569,9 +3493,8 @@ const WORD_DATA = {
           "example": "I'd like to make a reservation for a table for four tonight.",
           "exampleType": "manual",
           "syllables": [
-            "re",
-            "se",
-            "rva",
+            "reser",
+            "va",
             "tion"
           ]
         },
@@ -3583,8 +3506,8 @@ const WORD_DATA = {
           "example": "We visited a famous monument in the centre of the city.",
           "exampleType": "manual",
           "syllables": [
-            "mo",
-            "nu",
+            "mon",
+            "u",
             "ment"
           ]
         },
@@ -3596,9 +3519,8 @@ const WORD_DATA = {
           "example": "She enquired about the departure time at the information desk.",
           "exampleType": "manual",
           "syllables": [
-            "enq",
-            "ui",
-            "re"
+            "en",
+            "quire"
           ]
         },
         {
@@ -3609,9 +3531,8 @@ const WORD_DATA = {
           "example": "For further enquiries, please call our customer service number.",
           "exampleType": "manual",
           "syllables": [
-            "enq",
-            "ui",
-            "ry"
+            "en",
+            "quiry"
           ]
         },
         {
@@ -3622,8 +3543,8 @@ const WORD_DATA = {
           "example": "We stayed at a youth hostel near the train station.",
           "exampleType": "manual",
           "syllables": [
-            "ho",
-            "stel"
+            "hos",
+            "tel"
           ]
         },
         {
@@ -3634,8 +3555,8 @@ const WORD_DATA = {
           "example": "William: Hurry up, Henry!",
           "exampleType": "book",
           "syllables": [
-            "hu",
-            "rry"
+            "hur",
+            "ry"
           ]
         },
         {
@@ -3690,8 +3611,8 @@ const WORD_DATA = {
           "example": "That's unfair for the lorry driver.",
           "exampleType": "book",
           "syllables": [
-            "lo",
-            "rry"
+            "lor",
+            "ry"
           ]
         },
         {
@@ -3713,8 +3634,7 @@ const WORD_DATA = {
           "example": "Dad had to change a flat tyre on the way to the airport.",
           "exampleType": "manual",
           "syllables": [
-            "ty",
-            "re"
+            "tyre"
           ]
         },
         {
@@ -3725,8 +3645,8 @@ const WORD_DATA = {
           "example": "We booked our holiday through a travel agency.",
           "exampleType": "manual",
           "syllables": [
-            "ag",
-            "ency"
+            "agen",
+            "cy"
           ]
         },
         {
@@ -3753,8 +3673,7 @@ const WORD_DATA = {
           "example": "The great white shark is one of the most feared animals in the ocean.",
           "exampleType": "manual",
           "syllables": [
-            "sh",
-            "ark"
+            "shark"
           ]
         },
         {
@@ -3798,8 +3717,8 @@ const WORD_DATA = {
           "example": "The children were afraid of the monster under the bed.",
           "exampleType": "manual",
           "syllables": [
-            "mo",
-            "nster"
+            "mon",
+            "ster"
           ]
         },
         {
@@ -3832,8 +3751,7 @@ const WORD_DATA = {
           "example": "The hunter aimed carefully and shot at the target.",
           "exampleType": "manual",
           "syllables": [
-            "sh",
-            "oot"
+            "shoot"
           ]
         },
         {
@@ -3844,8 +3762,8 @@ const WORD_DATA = {
           "example": "The police arrested the thief outside the shop.",
           "exampleType": "manual",
           "syllables": [
-            "arr",
-            "est"
+            "ar",
+            "rest"
           ]
         },
         {
@@ -3856,8 +3774,7 @@ const WORD_DATA = {
           "example": "Crime has increased in the city over the past few years.",
           "exampleType": "manual",
           "syllables": [
-            "cri",
-            "me"
+            "crime"
           ]
         },
         {
@@ -3868,8 +3785,8 @@ const WORD_DATA = {
           "example": "He even helps unemployed criminals find jobs.",
           "exampleType": "book",
           "syllables": [
-            "cri",
-            "mi",
+            "crim",
+            "i",
             "nal"
           ]
         },
@@ -3881,9 +3798,8 @@ const WORD_DATA = {
           "example": "I love vanilla ice cream — it's my favourite flavour.",
           "exampleType": "manual",
           "syllables": [
-            "va",
-            "ni",
-            "lla"
+            "vanil",
+            "la"
           ]
         },
         {
@@ -3894,8 +3810,7 @@ const WORD_DATA = {
           "example": "A new virus spread quickly and many people got sick.",
           "exampleType": "manual",
           "syllables": [
-            "vi",
-            "rus"
+            "virus"
           ]
         },
         {
@@ -3917,8 +3832,8 @@ const WORD_DATA = {
           "example": "Many rare animals live deep in the jungle.",
           "exampleType": "manual",
           "syllables": [
-            "ju",
-            "ngle"
+            "jun",
+            "gle"
           ]
         },
         {
@@ -3929,8 +3844,7 @@ const WORD_DATA = {
           "example": "The factories were flooded by the heavy rain.",
           "exampleType": "book",
           "syllables": [
-            "fl",
-            "ood"
+            "flood"
           ]
         },
         {
@@ -3941,9 +3855,10 @@ const WORD_DATA = {
           "example": "To protect our environment, we should take action.",
           "exampleType": "book",
           "syllables": [
-            "env",
-            "ir",
-            "onment"
+            "en",
+            "vi",
+            "ron",
+            "ment"
           ]
         },
         {
@@ -3954,8 +3869,7 @@ const WORD_DATA = {
           "example": "The lake freezes over every winter and people go skating on it.",
           "exampleType": "manual",
           "syllables": [
-            "free",
-            "ze"
+            "freeze"
           ]
         },
         {
@@ -3966,8 +3880,7 @@ const WORD_DATA = {
           "example": "The shop sells a wide range of products from all over the world.",
           "exampleType": "manual",
           "syllables": [
-            "ra",
-            "nge"
+            "range"
           ]
         },
         {
@@ -3990,8 +3903,8 @@ const WORD_DATA = {
           "example": "The two armies fought a fierce battle near the river.",
           "exampleType": "manual",
           "syllables": [
-            "ba",
-            "ttle"
+            "bat",
+            "tle"
           ]
         },
         {
@@ -4014,9 +3927,9 @@ const WORD_DATA = {
           "example": "Nowadays our government is emphasising rubbish sorting.",
           "exampleType": "book",
           "syllables": [
-            "go",
-            "ve",
-            "rnment"
+            "gov",
+            "ern",
+            "ment"
           ]
         },
         {
@@ -4027,8 +3940,7 @@ const WORD_DATA = {
           "example": "The groom led the horse back to the stable after the ride.",
           "exampleType": "manual",
           "syllables": [
-            "gr",
-            "oom"
+            "groom"
           ]
         },
         {
@@ -4039,8 +3951,8 @@ const WORD_DATA = {
           "example": "But the seats are limited.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "mit"
+            "lim",
+            "it"
           ]
         },
         {
@@ -4051,9 +3963,9 @@ const WORD_DATA = {
           "example": "Her ambition is to become a doctor and help people.",
           "exampleType": "manual",
           "syllables": [
-            "amb",
-            "it",
-            "ion"
+            "am",
+            "bi",
+            "tion"
           ]
         },
         {
@@ -4075,8 +3987,8 @@ const WORD_DATA = {
           "example": "The wind is blowing from the northeast today.",
           "exampleType": "manual",
           "syllables": [
-            "no",
-            "rtheast"
+            "north",
+            "east"
           ]
         },
         {
@@ -4087,8 +3999,8 @@ const WORD_DATA = {
           "example": "The northern part of the country gets more snow in winter.",
           "exampleType": "manual",
           "syllables": [
-            "no",
-            "rthern"
+            "north",
+            "ern"
           ]
         },
         {
@@ -4099,8 +4011,8 @@ const WORD_DATA = {
           "example": "The southern coast has warmer weather and beautiful beaches.",
           "exampleType": "manual",
           "syllables": [
-            "sou",
-            "thern"
+            "south",
+            "ern"
           ]
         },
         {
@@ -4111,8 +4023,8 @@ const WORD_DATA = {
           "example": "The southwest region of England is popular with tourists.",
           "exampleType": "manual",
           "syllables": [
-            "sou",
-            "thwest"
+            "south",
+            "west"
           ]
         },
         {
@@ -4123,8 +4035,7 @@ const WORD_DATA = {
           "example": "When I watch sunrise and sunset, I feel the peace of life. 3.",
           "exampleType": "book",
           "syllables": [
-            "pea",
-            "ce"
+            "peace"
           ]
         },
         {
@@ -4173,8 +4084,7 @@ const WORD_DATA = {
           "example": "She burnt her tongue on the hot soup.",
           "exampleType": "manual",
           "syllables": [
-            "to",
-            "ngue"
+            "tongue"
           ]
         },
         {
@@ -4196,8 +4106,8 @@ const WORD_DATA = {
           "example": "She carried the bag on her shoulder.",
           "exampleType": "manual",
           "syllables": [
-            "shou",
-            "lder"
+            "shoul",
+            "der"
           ]
         },
         {
@@ -4219,8 +4129,7 @@ const WORD_DATA = {
           "example": "He hit his thumb with the hammer by accident.",
           "exampleType": "manual",
           "syllables": [
-            "th",
-            "umb"
+            "thumb"
           ]
         },
         {
@@ -4267,9 +4176,9 @@ const WORD_DATA = {
           "example": "The goalkeeper made a brilliant save in the last minute.",
           "exampleType": "manual",
           "syllables": [
-            "goa",
-            "lkee",
-            "per"
+            "goal",
+            "keep",
+            "er"
           ]
         },
         {
@@ -4280,8 +4189,7 @@ const WORD_DATA = {
           "example": "We will swim in the pool and the one who touches the ending point first will be the champion.",
           "exampleType": "book",
           "syllables": [
-            "po",
-            "int"
+            "point"
           ]
         },
         {
@@ -4292,8 +4200,8 @@ const WORD_DATA = {
           "example": "Man: Absolutely J I have tried motor-racing before.",
           "exampleType": "book",
           "syllables": [
-            "ra",
-            "cing"
+            "rac",
+            "ing"
           ]
         },
         {
@@ -4304,8 +4212,7 @@ const WORD_DATA = {
           "example": "It was too hot to wear trousers, so I put on my shorts.",
           "exampleType": "manual",
           "syllables": [
-            "sho",
-            "rts"
+            "shorts"
           ]
         },
         {
@@ -4316,8 +4223,8 @@ const WORD_DATA = {
           "example": "Maybe we can give her a snowboard or a film ticket.",
           "exampleType": "book",
           "syllables": [
-            "sno",
-            "wboard"
+            "snow",
+            "board"
           ]
         },
         {
@@ -4339,9 +4246,8 @@ const WORD_DATA = {
           "example": "I had a terrible earache and couldn't sleep all night.",
           "exampleType": "manual",
           "syllables": [
-            "ea",
-            "ra",
-            "che"
+            "ear",
+            "ache"
           ]
         },
         {
@@ -4352,8 +4258,7 @@ const WORD_DATA = {
           "example": "Take a deep breath and breathe out slowly.",
           "exampleType": "manual",
           "syllables": [
-            "brea",
-            "the"
+            "breathe"
           ]
         },
         {
@@ -4399,8 +4304,7 @@ const WORD_DATA = {
           "example": "I went to the chemist to buy some medicine for my cold.",
           "exampleType": "manual",
           "syllables": [
-            "che",
-            "mist"
+            "chemist"
           ]
         },
         {
@@ -4422,8 +4326,7 @@ const WORD_DATA = {
           "example": "The death of the old king shocked the whole country.",
           "exampleType": "manual",
           "syllables": [
-            "de",
-            "ath"
+            "death"
           ]
         },
         {
@@ -4434,9 +4337,8 @@ const WORD_DATA = {
           "example": "The building has a ramp for disabled people in wheelchairs.",
           "exampleType": "manual",
           "syllables": [
-            "di",
-            "sa",
-            "bled"
+            "dis",
+            "abled"
           ]
         },
         {
@@ -4447,9 +4349,8 @@ const WORD_DATA = {
           "example": "I need to buy a new tube of toothpaste.",
           "exampleType": "manual",
           "syllables": [
-            "too",
-            "thpa",
-            "ste"
+            "tooth",
+            "paste"
           ]
         },
         {
@@ -4471,8 +4372,7 @@ const WORD_DATA = {
           "example": "Scientists are working hard to find a cure for the disease.",
           "exampleType": "manual",
           "syllables": [
-            "cu",
-            "re"
+            "cure"
           ]
         },
         {
@@ -4543,8 +4443,7 @@ const WORD_DATA = {
           "example": "Anyhow, I hope the cat doesn't blame me or my brother for the mistake and I want it to be cheerful and full of energy all the time.",
           "exampleType": "book",
           "syllables": [
-            "bla",
-            "me"
+            "blame"
           ]
         },
         {
@@ -4577,8 +4476,8 @@ const WORD_DATA = {
           "example": "Can you see the shadow over there?",
           "exampleType": "auto",
           "syllables": [
-            "sha",
-            "dow"
+            "shad",
+            "ow"
           ]
         },
         {
@@ -4589,8 +4488,7 @@ const WORD_DATA = {
           "example": "You should shake it before it's too late.",
           "exampleType": "auto",
           "syllables": [
-            "sha",
-            "ke"
+            "shake"
           ]
         },
         {
@@ -4601,8 +4499,7 @@ const WORD_DATA = {
           "example": "They decided to stick together.",
           "exampleType": "auto",
           "syllables": [
-            "st",
-            "ick"
+            "stick"
           ]
         },
         {
@@ -4613,8 +4510,7 @@ const WORD_DATA = {
           "example": "At the same time, advocating public transport can avoid traffic jams and reduce air pollution.",
           "exampleType": "book",
           "syllables": [
-            "av",
-            "oid"
+            "avoid"
           ]
         },
         {
@@ -4625,8 +4521,7 @@ const WORD_DATA = {
           "example": "Can you see the depth over there?",
           "exampleType": "auto",
           "syllables": [
-            "de",
-            "pth"
+            "depth"
           ]
         },
         {
@@ -4638,8 +4533,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "scri",
-            "ption"
+            "scrip",
+            "tion"
           ]
         },
         {
@@ -4650,8 +4545,8 @@ const WORD_DATA = {
           "example": "Can you see the charity over there?",
           "exampleType": "auto",
           "syllables": [
-            "cha",
-            "ri",
+            "char",
+            "i",
             "ty"
           ]
         },
@@ -4663,9 +4558,7 @@ const WORD_DATA = {
           "example": "You should nowhere it before it's too late.",
           "exampleType": "auto",
           "syllables": [
-            "no",
-            "whe",
-            "re"
+            "nowhere"
           ]
         },
         {
@@ -4676,8 +4569,7 @@ const WORD_DATA = {
           "example": "She felt loose after hearing the news.",
           "exampleType": "auto",
           "syllables": [
-            "loo",
-            "se"
+            "loose"
           ]
         },
         {
@@ -4688,8 +4580,8 @@ const WORD_DATA = {
           "example": "Luckily, she told me, “The sweatshirt you want is out of stock.",
           "exampleType": "book",
           "syllables": [
-            "lu",
-            "cki",
+            "luck",
+            "i",
             "ly"
           ]
         },
@@ -4701,8 +4593,7 @@ const WORD_DATA = {
           "example": "Maybe the shapes of a circle will be much easier for you.",
           "exampleType": "book",
           "syllables": [
-            "sha",
-            "pe"
+            "shape"
           ]
         },
         {
@@ -4713,8 +4604,7 @@ const WORD_DATA = {
           "example": "Can you see the shock over there?",
           "exampleType": "auto",
           "syllables": [
-            "sh",
-            "ock"
+            "shock"
           ]
         },
         {
@@ -4725,8 +4615,7 @@ const WORD_DATA = {
           "example": "What chance was there of being alive?",
           "exampleType": "book",
           "syllables": [
-            "al",
-            "ive"
+            "alive"
           ]
         },
         {
@@ -4737,9 +4626,9 @@ const WORD_DATA = {
           "example": "We bought a new supporter yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "su",
-            "ppo",
-            "rter"
+            "sup",
+            "port",
+            "er"
           ]
         },
         {
@@ -4750,9 +4639,9 @@ const WORD_DATA = {
           "example": "Can you see the spectacular over there?",
           "exampleType": "auto",
           "syllables": [
-            "spe",
-            "cta",
-            "cu",
+            "spec",
+            "tac",
+            "u",
             "lar"
           ]
         },
@@ -4764,8 +4653,7 @@ const WORD_DATA = {
           "example": "Fll change my attitude, somehow. 2.",
           "exampleType": "book",
           "syllables": [
-            "so",
-            "me",
+            "some",
             "how"
           ]
         },
@@ -4788,8 +4676,7 @@ const WORD_DATA = {
           "example": "That was a very hopeless experience.",
           "exampleType": "auto",
           "syllables": [
-            "ho",
-            "pe",
+            "hope",
             "less"
           ]
         },
@@ -4801,9 +4688,8 @@ const WORD_DATA = {
           "example": "Can you see the millimetre over there?",
           "exampleType": "auto",
           "syllables": [
-            "mi",
-            "lli",
-            "me",
+            "mil",
+            "lime",
             "tre"
           ]
         },
@@ -4815,9 +4701,8 @@ const WORD_DATA = {
           "example": "The mystery was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "my",
-            "ste",
-            "ry"
+            "mys",
+            "tery"
           ]
         },
         {
@@ -4828,8 +4713,8 @@ const WORD_DATA = {
           "example": "They decided to rescue together.",
           "exampleType": "auto",
           "syllables": [
-            "re",
-            "scue"
+            "res",
+            "cue"
           ]
         },
         {
@@ -4854,9 +4739,9 @@ const WORD_DATA = {
           "example": "If you have some good suggestions, you can share them with me.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "gge",
-            "stion"
+            "sug",
+            "ges",
+            "tion"
           ]
         },
         {
@@ -4867,8 +4752,7 @@ const WORD_DATA = {
           "example": "They look really cute and touch well.",
           "exampleType": "book",
           "syllables": [
-            "to",
-            "uch"
+            "touch"
           ]
         },
         {
@@ -4934,10 +4818,11 @@ const WORD_DATA = {
           "example": "I will cherish the opportunity to learn more knowledge from my teachers. 2.",
           "exampleType": "book",
           "syllables": [
-            "opp",
-            "ort",
-            "un",
-            "ity"
+            "op",
+            "por",
+            "tu",
+            "ni",
+            "ty"
           ]
         }
       ]
@@ -4953,9 +4838,7 @@ const WORD_DATA = {
           "example": "You should delete it before it's too late.",
           "exampleType": "auto",
           "syllables": [
-            "de",
-            "le",
-            "te"
+            "delete"
           ]
         },
         {
@@ -4977,9 +4860,8 @@ const WORD_DATA = {
           "example": "The headline was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "hea",
-            "dli",
-            "ne"
+            "head",
+            "line"
           ]
         },
         {
@@ -4990,9 +4872,9 @@ const WORD_DATA = {
           "example": "We bought a new discover yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "di",
-            "sco",
-            "ver"
+            "dis",
+            "cov",
+            "er"
           ]
         },
         {
@@ -5003,10 +4885,9 @@ const WORD_DATA = {
           "example": "The discovery was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "di",
-            "sco",
-            "ve",
-            "ry"
+            "dis",
+            "cov",
+            "ery"
           ]
         },
         {
@@ -5030,9 +4911,8 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "re",
-            "la",
-            "xa",
-            "tion"
+            "lax",
+            "ation"
           ]
         },
         {
@@ -5043,8 +4923,7 @@ const WORD_DATA = {
           "example": "A kind stranger sent me to the hospital in his car. 2.",
           "exampleType": "book",
           "syllables": [
-            "stra",
-            "nger"
+            "stranger"
           ]
         },
         {
@@ -5055,8 +4934,7 @@ const WORD_DATA = {
           "example": "But I am too nervous to tell him the truth.",
           "exampleType": "book",
           "syllables": [
-            "tr",
-            "uth"
+            "truth"
           ]
         },
         {
@@ -5067,8 +4945,8 @@ const WORD_DATA = {
           "example": "We bought a new accent yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "acc",
-            "ent"
+            "ac",
+            "cent"
           ]
         },
         {
@@ -5092,8 +4970,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "de",
-            "fe",
-            "nce"
+            "fence"
           ]
         },
         {
@@ -5104,8 +4981,7 @@ const WORD_DATA = {
           "example": "Listen and read the phrases aloud.",
           "exampleType": "book",
           "syllables": [
-            "al",
-            "oud"
+            "aloud"
           ]
         },
         {
@@ -5127,8 +5003,7 @@ const WORD_DATA = {
           "example": "I still remember that I gave a speech to many college students in a big classroom.",
           "exampleType": "book",
           "syllables": [
-            "spe",
-            "ech"
+            "speech"
           ]
         },
         {
@@ -5139,10 +5014,9 @@ const WORD_DATA = {
           "example": "I will go to apologise to him at once.",
           "exampleType": "book",
           "syllables": [
-            "ap",
-            "ol",
-            "og",
-            "ise"
+            "apol",
+            "o",
+            "gise"
           ]
         },
         {
@@ -5153,9 +5027,9 @@ const WORD_DATA = {
           "example": "Can you see the apology over there?",
           "exampleType": "auto",
           "syllables": [
-            "ap",
-            "ol",
-            "ogy"
+            "apol",
+            "o",
+            "gy"
           ]
         },
         {
@@ -5166,9 +5040,8 @@ const WORD_DATA = {
           "example": "It must be a totally awesome experience.\" “I promise you.",
           "exampleType": "book",
           "syllables": [
-            "pro",
-            "mi",
-            "se"
+            "prom",
+            "ise"
           ]
         },
         {
@@ -5179,9 +5052,9 @@ const WORD_DATA = {
           "example": "We bought a new answerphone yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "answ",
-            "erph",
-            "one"
+            "an",
+            "swer",
+            "phone"
           ]
         },
         {
@@ -5192,9 +5065,7 @@ const WORD_DATA = {
           "example": "She won't be employed if she refuses to work abroad.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "fu",
-            "se"
+            "refuse"
           ]
         },
         {
@@ -5205,8 +5076,8 @@ const WORD_DATA = {
           "example": "That's unfair for the lorry driver.",
           "exampleType": "book",
           "syllables": [
-            "unf",
-            "air"
+            "un",
+            "fair"
           ]
         },
         {
@@ -5217,8 +5088,8 @@ const WORD_DATA = {
           "example": "It was quite unlucky.",
           "exampleType": "auto",
           "syllables": [
-            "unl",
-            "ucky"
+            "un",
+            "lucky"
           ]
         },
         {
@@ -5229,10 +5100,10 @@ const WORD_DATA = {
           "example": "It is unnecessary to bargain with an assistant.",
           "exampleType": "book",
           "syllables": [
-            "unn",
-            "ec",
-            "ess",
-            "ary"
+            "un",
+            "nec",
+            "es",
+            "sary"
           ]
         },
         {
@@ -5243,10 +5114,10 @@ const WORD_DATA = {
           "example": "It was really an unforgettable experience.",
           "exampleType": "book",
           "syllables": [
-            "unf",
-            "org",
-            "ett",
-            "able"
+            "un",
+            "for",
+            "get",
+            "table"
           ]
         },
         {
@@ -5257,9 +5128,9 @@ const WORD_DATA = {
           "example": "It was quite unfriendly.",
           "exampleType": "auto",
           "syllables": [
-            "unfr",
-            "ie",
-            "ndly"
+            "un",
+            "friend",
+            "ly"
           ]
         },
         {
@@ -5270,8 +5141,8 @@ const WORD_DATA = {
           "example": "It was quite unkind.",
           "exampleType": "auto",
           "syllables": [
-            "unk",
-            "ind"
+            "un",
+            "kind"
           ]
         },
         {
@@ -5282,9 +5153,9 @@ const WORD_DATA = {
           "example": "She felt unimportant after hearing the news.",
           "exampleType": "auto",
           "syllables": [
-            "un",
-            "imp",
-            "ortant"
+            "unim",
+            "por",
+            "tant"
           ]
         },
         {
@@ -5367,8 +5238,8 @@ const WORD_DATA = {
           "example": "The wedding went on well.",
           "exampleType": "book",
           "syllables": [
-            "we",
-            "dding"
+            "wed",
+            "ding"
           ]
         },
         {
@@ -5379,9 +5250,8 @@ const WORD_DATA = {
           "example": "This pair of antique vases is so pretty!",
           "exampleType": "book",
           "syllables": [
-            "ant",
-            "iq",
-            "ue"
+            "an",
+            "tique"
           ]
         },
         {
@@ -5392,8 +5262,7 @@ const WORD_DATA = {
           "example": "This pair of antique vases is so pretty!",
           "exampleType": "book",
           "syllables": [
-            "va",
-            "se"
+            "vase"
           ]
         },
         {
@@ -5405,8 +5274,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "un",
-            "us",
-            "ual"
+            "usu",
+            "al"
           ]
         },
         {
@@ -5439,8 +5308,8 @@ const WORD_DATA = {
           "example": "We have put the vases on the chest of drawers in our living room—they perfectly match the rug and cushions.",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "shion"
+            "cush",
+            "ion"
           ]
         },
         {
@@ -5451,9 +5320,8 @@ const WORD_DATA = {
           "example": "It was such a pity that you couldn't attend our marriage ceremony!",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "rria",
-            "ge"
+            "mar",
+            "riage"
           ]
         },
         {
@@ -5464,8 +5332,8 @@ const WORD_DATA = {
           "example": "Have you decided where to have the wedding ceremony?",
           "exampleType": "book",
           "syllables": [
-            "ce",
-            "re",
+            "cer",
+            "e",
             "mo",
             "ny"
           ]
@@ -5478,8 +5346,8 @@ const WORD_DATA = {
           "example": "Are you enjoying a happy childhood?",
           "exampleType": "book",
           "syllables": [
-            "chi",
-            "ldhood"
+            "child",
+            "hood"
           ]
         },
         {
@@ -5490,8 +5358,8 @@ const WORD_DATA = {
           "example": "How was your honeymoon trip?",
           "exampleType": "book",
           "syllables": [
-            "ho",
-            "ney",
+            "hon",
+            "ey",
             "moon"
           ]
         },
@@ -5503,9 +5371,9 @@ const WORD_DATA = {
           "example": "Anyway, I sorted some of the best pictures once we got back from the honeymoon, so you wouldn't miss this special occasion even though you were not able to show up.",
           "exampleType": "book",
           "syllables": [
-            "occ",
-            "as",
-            "ion"
+            "oc",
+            "ca",
+            "sion"
           ]
         },
         {
@@ -5528,8 +5396,7 @@ const WORD_DATA = {
           "example": "We just wanted it to be cosy, casual but meanwhile surrounded by an atmosphere of romance.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "sy"
+            "cosy"
           ]
         },
         {
@@ -5541,7 +5408,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "ca",
-            "sual"
+            "su",
+            "al"
           ]
         },
         {
@@ -5552,9 +5420,8 @@ const WORD_DATA = {
           "example": "Meanwhile, he had to bear the ache from the body.",
           "exampleType": "book",
           "syllables": [
-            "mea",
-            "nwhi",
-            "le"
+            "mean",
+            "while"
           ]
         },
         {
@@ -5565,8 +5432,8 @@ const WORD_DATA = {
           "example": "I am surrounded by love from my parents every day.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "rround"
+            "sur",
+            "round"
           ]
         },
         {
@@ -5578,8 +5445,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "ro",
-            "ma",
-            "nce"
+            "mance"
           ]
         },
         {
@@ -5590,8 +5456,8 @@ const WORD_DATA = {
           "example": "Do you remember the small church with a bell tower which is located in the North District?",
           "exampleType": "book",
           "syllables": [
-            "to",
-            "wer"
+            "tow",
+            "er"
           ]
         },
         {
@@ -5603,8 +5469,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "lo",
-            "ca",
-            "te"
+            "cate"
           ]
         },
         {
@@ -5615,8 +5480,8 @@ const WORD_DATA = {
           "example": "Do you remember the small church with a bell tower which is located in the North District?",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "strict"
+            "dis",
+            "trict"
           ]
         },
         {
@@ -5638,10 +5503,9 @@ const WORD_DATA = {
           "example": "Whose job may not disappear with unmanned cars' appearance?",
           "exampleType": "book",
           "syllables": [
-            "app",
-            "ea",
-            "ra",
-            "nce"
+            "ap",
+            "pear",
+            "ance"
           ]
         },
         {
@@ -5652,8 +5516,8 @@ const WORD_DATA = {
           "example": "Can you help me marry this?",
           "exampleType": "auto",
           "syllables": [
-            "ma",
-            "rry"
+            "mar",
+            "ry"
           ]
         },
         {
@@ -5688,9 +5552,8 @@ const WORD_DATA = {
           "example": "They also have a nice cottage that sleeps six.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "tta",
-            "ge"
+            "cot",
+            "tage"
           ]
         },
         {
@@ -5701,8 +5564,7 @@ const WORD_DATA = {
           "example": "They also have a nice cottage that sleeps six.",
           "exampleType": "book",
           "syllables": [
-            "sl",
-            "eep"
+            "sleep"
           ]
         },
         {
@@ -5713,8 +5575,7 @@ const WORD_DATA = {
           "example": "As you can see in the photos, at the entrance, there was a welcome board with our names on it.",
           "exampleType": "book",
           "syllables": [
-            "bo",
-            "ard"
+            "board"
           ]
         },
         {
@@ -5725,8 +5586,7 @@ const WORD_DATA = {
           "example": "See you soon! （Your name） 听力原文 HI.",
           "exampleType": "book",
           "syllables": [
-            "na",
-            "me"
+            "name"
           ]
         },
         {
@@ -5748,10 +5608,9 @@ const WORD_DATA = {
           "example": "Residents can have more freedom to change the appearance of the house and decorate the garden as they wish.",
           "exampleType": "book",
           "syllables": [
-            "de",
-            "co",
-            "ra",
-            "te"
+            "dec",
+            "o",
+            "rate"
           ]
         },
         {
@@ -5762,8 +5621,7 @@ const WORD_DATA = {
           "example": "She felt hand-held after hearing the news.",
           "exampleType": "auto",
           "syllables": [
-            "ha",
-            "nd-held"
+            "hand-held"
           ]
         },
         {
@@ -5774,8 +5632,7 @@ const WORD_DATA = {
           "example": "The river rose to the height of the main road.",
           "exampleType": "book",
           "syllables": [
-            "ro",
-            "se"
+            "rose"
           ]
         },
         {
@@ -5786,8 +5643,8 @@ const WORD_DATA = {
           "example": "My hand­ held bouquet（手捧花束）was made of roses and tulips, which have the meaning of love.",
           "exampleType": "book",
           "syllables": [
-            "mea",
-            "ning"
+            "mean",
+            "ing"
           ]
         },
         {
@@ -5798,8 +5655,7 @@ const WORD_DATA = {
           "example": "Have you noticed the blue earrings under my curly hair?",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "rly"
+            "curly"
           ]
         },
         {
@@ -5810,8 +5666,8 @@ const WORD_DATA = {
           "example": "It was you who 003 该故事巧记PET核心词汇 mentioned that there should be usomething blue” at the wedding.",
           "exampleType": "book",
           "syllables": [
-            "me",
-            "ntion"
+            "men",
+            "tion"
           ]
         },
         {
@@ -5822,9 +5678,8 @@ const WORD_DATA = {
           "example": "My worst nightmare of a stranger breaking in and stopping the ceremony didn't happen一just kidding !",
           "exampleType": "book",
           "syllables": [
-            "ni",
-            "ghtma",
-            "re"
+            "night",
+            "mare"
           ]
         },
         {
@@ -5857,8 +5712,7 @@ const WORD_DATA = {
           "example": "By the way, my twin nephew and niece are the cutest page boy and flower girl ever!",
           "exampleType": "book",
           "syllables": [
-            "ne",
-            "phew"
+            "nephew"
           ]
         },
         {
@@ -5869,8 +5723,7 @@ const WORD_DATA = {
           "example": "By the way, my twin nephew and niece are the cutest page boy and flower girl ever!",
           "exampleType": "book",
           "syllables": [
-            "nie",
-            "ce"
+            "niece"
           ]
         }
       ]
@@ -5885,8 +5738,7 @@ const WORD_DATA = {
           "example": "You're the most beautiful bride I've ever known一no kidding!",
           "exampleType": "book",
           "syllables": [
-            "bri",
-            "de"
+            "bride"
           ]
         },
         {
@@ -5897,9 +5749,8 @@ const WORD_DATA = {
           "example": "Freddy also looked handsome.",
           "exampleType": "book",
           "syllables": [
-            "ha",
-            "ndso",
-            "me"
+            "hand",
+            "some"
           ]
         },
         {
@@ -5910,8 +5761,7 @@ const WORD_DATA = {
           "example": "I love the photo in which he kissed your cheek by the fountain.",
           "exampleType": "book",
           "syllables": [
-            "ch",
-            "eek"
+            "cheek"
           ]
         },
         {
@@ -5922,8 +5772,8 @@ const WORD_DATA = {
           "example": "I love the photo in which he kissed your cheek by the fountain.",
           "exampleType": "book",
           "syllables": [
-            "fou",
-            "ntain"
+            "foun",
+            "tain"
           ]
         },
         {
@@ -5934,8 +5784,7 @@ const WORD_DATA = {
           "example": "My best mate , I wish I were there to witness your happiness!",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "te"
+            "mate"
           ]
         },
         {
@@ -5946,8 +5795,8 @@ const WORD_DATA = {
           "example": "It was so unfortunate that I missed your big day because I fell off the ladder and broke my leg.",
           "exampleType": "book",
           "syllables": [
-            "la",
-            "dder"
+            "lad",
+            "der"
           ]
         },
         {
@@ -5980,9 +5829,9 @@ const WORD_DATA = {
           "example": "I saw your property advertisements online and I am very interested in your house.",
           "exampleType": "book",
           "syllables": [
-            "pro",
-            "pe",
-            "rty"
+            "prop",
+            "er",
+            "ty"
           ]
         },
         {
@@ -5993,9 +5842,8 @@ const WORD_DATA = {
           "example": "I was tired of living with flatmates.",
           "exampleType": "book",
           "syllables": [
-            "fla",
-            "tma",
-            "te"
+            "flat",
+            "mate"
           ]
         },
         {
@@ -6039,9 +5887,10 @@ const WORD_DATA = {
           "example": "The apartment block is well situated and the neighbourhood is nice and quiet.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "tua",
-            "ted"
+            "sit",
+            "u",
+            "at",
+            "ed"
           ]
         },
         {
@@ -6052,9 +5901,9 @@ const WORD_DATA = {
           "example": "Mrs White said the neighbourhood is great.",
           "exampleType": "book",
           "syllables": [
-            "nei",
-            "ghbou",
-            "rhood"
+            "neigh",
+            "bour",
+            "hood"
           ]
         },
         {
@@ -6065,8 +5914,7 @@ const WORD_DATA = {
           "example": "The nearest tube station is only a ten-minute walk and the railway line is also not far away.",
           "exampleType": "book",
           "syllables": [
-            "tu",
-            "be"
+            "tube"
           ]
         },
         {
@@ -6077,8 +5925,7 @@ const WORD_DATA = {
           "example": "It has access to safe and efficient transportation lines.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "ne"
+            "line"
           ]
         },
         {
@@ -6089,9 +5936,8 @@ const WORD_DATA = {
           "example": "One day we were amazed to find a cute homeless cat on the balcony.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "lco",
-            "ny"
+            "bal",
+            "cony"
           ]
         },
         {
@@ -6113,11 +5959,11 @@ const WORD_DATA = {
           "example": "There's a small balcony where I can look up at the sky or have a drink with my friends occasionally.",
           "exampleType": "book",
           "syllables": [
-            "occ",
-            "as",
-            "io",
-            "na",
-            "lly"
+            "oc",
+            "ca",
+            "sion",
+            "al",
+            "ly"
           ]
         },
         {
@@ -6139,8 +5985,7 @@ const WORD_DATA = {
           "example": "I changed the locks, checked the smoke alarms , covered the ground with dust sheets 5 got a dustbin 5 changed the 读故事巧记PET核心词汇 bulbs and repaired a leaking pipe.",
           "exampleType": "book",
           "syllables": [
-            "al",
-            "arm"
+            "alarm"
           ]
         },
         {
@@ -6151,8 +5996,7 @@ const WORD_DATA = {
           "example": "When he was running to catch the basketball, unfortunately, his ear was hit by the basketball and he fell down to the ground.",
           "exampleType": "book",
           "syllables": [
-            "gro",
-            "und"
+            "ground"
           ]
         },
         {
@@ -6174,8 +6018,8 @@ const WORD_DATA = {
           "example": "Kitchen rubbish is likely to go off in several days, which should be classified from other rubbish and put into a dustbin.",
           "exampleType": "book",
           "syllables": [
-            "du",
-            "stbin"
+            "dust",
+            "bin"
           ]
         },
         {
@@ -6209,8 +6053,7 @@ const WORD_DATA = {
           "example": "J Day 2 I.（略） II. 1. bribe 2. bulb 3. dishwasher 4. dustbin 5. freezer 6. kettle 7. ladder 8. microwave 9. pipe 10. lock JU. 1.",
           "exampleType": "book",
           "syllables": [
-            "pi",
-            "pe"
+            "pipe"
           ]
         },
         {
@@ -6221,9 +6064,9 @@ const WORD_DATA = {
           "example": "However, all electrical appliances such as the water heater, microwave, freezer, dishwasher and kettle are included, and the air conditioning and central heating also work well, so I can save a lot.",
           "exampleType": "book",
           "syllables": [
-            "el",
-            "ectr",
-            "ical"
+            "elec",
+            "tri",
+            "cal"
           ]
         },
         {
@@ -6234,8 +6077,7 @@ const WORD_DATA = {
           "example": "However, all electrical appliances such as the water heater, microwave, freezer, dishwasher and kettle are included, and the air conditioning and central heating also work well, so I can save a lot.",
           "exampleType": "book",
           "syllables": [
-            "hea",
-            "ter"
+            "heater"
           ]
         },
         {
@@ -6247,9 +6089,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "mi",
-            "cro",
-            "wa",
-            "ve"
+            "crowave"
           ]
         },
         {
@@ -6260,8 +6100,8 @@ const WORD_DATA = {
           "example": "J Day 2 I.（略） II. 1. bribe 2. bulb 3. dishwasher 4. dustbin 5. freezer 6. kettle 7. ladder 8. microwave 9. pipe 10. lock JU. 1.",
           "exampleType": "book",
           "syllables": [
-            "free",
-            "zer"
+            "freez",
+            "er"
           ]
         },
         {
@@ -6272,9 +6112,9 @@ const WORD_DATA = {
           "example": "J Day 2 I.（略） II. 1. bribe 2. bulb 3. dishwasher 4. dustbin 5. freezer 6. kettle 7. ladder 8. microwave 9. pipe 10. lock JU. 1.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "shwa",
-            "sher"
+            "dish",
+            "wash",
+            "er"
           ]
         },
         {
@@ -6285,8 +6125,8 @@ const WORD_DATA = {
           "example": "J Day 2 I.（略） II. 1. bribe 2. bulb 3. dishwasher 4. dustbin 5. freezer 6. kettle 7. ladder 8. microwave 9. pipe 10. lock JU. 1.",
           "exampleType": "book",
           "syllables": [
-            "ke",
-            "ttle"
+            "ket",
+            "tle"
           ]
         },
         {
@@ -6341,8 +6181,7 @@ const WORD_DATA = {
           "example": "Anyway, my flat is still messy and dusty.",
           "exampleType": "book",
           "syllables": [
-            "me",
-            "ssy"
+            "messy"
           ]
         },
         {
@@ -6353,8 +6192,7 @@ const WORD_DATA = {
           "example": "Anyway, my flat is still messy and dusty.",
           "exampleType": "book",
           "syllables": [
-            "du",
-            "sty"
+            "dusty"
           ]
         },
         {
@@ -6380,8 +6218,8 @@ const WORD_DATA = {
           "example": "That was a very qualified experience.",
           "exampleType": "auto",
           "syllables": [
-            "qua",
-            "li",
+            "qual",
+            "i",
             "fied"
           ]
         },
@@ -6394,9 +6232,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "ed",
-            "uc",
-            "at",
-            "ion"
+            "u",
+            "ca",
+            "tion"
           ]
         },
         {
@@ -6407,8 +6245,8 @@ const WORD_DATA = {
           "example": "After heated discussions, it is advised to give up robots by some experts.",
           "exampleType": "book",
           "syllables": [
-            "exp",
-            "ert"
+            "ex",
+            "pert"
           ]
         },
         {
@@ -6420,8 +6258,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "fa",
-            "mi",
-            "liar"
+            "mil",
+            "iar"
           ]
         },
         {
@@ -6455,8 +6293,8 @@ const WORD_DATA = {
           "example": "It was such a pity that you couldn't attend our marriage ceremony!",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "end"
+            "at",
+            "tend"
           ]
         },
         {
@@ -6491,9 +6329,9 @@ const WORD_DATA = {
           "example": "For office workers, smartphones and computers are essential to make their work go on as usual.",
           "exampleType": "book",
           "syllables": [
-            "ess",
-            "ent",
-            "ial"
+            "es",
+            "sen",
+            "tial"
           ]
         },
         {
@@ -6504,9 +6342,8 @@ const WORD_DATA = {
           "example": "I will cherish the opportunity to learn more knowledge from my teachers. 2.",
           "exampleType": "book",
           "syllables": [
-            "kno",
-            "wle",
-            "dge"
+            "knowl",
+            "edge"
           ]
         },
         {
@@ -6517,8 +6354,8 @@ const WORD_DATA = {
           "example": "The grammar was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "gra",
-            "mmar"
+            "gram",
+            "mar"
           ]
         },
         {
@@ -6530,10 +6367,9 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "vo",
-            "ca",
-            "bu",
-            "la",
-            "ry"
+            "cab",
+            "u",
+            "lary"
           ]
         },
         {
@@ -6544,8 +6380,8 @@ const WORD_DATA = {
           "example": "What is the topic of the next task?",
           "exampleType": "book",
           "syllables": [
-            "to",
-            "pic"
+            "top",
+            "ic"
           ]
         },
         {
@@ -6567,9 +6403,8 @@ const WORD_DATA = {
           "example": "At the end of this stage, students will be tested through National Curriculum assessments on core（核心的）subjects.",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "rri",
-            "cu",
+            "cur",
+            "ricu",
             "lum"
           ]
         },
@@ -6581,11 +6416,10 @@ const WORD_DATA = {
           "example": "I would love to pursue my study in English literature, which I am really interested in, but my parents strongly suggested that I choose Economics.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "te",
-            "ra",
-            "tu",
-            "re"
+            "lit",
+            "er",
+            "a",
+            "ture"
           ]
         },
         {
@@ -6596,9 +6430,8 @@ const WORD_DATA = {
           "example": "Can you share some Arithmetic methods?",
           "exampleType": "book",
           "syllables": [
-            "ar",
-            "ithm",
-            "etic"
+            "arith",
+            "metic"
           ]
         },
         {
@@ -6609,9 +6442,9 @@ const WORD_DATA = {
           "example": "Technology is changing fast.",
           "exampleType": "book",
           "syllables": [
-            "te",
-            "chno",
-            "lo",
+            "tech",
+            "nol",
+            "o",
             "gy"
           ]
         },
@@ -6623,10 +6456,10 @@ const WORD_DATA = {
           "example": "Unit 2 ◄/ Day 3 I.（略） D. 1. fee 2. entry 3. graduation 4. questionnaire 5. drama 6. certificate 7. arithmetic 8. economics 9. engineering 10. nature studies HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "eng",
-            "in",
-            "ee",
-            "ring"
+            "en",
+            "gi",
+            "neer",
+            "ing"
           ]
         },
         {
@@ -6649,9 +6482,9 @@ const WORD_DATA = {
           "example": "I would love to pursue my study in English literature, which I am really interested in, but my parents strongly suggested that I choose Economics.",
           "exampleType": "book",
           "syllables": [
-            "ec",
-            "on",
-            "omics"
+            "eco",
+            "nom",
+            "ics"
           ]
         },
         {
@@ -6662,8 +6495,9 @@ const WORD_DATA = {
           "example": "Jordan: Warmest congratulations on your graduation, Evelyne!",
           "exampleType": "book",
           "syllables": [
-            "gra",
-            "dua",
+            "grad",
+            "u",
+            "a",
             "tion"
           ]
         },
@@ -6675,11 +6509,9 @@ const WORD_DATA = {
           "example": "After 读故暮巧记PET核心词汇 the two-year study, students take GCSE （ General Certificate of Secondary Education） examinations.",
           "exampleType": "book",
           "syllables": [
-            "ce",
-            "rti",
-            "fi",
-            "ca",
-            "te"
+            "cer",
+            "tifi",
+            "cate"
           ]
         },
         {
@@ -6690,8 +6522,7 @@ const WORD_DATA = {
           "example": "It was the obvious choice.",
           "exampleType": "book",
           "syllables": [
-            "choi",
-            "ce"
+            "choice"
           ]
         },
         {
@@ -6748,8 +6579,7 @@ const WORD_DATA = {
           "example": "Tuition fees may vary from universities and regions, but there're also many student grants they can apply for.",
           "exampleType": "book",
           "syllables": [
-            "gr",
-            "ant"
+            "grant"
           ]
         },
         {
@@ -6760,8 +6590,7 @@ const WORD_DATA = {
           "example": "What is hard to break down?",
           "exampleType": "book",
           "syllables": [
-            "br",
-            "eak"
+            "break"
           ]
         },
         {
@@ -6772,10 +6601,9 @@ const WORD_DATA = {
           "example": "Unit 2 ◄/ Day 3 I.（略） D. 1. fee 2. entry 3. graduation 4. questionnaire 5. drama 6. certificate 7. arithmetic 8. economics 9. engineering 10. nature studies HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "que",
-            "stio",
-            "nnai",
-            "re"
+            "ques",
+            "tion",
+            "naire"
           ]
         },
         {
@@ -6802,9 +6630,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "el",
-            "em",
-            "ent",
-            "ary"
+            "e",
+            "men",
+            "tary"
           ]
         },
         {
@@ -6815,9 +6643,9 @@ const WORD_DATA = {
           "example": "Can you see the ability over there?",
           "exampleType": "auto",
           "syllables": [
-            "ab",
-            "il",
-            "ity"
+            "abil",
+            "i",
+            "ty"
           ]
         },
         {
@@ -6828,8 +6656,9 @@ const WORD_DATA = {
           "example": "It was too difficult for me to recite the alphabet, distinguish the consonants and vowels, or pronounce words correctly, not to mention my bad handwriting.",
           "exampleType": "book",
           "syllables": [
-            "alph",
-            "abet"
+            "al",
+            "pha",
+            "bet"
           ]
         },
         {
@@ -6840,8 +6669,8 @@ const WORD_DATA = {
           "example": "It was too difficult for me to recite the alphabet, distinguish the consonants and vowels, or pronounce words correctly, not to mention my bad handwriting.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nso",
+            "con",
+            "so",
             "nant"
           ]
         },
@@ -6853,8 +6682,8 @@ const WORD_DATA = {
           "example": "It was too difficult for me to recite the alphabet, distinguish the consonants and vowels, or pronounce words correctly, not to mention my bad handwriting.",
           "exampleType": "book",
           "syllables": [
-            "vo",
-            "wel"
+            "vow",
+            "el"
           ]
         },
         {
@@ -6866,8 +6695,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "nou",
-            "nce"
+            "nounce"
           ]
         },
         {
@@ -6889,9 +6717,9 @@ const WORD_DATA = {
           "example": "It was too difficult for me to recite the alphabet, distinguish the consonants and vowels, or pronounce words correctly, not to mention my bad handwriting.",
           "exampleType": "book",
           "syllables": [
-            "ha",
-            "ndwri",
-            "ting"
+            "hand",
+            "writ",
+            "ing"
           ]
         },
         {
@@ -6913,8 +6741,8 @@ const WORD_DATA = {
           "example": "Day 4 I.（略） II. 1. chapter 2. absent 6. lecture 7. register HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "abs",
-            "ent"
+            "ab",
+            "sent"
           ]
         },
         {
@@ -6925,9 +6753,9 @@ const WORD_DATA = {
           "example": "Today a talented writer will come to share his ideas about how to write a short essay.",
           "exampleType": "book",
           "syllables": [
-            "ta",
-            "le",
-            "nted"
+            "tal",
+            "ent",
+            "ed"
           ]
         },
         {
@@ -6938,8 +6766,7 @@ const WORD_DATA = {
           "example": "But my English teacher encouraged me and said, “ Every student is talented and has an equal chance to achieve success.",
           "exampleType": "book",
           "syllables": [
-            "eq",
-            "ual"
+            "equal"
           ]
         },
         {
@@ -6950,9 +6777,7 @@ const WORD_DATA = {
           "example": "It cannot help her achieve her goals.",
           "exampleType": "book",
           "syllables": [
-            "ach",
-            "ie",
-            "ve"
+            "achieve"
           ]
         },
         {
@@ -6963,9 +6788,7 @@ const WORD_DATA = {
           "example": "B 3. composition 4. laboratory 5. achievement 8. cancel 9. result 10. search 4.",
           "exampleType": "book",
           "syllables": [
-            "ach",
-            "ie",
-            "ve",
+            "achieve",
             "ment"
           ]
         },
@@ -6977,9 +6800,9 @@ const WORD_DATA = {
           "example": "Just pay attention to the noticeboard.",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "ent",
-            "ion"
+            "at",
+            "ten",
+            "tion"
           ]
         },
         {
@@ -6990,10 +6813,9 @@ const WORD_DATA = {
           "example": "Ifs too noisy to hear what the actors are saying and I can't concentrate on the film.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nce",
-            "ntra",
-            "te"
+            "con",
+            "cen",
+            "trate"
           ]
         },
         {
@@ -7004,8 +6826,7 @@ const WORD_DATA = {
           "example": "To search for other solutions.",
           "exampleType": "book",
           "syllables": [
-            "sea",
-            "rch"
+            "search"
           ]
         },
         {
@@ -7041,8 +6862,7 @@ const WORD_DATA = {
           "example": "You should be confident and find ways to solve your problems. 听力原文 m.",
           "exampleType": "book",
           "syllables": [
-            "so",
-            "lve"
+            "solve"
           ]
         },
         {
@@ -7075,9 +6895,9 @@ const WORD_DATA = {
           "example": "Day 4 I.（略） II. 1. chapter 2. absent 6. lecture 7. register HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "gi",
-            "ster"
+            "reg",
+            "is",
+            "ter"
           ]
         },
         {
@@ -7089,8 +6909,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "vi",
-            "se"
+            "vise"
           ]
         },
         {
@@ -7112,8 +6931,8 @@ const WORD_DATA = {
           "example": "She was writing a composition. 2.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mpo",
+            "com",
+            "po",
             "si",
             "tion"
           ]
@@ -7126,8 +6945,8 @@ const WORD_DATA = {
           "example": "How to write a short essay.",
           "exampleType": "book",
           "syllables": [
-            "ess",
-            "ay"
+            "es",
+            "say"
           ]
         },
         {
@@ -7138,8 +6957,8 @@ const WORD_DATA = {
           "example": "It was certain that my effort paid off!",
           "exampleType": "book",
           "syllables": [
-            "ce",
-            "rtain"
+            "cer",
+            "tain"
           ]
         },
         {
@@ -7161,9 +6980,10 @@ const WORD_DATA = {
           "example": "She was doing a scientific experiment.",
           "exampleType": "book",
           "syllables": [
-            "scie",
-            "nti",
-            "fic"
+            "sci",
+            "en",
+            "tif",
+            "ic"
           ]
         },
         {
@@ -7174,8 +6994,8 @@ const WORD_DATA = {
           "example": "And can you take me to your laboratory next time?",
           "exampleType": "book",
           "syllables": [
-            "la",
-            "bo",
+            "lab",
+            "o",
             "ra",
             "to",
             "ry"
@@ -7189,8 +7009,8 @@ const WORD_DATA = {
           "example": "I was very grateful that our school didn't cancel it.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "ncel"
+            "can",
+            "cel"
           ]
         },
         {
@@ -7201,8 +7021,8 @@ const WORD_DATA = {
           "example": "How to escape from an earthquake.",
           "exampleType": "book",
           "syllables": [
-            "esc",
-            "ape"
+            "es",
+            "cape"
           ]
         },
         {
@@ -7225,10 +7045,9 @@ const WORD_DATA = {
           "example": "The bike is taken care of carefully, so it looks new.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "re",
-            "fu",
-            "lly"
+            "care",
+            "ful",
+            "ly"
           ]
         }
       ]
@@ -7243,8 +7062,7 @@ const WORD_DATA = {
           "example": "But I won't eat any spinach if I have other choices.",
           "exampleType": "book",
           "syllables": [
-            "spi",
-            "nach"
+            "spinach"
           ]
         },
         {
@@ -7255,9 +7073,8 @@ const WORD_DATA = {
           "example": "As for vegetables, I think broccoli and cabbages are just okay.",
           "exampleType": "book",
           "syllables": [
-            "bro",
-            "cco",
-            "li"
+            "broc",
+            "coli"
           ]
         },
         {
@@ -7268,9 +7085,8 @@ const WORD_DATA = {
           "example": "As for vegetables, I think broccoli and cabbages are just okay.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "bba",
-            "ge"
+            "cab",
+            "bage"
           ]
         },
         {
@@ -7281,7 +7097,8 @@ const WORD_DATA = {
           "example": "What do you think is a healthy diet? 3.",
           "exampleType": "book",
           "syllables": [
-            "diet"
+            "di",
+            "et"
           ]
         },
         {
@@ -7337,8 +7154,7 @@ const WORD_DATA = {
           "example": "Woman: Yes, can I have some fresh salmon?",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "lmon"
+            "salmon"
           ]
         },
         {
@@ -7361,8 +7177,8 @@ const WORD_DATA = {
           "example": "The turkey is so delicious!",
           "exampleType": "book",
           "syllables": [
-            "tu",
-            "rkey"
+            "tur",
+            "key"
           ]
         },
         {
@@ -7374,8 +7190,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "no",
-            "ti",
-            "ce",
+            "tice",
             "board"
           ]
         },
@@ -7387,8 +7202,7 @@ const WORD_DATA = {
           "example": "Any questions?\" “Why can5t I find the chopsticks?” a tiny girl asked. \"Well.",
           "exampleType": "book",
           "syllables": [
-            "ti",
-            "ny"
+            "tiny"
           ]
         },
         {
@@ -7411,9 +7225,8 @@ const WORD_DATA = {
           "example": "But it's so difficult to convince yourself to keep it.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nvi",
-            "nce"
+            "con",
+            "vince"
           ]
         },
         {
@@ -7424,8 +7237,7 @@ const WORD_DATA = {
           "example": "Can you tell me any tricks?",
           "exampleType": "book",
           "syllables": [
-            "tr",
-            "ick"
+            "trick"
           ]
         },
         {
@@ -7436,9 +7248,7 @@ const WORD_DATA = {
           "example": "I've just got a recipe from a video on my phone.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "ci",
-            "pe"
+            "recipe"
           ]
         },
         {
@@ -7482,8 +7292,8 @@ const WORD_DATA = {
           "example": "They don't contain any alcohol.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ntain"
+            "con",
+            "tain"
           ]
         },
         {
@@ -7494,8 +7304,7 @@ const WORD_DATA = {
           "example": "So just say ' Cheers!5 as adults do.",
           "exampleType": "book",
           "syllables": [
-            "che",
-            "ers"
+            "cheers"
           ]
         },
         {
@@ -7506,9 +7315,8 @@ const WORD_DATA = {
           "example": "You can also enjoy fresh pineapple, orange or peach juice.",
           "exampleType": "book",
           "syllables": [
-            "pi",
-            "nea",
-            "pple"
+            "pineap",
+            "ple"
           ]
         },
         {
@@ -7519,8 +7327,7 @@ const WORD_DATA = {
           "example": "You can also enjoy fresh pineapple, orange or peach juice.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "ach"
+            "peach"
           ]
         },
         {
@@ -7531,8 +7338,7 @@ const WORD_DATA = {
           "example": "The clean cups and saucers are on the shelf.",
           "exampleType": "book",
           "syllables": [
-            "sau",
-            "cer"
+            "saucer"
           ]
         },
         {
@@ -7554,8 +7360,7 @@ const WORD_DATA = {
           "example": "Remember to stir them and don't spill the drinks.\" 033 禳故事巧记PET核心词汇 参考译尊 “ It is not a good idea to miss meals and replace them with refreshments.",
           "exampleType": "book",
           "syllables": [
-            "sp",
-            "ill"
+            "spill"
           ]
         },
         {
@@ -7567,8 +7372,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "pla",
-            "ce"
+            "place"
           ]
         },
         {
@@ -7580,8 +7384,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "fre",
-            "shment"
+            "fresh",
+            "ment"
           ]
         },
         {
@@ -7593,8 +7397,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "co",
-            "co",
-            "nut"
+            "conut"
           ]
         },
         {
@@ -7616,9 +7419,7 @@ const WORD_DATA = {
           "example": "But if you are too hungry to wait, help yourself to some coconut cookies or pies on the tables with a blue table-cloth.\" “ Finally, a warning for all of you.",
           "exampleType": "book",
           "syllables": [
-            "ta",
-            "ble",
-            "-cloth"
+            "table-cloth"
           ]
         },
         {
@@ -7629,8 +7430,8 @@ const WORD_DATA = {
           "example": "But if you are too hungry to wait, help yourself to some coconut cookies or pies on the tables with a blue table-cloth.\" “ Finally, a warning for all of you.",
           "exampleType": "book",
           "syllables": [
-            "wa",
-            "rning"
+            "warn",
+            "ing"
           ]
         },
         {
@@ -7641,8 +7442,7 @@ const WORD_DATA = {
           "example": "I have to watch my weight! 10.",
           "exampleType": "book",
           "syllables": [
-            "wei",
-            "ght"
+            "weight"
           ]
         },
         {
@@ -7653,8 +7453,8 @@ const WORD_DATA = {
           "example": "Your happiness is not far away.",
           "exampleType": "book",
           "syllables": [
-            "ha",
-            "ppi",
+            "hap",
+            "pi",
             "ness"
           ]
         },
@@ -7666,8 +7466,7 @@ const WORD_DATA = {
           "example": "Let's enjoy a huge meal.",
           "exampleType": "book",
           "syllables": [
-            "hu",
-            "ge"
+            "huge"
           ]
         },
         {
@@ -7678,9 +7477,8 @@ const WORD_DATA = {
           "example": "Let's have a takeaway tonight.",
           "exampleType": "book",
           "syllables": [
-            "ta",
-            "kea",
-            "way"
+            "take",
+            "away"
           ]
         },
         {
@@ -7691,8 +7489,7 @@ const WORD_DATA = {
           "example": "You can imagine how delighted grandparents will be and all the cute pets will come to greet us...",
           "exampleType": "book",
           "syllables": [
-            "gr",
-            "eet"
+            "greet"
           ]
         },
         {
@@ -7703,8 +7500,8 @@ const WORD_DATA = {
           "example": "They are smart robots and have similar voices.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "mi",
+            "sim",
+            "i",
             "lar"
           ]
         }
@@ -7720,9 +7517,9 @@ const WORD_DATA = {
           "example": "It tastes disgusting.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sgu",
-            "sting"
+            "dis",
+            "gust",
+            "ing"
           ]
         },
         {
@@ -7733,8 +7530,7 @@ const WORD_DATA = {
           "example": "The one we usually use for a salad or something with different flavours?",
           "exampleType": "book",
           "syllables": [
-            "fla",
-            "vour"
+            "flavour"
           ]
         },
         {
@@ -7767,9 +7563,10 @@ const WORD_DATA = {
           "example": "Lefs see the ingredients you should prepare.",
           "exampleType": "book",
           "syllables": [
-            "ingr",
-            "ed",
-            "ient"
+            "in",
+            "gre",
+            "di",
+            "ent"
           ]
         },
         {
@@ -7780,8 +7577,7 @@ const WORD_DATA = {
           "example": "Day 6 I. （略） II. 1. pan 2. flour 3. spice 4. tissue 5. juice 6. lettuce 7. cucumber 8. jar 9. chips 10. taste HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "fl",
-            "our"
+            "flour"
           ]
         },
         {
@@ -7792,9 +7588,8 @@ const WORD_DATA = {
           "example": "Bread, chicken, a lettuce and a cucumber.",
           "exampleType": "book",
           "syllables": [
-            "le",
-            "ttu",
-            "ce"
+            "let",
+            "tuce"
           ]
         },
         {
@@ -7884,8 +7679,7 @@ const WORD_DATA = {
           "example": "The bite was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "bi",
-            "te"
+            "bite"
           ]
         },
         {
@@ -7896,8 +7690,8 @@ const WORD_DATA = {
           "example": "To be honest, it was acceptable, but no Day more.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "ept",
+            "ac",
+            "cept",
             "able"
           ]
         },
@@ -7924,8 +7718,8 @@ const WORD_DATA = {
           "example": "She sees the advert herself.",
           "exampleType": "book",
           "syllables": [
-            "adv",
-            "ert"
+            "ad",
+            "vert"
           ]
         },
         {
@@ -7936,9 +7730,9 @@ const WORD_DATA = {
           "example": "The advertise was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "adv",
-            "ert",
-            "ise"
+            "ad",
+            "ver",
+            "tise"
           ]
         },
         {
@@ -7949,8 +7743,7 @@ const WORD_DATA = {
           "example": "Maybe the goods need to be checked.",
           "exampleType": "book",
           "syllables": [
-            "go",
-            "ods"
+            "goods"
           ]
         },
         {
@@ -7972,9 +7765,9 @@ const WORD_DATA = {
           "example": "Ifs just on the opposite side of a supermarket where I often go shopping.",
           "exampleType": "book",
           "syllables": [
-            "opp",
-            "os",
-            "ite"
+            "op",
+            "po",
+            "site"
           ]
         },
         {
@@ -7986,9 +7779,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "su",
-            "pe",
-            "rma",
-            "rket"
+            "per",
+            "mar",
+            "ket"
           ]
         },
         {
@@ -8010,8 +7803,8 @@ const WORD_DATA = {
           "example": "Once walking in the shop, I was overwhelmed by shining brand new luxury goods like perfume, jewellery, and second-hand bags on the shelves.",
           "exampleType": "book",
           "syllables": [
-            "lu",
-            "xu",
+            "lux",
+            "u",
             "ry"
           ]
         },
@@ -8023,9 +7816,7 @@ const WORD_DATA = {
           "example": "From: Logan Subject: A second-hand bicycle for sale Dear Benjamin, I'm so happy to see the advert that you are selling your mountain bike.",
           "exampleType": "book",
           "syllables": [
-            "se",
-            "co",
-            "nd-hand"
+            "second-hand"
           ]
         },
         {
@@ -8047,8 +7838,8 @@ const WORD_DATA = {
           "example": "And she always complains about the unreliable weather forecast.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mplain"
+            "com",
+            "plain"
           ]
         },
         {
@@ -8059,8 +7850,8 @@ const WORD_DATA = {
           "example": "They can't afford it.",
           "exampleType": "book",
           "syllables": [
-            "aff",
-            "ord"
+            "af",
+            "ford"
           ]
         },
         {
@@ -8071,8 +7862,9 @@ const WORD_DATA = {
           "example": "One assistant tells her about it.",
           "exampleType": "book",
           "syllables": [
-            "ass",
-            "istant"
+            "as",
+            "sis",
+            "tant"
           ]
         },
         {
@@ -8084,9 +7876,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "in",
-            "exp",
-            "ens",
-            "ive"
+            "ex",
+            "pen",
+            "sive"
           ]
         },
         {
@@ -8097,8 +7889,7 @@ const WORD_DATA = {
           "example": "So why not wear a long sleeveless dress?",
           "exampleType": "book",
           "syllables": [
-            "slee",
-            "ve",
+            "sleeve",
             "less"
           ]
         },
@@ -8133,8 +7924,8 @@ const WORD_DATA = {
           "example": "A yellow sweatshirt with black pants.",
           "exampleType": "book",
           "syllables": [
-            "swea",
-            "tshirt"
+            "sweat",
+            "shirt"
           ]
         },
         {
@@ -8145,8 +7936,8 @@ const WORD_DATA = {
           "example": "The quality of teaching is excellent. 3.",
           "exampleType": "book",
           "syllables": [
-            "qua",
-            "li",
+            "qual",
+            "i",
             "ty"
           ]
         },
@@ -8158,8 +7949,8 @@ const WORD_DATA = {
           "example": "After drawing different patterns, we cut and sewed them together.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "ttern"
+            "pat",
+            "tern"
           ]
         },
         {
@@ -8170,8 +7961,9 @@ const WORD_DATA = {
           "example": "It was the obvious choice.",
           "exampleType": "book",
           "syllables": [
-            "obv",
-            "ious"
+            "ob",
+            "vi",
+            "ous"
           ]
         },
         {
@@ -8182,9 +7974,8 @@ const WORD_DATA = {
           "example": "The train is suitable for a long trip.",
           "exampleType": "book",
           "syllables": [
-            "sui",
-            "ta",
-            "ble"
+            "suit",
+            "able"
           ]
         },
         {
@@ -8195,8 +7986,7 @@ const WORD_DATA = {
           "example": "But you need to wait at least three days and pay a deposit.",
           "exampleType": "book",
           "syllables": [
-            "le",
-            "ast"
+            "least"
           ]
         },
         {
@@ -8219,8 +8009,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "po",
-            "sit"
+            "posit"
           ]
         },
         {
@@ -8242,10 +8031,10 @@ const WORD_DATA = {
           "example": "If the item is not as satisfactory as you thought, we will exchange it or refund for you.” I was so happy to know that and thanked her a lot.",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "ti",
-            "sfa",
-            "cto",
+            "sat",
+            "is",
+            "fac",
+            "to",
             "ry"
           ]
         },
@@ -8257,8 +8046,8 @@ const WORD_DATA = {
           "example": "Why does the mother want to exchange the skirt?",
           "exampleType": "book",
           "syllables": [
-            "exch",
-            "ange"
+            "ex",
+            "change"
           ]
         },
         {
@@ -8304,8 +8093,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "du",
-            "ce"
+            "duce"
           ]
         },
         {
@@ -8316,8 +8104,8 @@ const WORD_DATA = {
           "example": "BHhhh Unit 4 Day 7 4. percent 9. lady I.（略） 11. 1. assistant 2. half 3. reduce 6. goods 7. sweatshirt 8. cash m. 1.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rcent"
+            "per",
+            "cent"
           ]
         },
         {
@@ -8328,8 +8116,7 @@ const WORD_DATA = {
           "example": "All my family members will be in charge of food, hotel and safety.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "rge"
+            "charge"
           ]
         },
         {
@@ -8351,8 +8138,8 @@ const WORD_DATA = {
           "example": "It is unnecessary to bargain with an assistant.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "rgain"
+            "bar",
+            "gain"
           ]
         },
         {
@@ -8378,8 +8165,7 @@ const WORD_DATA = {
           "example": "The style is not what her daughter wants. 4.",
           "exampleType": "book",
           "syllables": [
-            "sty",
-            "le"
+            "style"
           ]
         },
         {
@@ -8390,8 +8176,8 @@ const WORD_DATA = {
           "example": "There's also a police station nearby.",
           "exampleType": "book",
           "syllables": [
-            "nea",
-            "rby"
+            "near",
+            "by"
           ]
         },
         {
@@ -8425,8 +8211,7 @@ const WORD_DATA = {
           "example": "Go ahead! ” my bossy brother ordered me.",
           "exampleType": "book",
           "syllables": [
-            "ah",
-            "ead"
+            "ahead"
           ]
         },
         {
@@ -8437,8 +8222,7 @@ const WORD_DATA = {
           "example": "There are five channels to choose!",
           "exampleType": "book",
           "syllables": [
-            "choo",
-            "se"
+            "choose"
           ]
         },
         {
@@ -8451,7 +8235,8 @@ const WORD_DATA = {
           "syllables": [
             "ma",
             "te",
-            "rial"
+            "ri",
+            "al"
           ]
         },
         {
@@ -8474,8 +8259,8 @@ const WORD_DATA = {
           "example": "That means we need to choose some materials from our daily life, such as paper, packets, plastic bottles, old clothes and so on.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "cket"
+            "pack",
+            "et"
           ]
         },
         {
@@ -8486,8 +8271,8 @@ const WORD_DATA = {
           "example": "Take plastics for example.",
           "exampleType": "book",
           "syllables": [
-            "pla",
-            "stic"
+            "plas",
+            "tic"
           ]
         },
         {
@@ -8498,8 +8283,7 @@ const WORD_DATA = {
           "example": "At last, I decided to raise the salary to make these positions more attractive.",
           "exampleType": "book",
           "syllables": [
-            "rai",
-            "se"
+            "raise"
           ]
         },
         {
@@ -8522,9 +8306,7 @@ const WORD_DATA = {
           "example": "A white pullover with a pair of brown pants.",
           "exampleType": "book",
           "syllables": [
-            "pu",
-            "llo",
-            "ver"
+            "pullover"
           ]
         },
         {
@@ -8546,8 +8328,7 @@ const WORD_DATA = {
           "example": "The sleeves of his shirt are wet.",
           "exampleType": "book",
           "syllables": [
-            "slee",
-            "ve"
+            "sleeve"
           ]
         },
         {
@@ -8591,8 +8372,7 @@ const WORD_DATA = {
           "example": "I found a few pairs of pants.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "nts"
+            "pants"
           ]
         },
         {
@@ -8603,8 +8383,8 @@ const WORD_DATA = {
           "example": "A pair of pants was made of old cotton shirts inside and plastic bags outside.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "tton"
+            "cot",
+            "ton"
           ]
         },
         {
@@ -8615,8 +8395,8 @@ const WORD_DATA = {
           "example": "A button has come off his collar. 3.",
           "exampleType": "book",
           "syllables": [
-            "bu",
-            "tton"
+            "but",
+            "ton"
           ]
         },
         {
@@ -8639,8 +8419,7 @@ const WORD_DATA = {
           "example": "Do you think it is a good match?",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "tch"
+            "match"
           ]
         },
         {
@@ -8651,10 +8430,9 @@ const WORD_DATA = {
           "example": "Have you found anything fashionable yet?",
           "exampleType": "book",
           "syllables": [
-            "fa",
-            "shio",
-            "na",
-            "ble"
+            "fash",
+            "ion",
+            "able"
           ]
         },
         {
@@ -8665,8 +8443,8 @@ const WORD_DATA = {
           "example": "And with the new sandals.",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "ndal"
+            "san",
+            "dal"
           ]
         },
         {
@@ -8688,8 +8466,7 @@ const WORD_DATA = {
           "example": "The skirt is a little tight for her.",
           "exampleType": "book",
           "syllables": [
-            "ti",
-            "ght"
+            "tight"
           ]
         },
         {
@@ -8700,8 +8477,8 @@ const WORD_DATA = {
           "example": "I got undressed and tried on the outfit.",
           "exampleType": "book",
           "syllables": [
-            "und",
-            "ress"
+            "un",
+            "dress"
           ]
         },
         {
@@ -8712,8 +8489,8 @@ const WORD_DATA = {
           "example": "A classmate fastened a ribbon around my neck and pinned a badge on the collar.",
           "exampleType": "book",
           "syllables": [
-            "fa",
-            "sten"
+            "fas",
+            "ten"
           ]
         },
         {
@@ -8735,8 +8512,8 @@ const WORD_DATA = {
           "example": "The collar of his shirt is dirty.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "llar"
+            "col",
+            "lar"
           ]
         },
         {
@@ -8747,8 +8524,7 @@ const WORD_DATA = {
           "example": "It's stylish and well-made.",
           "exampleType": "book",
           "syllables": [
-            "sty",
-            "lish"
+            "stylish"
           ]
         },
         {
@@ -8770,8 +8546,7 @@ const WORD_DATA = {
           "example": "The next day I joined the long queue for the competition at our school.",
           "exampleType": "book",
           "syllables": [
-            "qu",
-            "eue"
+            "queue"
           ]
         },
         {
@@ -8782,8 +8557,7 @@ const WORD_DATA = {
           "example": "There were about 50 people, at a rough guess.",
           "exampleType": "book",
           "syllables": [
-            "ro",
-            "ugh"
+            "rough"
           ]
         },
         {
@@ -8794,9 +8568,10 @@ const WORD_DATA = {
           "example": "But our design was obviously the most popular one because we got the highest score.",
           "exampleType": "book",
           "syllables": [
-            "obv",
-            "iou",
-            "sly"
+            "ob",
+            "vi",
+            "ous",
+            "ly"
           ]
         }
       ]
@@ -8811,8 +8586,7 @@ const WORD_DATA = {
           "example": "We bought a new hide yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "hi",
-            "de"
+            "hide"
           ]
         },
         {
@@ -8823,8 +8597,7 @@ const WORD_DATA = {
           "example": "Because the audience are noisy while watching films.",
           "exampleType": "book",
           "syllables": [
-            "whi",
-            "le"
+            "while"
           ]
         },
         {
@@ -8835,8 +8608,7 @@ const WORD_DATA = {
           "example": "I looked round the study.",
           "exampleType": "book",
           "syllables": [
-            "ro",
-            "und"
+            "round"
           ]
         },
         {
@@ -8847,8 +8619,7 @@ const WORD_DATA = {
           "example": "Then a thick book with graphics on the desk interested me.",
           "exampleType": "book",
           "syllables": [
-            "th",
-            "ick"
+            "thick"
           ]
         },
         {
@@ -8859,8 +8630,8 @@ const WORD_DATA = {
           "example": "Then a thick book with graphics on the desk interested me.",
           "exampleType": "book",
           "syllables": [
-            "gra",
-            "phic"
+            "graph",
+            "ic"
           ]
         },
         {
@@ -8871,8 +8642,7 @@ const WORD_DATA = {
           "example": "Tom: Because the audience — I mean the children — are always talking and laughing loudly.",
           "exampleType": "book",
           "syllables": [
-            "la",
-            "ugh"
+            "laugh"
           ]
         },
         {
@@ -8883,8 +8653,7 @@ const WORD_DATA = {
           "example": "Gradually blank pages of a stamp album were filled with a variety of stamps about historic figures and tourist attractions.",
           "exampleType": "book",
           "syllables": [
-            "bl",
-            "ank"
+            "blank"
           ]
         },
         {
@@ -8895,9 +8664,8 @@ const WORD_DATA = {
           "example": "Gradually blank pages of a stamp album were filled with a variety of stamps about historic figures and tourist attractions.",
           "exampleType": "book",
           "syllables": [
-            "hi",
-            "sto",
-            "ric"
+            "his",
+            "toric"
           ]
         },
         {
@@ -8920,8 +8688,7 @@ const WORD_DATA = {
           "example": "But she won't change the habit.",
           "exampleType": "book",
           "syllables": [
-            "ha",
-            "bit"
+            "habit"
           ]
         },
         {
@@ -8933,9 +8700,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "ve",
-            "lo",
-            "pment"
+            "vel",
+            "op",
+            "ment"
           ]
         },
         {
@@ -8946,10 +8713,10 @@ const WORD_DATA = {
           "example": "Summers in London are generally mild and pleasant, but sometimes there are still rainy days waiting for you.",
           "exampleType": "book",
           "syllables": [
-            "ge",
-            "ne",
-            "ra",
-            "lly"
+            "gen",
+            "er",
+            "al",
+            "ly"
           ]
         },
         {
@@ -8960,8 +8727,9 @@ const WORD_DATA = {
           "example": "It sounds interesting!",
           "exampleType": "book",
           "syllables": [
-            "int",
-            "erest"
+            "in",
+            "ter",
+            "est"
           ]
         },
         {
@@ -8972,9 +8740,8 @@ const WORD_DATA = {
           "example": "However, with the development of society, kids these days generally have no interest in or dislike collecting items.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sli",
-            "ke"
+            "dis",
+            "like"
           ]
         },
         {
@@ -8985,8 +8752,7 @@ const WORD_DATA = {
           "example": "There are many reports about this trend of global climate change on TV or cellphones.",
           "exampleType": "book",
           "syllables": [
-            "tr",
-            "end"
+            "trend"
           ]
         },
         {
@@ -9008,8 +8774,8 @@ const WORD_DATA = {
           "example": "We often hang out in the big libraries and read all kinds of books, particularly the best-selling science fiction.",
           "exampleType": "book",
           "syllables": [
-            "fi",
-            "ction"
+            "fic",
+            "tion"
           ]
         },
         {
@@ -9020,10 +8786,10 @@ const WORD_DATA = {
           "example": "In the movie, he plays as a superhero who is particularly interested in hiking and expedition.",
           "exampleType": "book",
           "syllables": [
-            "exp",
-            "ed",
-            "it",
-            "ion"
+            "ex",
+            "pe",
+            "di",
+            "tion"
           ]
         },
         {
@@ -9034,9 +8800,9 @@ const WORD_DATA = {
           "example": "Lying has been particularly disappointing.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "rti",
-            "cu",
+            "par",
+            "tic",
+            "u",
             "lar"
           ]
         },
@@ -9048,9 +8814,10 @@ const WORD_DATA = {
           "example": "She was doing a scientific experiment.",
           "exampleType": "book",
           "syllables": [
-            "exp",
-            "er",
-            "iment"
+            "ex",
+            "per",
+            "i",
+            "ment"
           ]
         },
         {
@@ -9062,8 +8829,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "ve",
-            "lop"
+            "vel",
+            "op"
           ]
         },
         {
@@ -9074,8 +8841,9 @@ const WORD_DATA = {
           "example": "Write your article in about 100 words.",
           "exampleType": "book",
           "syllables": [
-            "art",
-            "icle"
+            "ar",
+            "ti",
+            "cle"
           ]
         },
         {
@@ -9086,8 +8854,7 @@ const WORD_DATA = {
           "example": "I thought it was the bad weather again.",
           "exampleType": "book",
           "syllables": [
-            "tho",
-            "ught"
+            "thought"
           ]
         },
         {
@@ -9098,9 +8865,9 @@ const WORD_DATA = {
           "example": "Lying has been particularly disappointing.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sa",
-            "ppoint"
+            "dis",
+            "ap",
+            "point"
           ]
         },
         {
@@ -9111,8 +8878,8 @@ const WORD_DATA = {
           "example": "I expect to see further improvement in the future.",
           "exampleType": "book",
           "syllables": [
-            "exp",
-            "ect"
+            "ex",
+            "pect"
           ]
         },
         {
@@ -9123,9 +8890,9 @@ const WORD_DATA = {
           "example": "I expect to see further improvement in the future.",
           "exampleType": "book",
           "syllables": [
-            "impr",
-            "ov",
-            "ement"
+            "im",
+            "prove",
+            "ment"
           ]
         },
         {
@@ -9136,9 +8903,9 @@ const WORD_DATA = {
           "example": "Then maybe 尸f心词汇 more people will decide to be stamp collectors via a new technique.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "lle",
-            "ctor"
+            "col",
+            "lec",
+            "tor"
           ]
         },
         {
@@ -9149,9 +8916,8 @@ const WORD_DATA = {
           "example": "Then maybe 尸f心词汇 more people will decide to be stamp collectors via a new technique.",
           "exampleType": "book",
           "syllables": [
-            "te",
-            "chni",
-            "que"
+            "tech",
+            "nique"
           ]
         },
         {
@@ -9162,8 +8928,8 @@ const WORD_DATA = {
           "example": "Do you fancy trying more modes?",
           "exampleType": "book",
           "syllables": [
-            "fa",
-            "ncy"
+            "fan",
+            "cy"
           ]
         },
         {
@@ -9197,8 +8963,8 @@ const WORD_DATA = {
           "example": "I can hardly chew it.",
           "exampleType": "book",
           "syllables": [
-            "ha",
-            "rdly"
+            "hard",
+            "ly"
           ]
         },
         {
@@ -9210,8 +8976,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "to",
-            "ta",
-            "lly"
+            "tal",
+            "ly"
           ]
         },
         {
@@ -9222,10 +8988,10 @@ const WORD_DATA = {
           "example": "She has no working experience.",
           "exampleType": "book",
           "syllables": [
-            "exp",
-            "er",
-            "ie",
-            "nce"
+            "ex",
+            "pe",
+            "ri",
+            "ence"
           ]
         },
         {
@@ -9238,8 +9004,7 @@ const WORD_DATA = {
           "syllables": [
             "pho",
             "to",
-            "co",
-            "py"
+            "copy"
           ]
         },
         {
@@ -9250,10 +9015,10 @@ const WORD_DATA = {
           "example": "Personally, stamps are an important part of our traditional culture.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rso",
-            "na",
-            "lly"
+            "per",
+            "son",
+            "al",
+            "ly"
           ]
         },
         {
@@ -9266,8 +9031,8 @@ const WORD_DATA = {
           "syllables": [
             "tra",
             "di",
-            "tio",
-            "nal"
+            "tion",
+            "al"
           ]
         },
         {
@@ -9278,10 +9043,8 @@ const WORD_DATA = {
           "example": "Therefore, they should be remembered forever,\" he explained.",
           "exampleType": "book",
           "syllables": [
-            "the",
-            "re",
-            "fo",
-            "re"
+            "there",
+            "fore"
           ]
         }
       ]
@@ -9296,8 +9059,7 @@ const WORD_DATA = {
           "example": "He and his robot friend went on a twenty-mile 214 参毒谷案 hike through the forest and found a terrible ancient cave.",
           "exampleType": "book",
           "syllables": [
-            "hi",
-            "ke"
+            "hike"
           ]
         },
         {
@@ -9308,8 +9070,8 @@ const WORD_DATA = {
           "example": "However, what he likes most is to write novels.",
           "exampleType": "book",
           "syllables": [
-            "no",
-            "vel"
+            "nov",
+            "el"
           ]
         },
         {
@@ -9320,8 +9082,7 @@ const WORD_DATA = {
           "example": "He often goes hiking and swimming ； he even plans to go on a round-the-world cruise.",
           "exampleType": "book",
           "syllables": [
-            "crui",
-            "se"
+            "cruise"
           ]
         },
         {
@@ -9332,11 +9093,11 @@ const WORD_DATA = {
           "example": "Lying has been particularly disappointing.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "rti",
-            "cu",
-            "la",
-            "rly"
+            "par",
+            "tic",
+            "u",
+            "lar",
+            "ly"
           ]
         },
         {
@@ -9348,9 +9109,10 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "un",
-            "int",
-            "er",
-            "ested"
+            "in",
+            "ter",
+            "est",
+            "ed"
           ]
         },
         {
@@ -9361,8 +9123,7 @@ const WORD_DATA = {
           "example": "It's hard for them to imagine how to keep everything on track without technology.",
           "exampleType": "book",
           "syllables": [
-            "im",
-            "ag",
+            "imag",
             "ine"
           ]
         },
@@ -9374,8 +9135,8 @@ const WORD_DATA = {
           "example": "I insist that I should go swimming.",
           "exampleType": "book",
           "syllables": [
-            "ins",
-            "ist"
+            "in",
+            "sist"
           ]
         },
         {
@@ -9397,8 +9158,7 @@ const WORD_DATA = {
           "example": "We have some different hobbies, though.",
           "exampleType": "book",
           "syllables": [
-            "tho",
-            "ugh"
+            "though"
           ]
         },
         {
@@ -9409,9 +9169,9 @@ const WORD_DATA = {
           "example": "The story develops round five main characters.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "ra",
-            "cter"
+            "char",
+            "ac",
+            "ter"
           ]
         },
         {
@@ -9422,10 +9182,10 @@ const WORD_DATA = {
           "example": "The captain has experienced a lot.",
           "exampleType": "book",
           "syllables": [
-            "exp",
-            "er",
-            "ie",
-            "nced"
+            "ex",
+            "pe",
+            "ri",
+            "enced"
           ]
         },
         {
@@ -9436,8 +9196,7 @@ const WORD_DATA = {
           "example": "Day 10 l. （略） II. 1. hike 2. novel 3. cruise 4. thief 5. disappointment 6. gallery 7. sculpture 8. slide 9. author 10. imagine HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "th",
-            "ief"
+            "thief"
           ]
         },
         {
@@ -9448,8 +9207,8 @@ const WORD_DATA = {
           "example": "Take Dali Ancient City as an example.",
           "exampleType": "book",
           "syllables": [
-            "anc",
-            "ient"
+            "an",
+            "cient"
           ]
         },
         {
@@ -9460,9 +9219,8 @@ const WORD_DATA = {
           "example": "And you know I am uninterested in sculptures and paintings.",
           "exampleType": "book",
           "syllables": [
-            "scu",
-            "lptu",
-            "re"
+            "sculp",
+            "ture"
           ]
         },
         {
@@ -9473,9 +9231,7 @@ const WORD_DATA = {
           "example": "We're going to the art gallery tonight.",
           "exampleType": "book",
           "syllables": [
-            "ga",
-            "lle",
-            "ry"
+            "gallery"
           ]
         },
         {
@@ -9486,8 +9242,7 @@ const WORD_DATA = {
           "example": "They decided to hire together.",
           "exampleType": "auto",
           "syllables": [
-            "hi",
-            "re"
+            "hire"
           ]
         },
         {
@@ -9499,8 +9254,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "mo",
-            "to",
-            "rcy",
+            "tor",
+            "cy",
             "cle"
           ]
         },
@@ -9513,8 +9268,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "be",
-            "ha",
-            "ve"
+            "have"
           ]
         },
         {
@@ -9547,8 +9301,7 @@ const WORD_DATA = {
           "example": "Can you see the rope over there?",
           "exampleType": "auto",
           "syllables": [
-            "ro",
-            "pe"
+            "rope"
           ]
         },
         {
@@ -9560,8 +9313,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "spo",
-            "nsi",
+            "spon",
+            "si",
             "ble"
           ]
         },
@@ -9584,9 +9337,9 @@ const WORD_DATA = {
           "example": "From the moment the thieves bought the tickets with a membership card, they were closely noticed.",
           "exampleType": "book",
           "syllables": [
-            "me",
-            "mbe",
-            "rship"
+            "mem",
+            "ber",
+            "ship"
           ]
         },
         {
@@ -9597,10 +9350,10 @@ const WORD_DATA = {
           "example": "Day 10 l. （略） II. 1. hike 2. novel 3. cruise 4. thief 5. disappointment 6. gallery 7. sculpture 8. slide 9. author 10. imagine HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sa",
-            "ppoi",
-            "ntment"
+            "dis",
+            "ap",
+            "point",
+            "ment"
           ]
         },
         {
@@ -9624,8 +9377,7 @@ const WORD_DATA = {
           "example": "Day 10 l. （略） II. 1. hike 2. novel 3. cruise 4. thief 5. disappointment 6. gallery 7. sculpture 8. slide 9. author 10. imagine HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "sli",
-            "de"
+            "slide"
           ]
         },
         {
@@ -9636,8 +9388,8 @@ const WORD_DATA = {
           "example": "The partly was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "pa",
-            "rtly"
+            "part",
+            "ly"
           ]
         },
         {
@@ -9648,9 +9400,10 @@ const WORD_DATA = {
           "example": "We are so much alike that it is impossible to tell one from the other.",
           "exampleType": "book",
           "syllables": [
-            "imp",
-            "oss",
-            "ible"
+            "im",
+            "pos",
+            "si",
+            "ble"
           ]
         },
         {
@@ -9661,8 +9414,7 @@ const WORD_DATA = {
           "example": "His friends ran to him and asked whether he was hurt.",
           "exampleType": "book",
           "syllables": [
-            "whe",
-            "ther"
+            "whether"
           ]
         },
         {
@@ -9685,8 +9437,8 @@ const WORD_DATA = {
           "example": "Just help me create something different.",
           "exampleType": "book",
           "syllables": [
-            "crea",
-            "te"
+            "cre",
+            "ate"
           ]
         },
         {
@@ -9697,11 +9449,10 @@ const WORD_DATA = {
           "example": "Let your imagination run wild and be creative.",
           "exampleType": "book",
           "syllables": [
-            "im",
-            "ag",
-            "in",
-            "at",
-            "ion"
+            "imag",
+            "i",
+            "na",
+            "tion"
           ]
         },
         {
@@ -9712,9 +9463,8 @@ const WORD_DATA = {
           "example": "Let your imagination run wild and be creative.",
           "exampleType": "book",
           "syllables": [
-            "crea",
-            "ti",
-            "ve"
+            "cre",
+            "ative"
           ]
         },
         {
@@ -9736,9 +9486,9 @@ const WORD_DATA = {
           "example": "The experience makes Jessy realise the importance of workout.",
           "exampleType": "book",
           "syllables": [
-            "imp",
-            "ort",
-            "ance"
+            "im",
+            "por",
+            "tance"
           ]
         },
         {
@@ -9749,9 +9499,9 @@ const WORD_DATA = {
           "example": "In general, it is just great to have such a partner! 4.",
           "exampleType": "book",
           "syllables": [
-            "ge",
-            "ne",
-            "ral"
+            "gen",
+            "er",
+            "al"
           ]
         },
         {
@@ -9791,9 +9541,10 @@ const WORD_DATA = {
           "example": "He is intelligent, reliable, and easy to get along with.",
           "exampleType": "book",
           "syllables": [
-            "int",
-            "ell",
-            "igent"
+            "in",
+            "tel",
+            "li",
+            "gent"
           ]
         },
         {
@@ -9804,9 +9555,9 @@ const WORD_DATA = {
           "example": "She gave me a generous gift on my birthday.",
           "exampleType": "book",
           "syllables": [
-            "ge",
-            "ne",
-            "rous"
+            "gen",
+            "er",
+            "ous"
           ]
         },
         {
@@ -9828,9 +9579,9 @@ const WORD_DATA = {
           "example": "At first, we were just ordinary friends.",
           "exampleType": "book",
           "syllables": [
-            "ord",
-            "in",
-            "ary"
+            "or",
+            "di",
+            "nary"
           ]
         },
         {
@@ -9841,8 +9592,8 @@ const WORD_DATA = {
           "example": "There is no need to be nervous.",
           "exampleType": "book",
           "syllables": [
-            "ne",
-            "rvous"
+            "ner",
+            "vous"
           ]
         },
         {
@@ -9865,10 +9616,10 @@ const WORD_DATA = {
           "example": "Lying has been particularly disappointing.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sa",
-            "ppoi",
-            "nting"
+            "dis",
+            "ap",
+            "point",
+            "ing"
           ]
         },
         {
@@ -9879,9 +9630,9 @@ const WORD_DATA = {
           "example": "This disappointing result made me feel embarrassed and I was not very hopeful about the next exam.",
           "exampleType": "book",
           "syllables": [
-            "emb",
-            "arr",
-            "assed"
+            "em",
+            "bar",
+            "rassed"
           ]
         },
         {
@@ -9892,8 +9643,7 @@ const WORD_DATA = {
           "example": "I feel hopeful that Fll become a great Chinese teacher someday.",
           "exampleType": "book",
           "syllables": [
-            "ho",
-            "pe",
+            "hope",
             "ful"
           ]
         },
@@ -9905,9 +9655,8 @@ const WORD_DATA = {
           "example": "I was completely exhausted.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mple",
-            "te"
+            "com",
+            "plete"
           ]
         },
         {
@@ -9918,9 +9667,9 @@ const WORD_DATA = {
           "example": "Fll change my attitude, somehow. 2.",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "it",
-            "ude"
+            "at",
+            "ti",
+            "tude"
           ]
         },
         {
@@ -9955,8 +9704,8 @@ const WORD_DATA = {
           "example": "I covered my nose with a tissue.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ver"
+            "cov",
+            "er"
           ]
         },
         {
@@ -9968,7 +9717,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "se",
-            "rious"
+            "ri",
+            "ous"
           ]
         },
         {
@@ -9979,8 +9729,7 @@ const WORD_DATA = {
           "example": "You may find many car lovers are crazy about car 213 该故事巧记PET核心词汇 听力原文 m.",
           "exampleType": "book",
           "syllables": [
-            "cra",
-            "zy"
+            "crazy"
           ]
         },
         {
@@ -9991,9 +9740,9 @@ const WORD_DATA = {
           "example": "I think you need more time to consider it.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nsi",
-            "der"
+            "con",
+            "sid",
+            "er"
           ]
         },
         {
@@ -10027,10 +9776,9 @@ const WORD_DATA = {
           "example": "Bob: It is a miserable day!",
           "exampleType": "book",
           "syllables": [
-            "mi",
-            "se",
-            "ra",
-            "ble"
+            "mis",
+            "er",
+            "able"
           ]
         },
         {
@@ -10041,10 +9789,9 @@ const WORD_DATA = {
           "example": "Don't be so negative.\" She calmed me down and what really comforted me was the gift she prepared for me.",
           "exampleType": "book",
           "syllables": [
-            "ne",
-            "ga",
-            "ti",
-            "ve"
+            "neg",
+            "a",
+            "tive"
           ]
         },
         {
@@ -10066,8 +9813,8 @@ const WORD_DATA = {
           "example": "Don't be so negative.\" She calmed me down and what really comforted me was the gift she prepared for me.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mfort"
+            "com",
+            "fort"
           ]
         },
         {
@@ -10078,9 +9825,8 @@ const WORD_DATA = {
           "example": "When I am embarrassed about the score, my dad will encourage me and tell me not to compare it with my classmates5.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mpa",
-            "re"
+            "com",
+            "pare"
           ]
         },
         {
@@ -10091,9 +9837,10 @@ const WORD_DATA = {
           "example": "It is not realistic to perform well every time.",
           "exampleType": "book",
           "syllables": [
-            "rea",
-            "li",
-            "stic"
+            "re",
+            "al",
+            "is",
+            "tic"
           ]
         },
         {
@@ -10116,8 +9863,8 @@ const WORD_DATA = {
           "example": "Be more confident and try your best.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nfi",
+            "con",
+            "fi",
             "dent"
           ]
         },
@@ -10129,9 +9876,9 @@ const WORD_DATA = {
           "example": "Such a wonderful subject.",
           "exampleType": "book",
           "syllables": [
-            "wo",
-            "nde",
-            "rful"
+            "won",
+            "der",
+            "ful"
           ]
         },
         {
@@ -10142,9 +9889,9 @@ const WORD_DATA = {
           "example": "Personally, stamps are an important part of our traditional culture.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rso",
-            "nal"
+            "per",
+            "son",
+            "al"
           ]
         },
         {
@@ -10156,8 +9903,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "li",
-            "ghted"
+            "light",
+            "ed"
           ]
         },
         {
@@ -10168,10 +9915,9 @@ const WORD_DATA = {
           "example": "We should encourage each other.",
           "exampleType": "book",
           "syllables": [
-            "enc",
-            "ou",
-            "ra",
-            "ge"
+            "en",
+            "cour",
+            "age"
           ]
         },
         {
@@ -10194,8 +9940,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "la",
-            "xed"
+            "laxed"
           ]
         },
         {
@@ -10206,9 +9951,8 @@ const WORD_DATA = {
           "example": "But what should I do to manage my own time?",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "na",
-            "ge"
+            "man",
+            "age"
           ]
         },
         {
@@ -10231,9 +9975,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "rea",
-            "so",
-            "na",
-            "ble"
+            "son",
+            "able"
           ]
         },
         {
@@ -10257,8 +10000,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "lia",
-            "ble"
+            "li",
+            "able"
           ]
         },
         {
@@ -10269,9 +10012,7 @@ const WORD_DATA = {
           "example": "The courage was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "cou",
-            "ra",
-            "ge"
+            "courage"
           ]
         }
       ]
@@ -10286,8 +10027,7 @@ const WORD_DATA = {
           "example": "They are smart robots and have similar voices.",
           "exampleType": "book",
           "syllables": [
-            "sm",
-            "art"
+            "smart"
           ]
         },
         {
@@ -10298,8 +10038,8 @@ const WORD_DATA = {
           "example": "We are common pupils.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mmon"
+            "com",
+            "mon"
           ]
         },
         {
@@ -10322,8 +10062,7 @@ const WORD_DATA = {
           "example": "One day we were amazed to find a cute homeless cat on the balcony.",
           "exampleType": "book",
           "syllables": [
-            "am",
-            "azed"
+            "amazed"
           ]
         },
         {
@@ -10334,8 +10073,7 @@ const WORD_DATA = {
           "example": "They are so cute and adorable.",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "te"
+            "cute"
           ]
         },
         {
@@ -10346,8 +10084,8 @@ const WORD_DATA = {
           "example": "We were much annoyed at it.",
           "exampleType": "book",
           "syllables": [
-            "ann",
-            "oyed"
+            "an",
+            "noyed"
           ]
         },
         {
@@ -10358,8 +10096,7 @@ const WORD_DATA = {
           "example": "Ifs so rude and cruel!",
           "exampleType": "book",
           "syllables": [
-            "ru",
-            "de"
+            "rude"
           ]
         },
         {
@@ -10370,8 +10107,8 @@ const WORD_DATA = {
           "example": "Ifs so rude and cruel!",
           "exampleType": "book",
           "syllables": [
-            "cr",
-            "uel"
+            "cru",
+            "el"
           ]
         },
         {
@@ -10382,8 +10119,8 @@ const WORD_DATA = {
           "example": "Fortunately, the fire is under control now.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ntrol"
+            "con",
+            "trol"
           ]
         },
         {
@@ -10394,8 +10131,7 @@ const WORD_DATA = {
           "example": "Was the guilty cat seriously ill?",
           "exampleType": "book",
           "syllables": [
-            "gui",
-            "lty"
+            "guilty"
           ]
         },
         {
@@ -10407,8 +10143,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "se",
-            "riou",
-            "sly"
+            "ri",
+            "ous",
+            "ly"
           ]
         },
         {
@@ -10419,9 +10156,8 @@ const WORD_DATA = {
           "example": "We were confused about what to do. “Oh.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nfu",
-            "sed"
+            "con",
+            "fused"
           ]
         },
         {
@@ -10432,8 +10168,8 @@ const WORD_DATA = {
           "example": "It's the typical sign of a cold.",
           "exampleType": "book",
           "syllables": [
-            "ty",
-            "pi",
+            "typ",
+            "i",
             "cal"
           ]
         },
@@ -10445,8 +10181,7 @@ const WORD_DATA = {
           "example": "Go ahead! ” my bossy brother ordered me.",
           "exampleType": "book",
           "syllables": [
-            "bo",
-            "ssy"
+            "bossy"
           ]
         },
         {
@@ -10457,9 +10192,9 @@ const WORD_DATA = {
           "example": "Then frightening things happened.",
           "exampleType": "book",
           "syllables": [
-            "fri",
-            "ghte",
-            "ning"
+            "fright",
+            "en",
+            "ing"
           ]
         },
         {
@@ -10481,8 +10216,7 @@ const WORD_DATA = {
           "example": "We sent it to the vefs at once and fortunately we arrived there in time. “I felt deeply ashamed of myself for doing the stupid decision.",
           "exampleType": "book",
           "syllables": [
-            "ash",
-            "amed"
+            "ashamed"
           ]
         },
         {
@@ -10493,8 +10227,7 @@ const WORD_DATA = {
           "example": "We sent it to the vefs at once and fortunately we arrived there in time. “I felt deeply ashamed of myself for doing the stupid decision.",
           "exampleType": "book",
           "syllables": [
-            "stu",
-            "pid"
+            "stupid"
           ]
         },
         {
@@ -10505,9 +10238,10 @@ const WORD_DATA = {
           "example": "That was an embarrassing and suffering situation.",
           "exampleType": "book",
           "syllables": [
-            "emb",
-            "arr",
-            "assing"
+            "em",
+            "bar",
+            "rass",
+            "ing"
           ]
         },
         {
@@ -10519,8 +10253,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "lie",
-            "ved"
+            "lieved"
           ]
         },
         {
@@ -10531,9 +10264,9 @@ const WORD_DATA = {
           "example": "Anyhow, are you satisfied with your birthday gift?",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "ti",
-            "sfied"
+            "sat",
+            "is",
+            "fied"
           ]
         },
         {
@@ -10544,8 +10277,8 @@ const WORD_DATA = {
           "example": "I must admit I was impressed by the gentle vet.",
           "exampleType": "book",
           "syllables": [
-            "impr",
-            "essed"
+            "im",
+            "pressed"
           ]
         },
         {
@@ -10556,8 +10289,8 @@ const WORD_DATA = {
           "example": "I must admit I was impressed by the gentle vet.",
           "exampleType": "book",
           "syllables": [
-            "ge",
-            "ntle"
+            "gen",
+            "tle"
           ]
         },
         {
@@ -10568,8 +10301,8 @@ const WORD_DATA = {
           "example": "And I am willing to help you repair his bike.",
           "exampleType": "book",
           "syllables": [
-            "wi",
-            "lling"
+            "will",
+            "ing"
           ]
         },
         {
@@ -10580,8 +10313,8 @@ const WORD_DATA = {
           "example": "Now, this charming pet has attracted lots of our friends.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "rming"
+            "charm",
+            "ing"
           ]
         },
         {
@@ -10592,8 +10325,8 @@ const WORD_DATA = {
           "example": "The location of your house is what attracts me the most.",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "ract"
+            "at",
+            "tract"
           ]
         },
         {
@@ -10604,8 +10337,8 @@ const WORD_DATA = {
           "example": "Among this group of friends, a firefighter and a vet made the rapidest progress, which made my uncle jealous.",
           "exampleType": "book",
           "syllables": [
-            "jea",
-            "lous"
+            "jeal",
+            "ous"
           ]
         },
         {
@@ -10617,8 +10350,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "pre",
-            "ssed"
+            "pressed"
           ]
         },
         {
@@ -10629,8 +10361,7 @@ const WORD_DATA = {
           "example": "They spent the whole day there and even didn't feel tired and bored at all.",
           "exampleType": "book",
           "syllables": [
-            "bo",
-            "red"
+            "bored"
           ]
         },
         {
@@ -10641,10 +10372,10 @@ const WORD_DATA = {
           "example": "Will it be disappointed with its new owners?n I asked myself curiously.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sa",
-            "ppoi",
-            "nted"
+            "dis",
+            "ap",
+            "point",
+            "ed"
           ]
         },
         {
@@ -10656,8 +10387,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "cu",
-            "riou",
-            "sly"
+            "ri",
+            "ous",
+            "ly"
           ]
         },
         {
@@ -10668,8 +10400,8 @@ const WORD_DATA = {
           "example": "Anyhow, I hope the cat doesn't blame me or my brother for the mistake and I want it to be cheerful and full of energy all the time.",
           "exampleType": "book",
           "syllables": [
-            "chee",
-            "rful"
+            "cheer",
+            "ful"
           ]
         },
         {
@@ -10681,7 +10413,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "en",
-            "ergy"
+            "er",
+            "gy"
           ]
         },
         {
@@ -10703,8 +10436,8 @@ const WORD_DATA = {
           "example": "You may think this is just an amusing story or a confusing experience or something enjoyable.",
           "exampleType": "book",
           "syllables": [
-            "am",
-            "using"
+            "amus",
+            "ing"
           ]
         },
         {
@@ -10715,9 +10448,9 @@ const WORD_DATA = {
           "example": "You may think this is just an amusing story or a confusing experience or something enjoyable.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nfu",
-            "sing"
+            "con",
+            "fus",
+            "ing"
           ]
         },
         {
@@ -10728,9 +10461,9 @@ const WORD_DATA = {
           "example": "Air travel is very fast and enjoyable.",
           "exampleType": "book",
           "syllables": [
-            "enj",
-            "oya",
-            "ble"
+            "en",
+            "joy",
+            "able"
           ]
         },
         {
@@ -10741,8 +10474,8 @@ const WORD_DATA = {
           "example": "He is always trying to inspire students to think differently.",
           "exampleType": "book",
           "syllables": [
-            "insp",
-            "ire"
+            "in",
+            "spire"
           ]
         }
       ]
@@ -10792,8 +10525,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "cli",
-            "ma",
-            "te"
+            "mate"
           ]
         },
         {
@@ -10804,8 +10536,7 @@ const WORD_DATA = {
           "example": "And she always complains about the unreliable weather forecast.",
           "exampleType": "book",
           "syllables": [
-            "fo",
-            "re",
+            "fore",
             "cast"
           ]
         },
@@ -10850,8 +10581,7 @@ const WORD_DATA = {
           "example": "It was sunny with a cool breeze. 2.",
           "exampleType": "book",
           "syllables": [
-            "bree",
-            "ze"
+            "breeze"
           ]
         },
         {
@@ -10862,8 +10592,8 @@ const WORD_DATA = {
           "example": "I am sure you will not be freezing.",
           "exampleType": "book",
           "syllables": [
-            "free",
-            "zing"
+            "freez",
+            "ing"
           ]
         },
         {
@@ -10874,8 +10604,8 @@ const WORD_DATA = {
           "example": "The truth is the temperature may drop sharply and you can experience a mild or cool breeze and a freezing snowfall on the same day.",
           "exampleType": "book",
           "syllables": [
-            "sno",
-            "wfall"
+            "snow",
+            "fall"
           ]
         },
         {
@@ -10886,8 +10616,8 @@ const WORD_DATA = {
           "example": "Since my job involves me travelling a lot and the weather always affects my daily plans, I need to know the weather conditions to help me make wise decisions.",
           "exampleType": "book",
           "syllables": [
-            "inv",
-            "olve"
+            "in",
+            "volve"
           ]
         },
         {
@@ -10898,8 +10628,8 @@ const WORD_DATA = {
           "example": "Does the weather affect your mood? 3.",
           "exampleType": "book",
           "syllables": [
-            "aff",
-            "ect"
+            "af",
+            "fect"
           ]
         },
         {
@@ -10910,8 +10640,8 @@ const WORD_DATA = {
           "example": "An air conditioner. 2.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ndi",
+            "con",
+            "di",
             "tion"
           ]
         },
@@ -10923,8 +10653,7 @@ const WORD_DATA = {
           "example": "I know it is not wise to spend too much time on computer games, so I usually play computer games for about 2 hours every week. 3.",
           "exampleType": "book",
           "syllables": [
-            "wi",
-            "se"
+            "wise"
           ]
         },
         {
@@ -10935,9 +10664,9 @@ const WORD_DATA = {
           "example": "If it is sunny with a cool breeze, I will be full of energy, whatever I do or wherever I go.",
           "exampleType": "book",
           "syllables": [
-            "whe",
-            "re",
-            "ver"
+            "wher",
+            "ev",
+            "er"
           ]
         },
         {
@@ -10948,9 +10677,9 @@ const WORD_DATA = {
           "example": "The advert says the digital watch can report exactly the weather conditions wherever I go or whenever I check it.",
           "exampleType": "book",
           "syllables": [
-            "whe",
-            "ne",
-            "ver"
+            "when",
+            "ev",
+            "er"
           ]
         },
         {
@@ -10961,8 +10690,8 @@ const WORD_DATA = {
           "example": "Particularly, the natural scenery and the rich ethnic custom are of extremely high tourist value.",
           "exampleType": "book",
           "syllables": [
-            "va",
-            "lue"
+            "val",
+            "ue"
           ]
         },
         {
@@ -10973,8 +10702,7 @@ const WORD_DATA = {
           "example": "Label the pictures. 2. 4. get wet glance at 10.",
           "exampleType": "book",
           "syllables": [
-            "gla",
-            "nce"
+            "glance"
           ]
         },
         {
@@ -10985,8 +10713,7 @@ const WORD_DATA = {
           "example": "Can you see the pause over there?",
           "exampleType": "auto",
           "syllables": [
-            "pau",
-            "se"
+            "pause"
           ]
         },
         {
@@ -10997,9 +10724,9 @@ const WORD_DATA = {
           "example": "Now let me introduce you a farm.",
           "exampleType": "book",
           "syllables": [
-            "intr",
-            "od",
-            "uce"
+            "in",
+            "tro",
+            "duce"
           ]
         },
         {
@@ -11011,8 +10738,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "no",
-            "ti",
-            "ce"
+            "tice"
           ]
         },
         {
@@ -11023,8 +10749,8 @@ const WORD_DATA = {
           "example": "It appears to be very terrible.",
           "exampleType": "book",
           "syllables": [
-            "app",
-            "ear"
+            "ap",
+            "pear"
           ]
         },
         {
@@ -11035,7 +10761,8 @@ const WORD_DATA = {
           "example": "Can you see the user over there?",
           "exampleType": "auto",
           "syllables": [
-            "user"
+            "us",
+            "er"
           ]
         },
         {
@@ -11068,9 +10795,8 @@ const WORD_DATA = {
           "example": "They are going to Hawaii to enjoy the sunshine.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "nshi",
-            "ne"
+            "sun",
+            "shine"
           ]
         },
         {
@@ -11081,8 +10807,8 @@ const WORD_DATA = {
           "example": "It must be fairly expensive.",
           "exampleType": "book",
           "syllables": [
-            "fai",
-            "rly"
+            "fair",
+            "ly"
           ]
         },
         {
@@ -11094,8 +10820,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "se",
-            "rve"
+            "serve"
           ]
         },
         {
@@ -11106,10 +10831,10 @@ const WORD_DATA = {
           "example": "Amanda: You're absolutely right!",
           "exampleType": "book",
           "syllables": [
-            "abs",
-            "ol",
-            "ut",
-            "ely"
+            "ab",
+            "so",
+            "lute",
+            "ly"
           ]
         },
         {
@@ -11120,8 +10845,7 @@ const WORD_DATA = {
           "example": "Let's pay for them at the self-checkout counter. 『Day 8 I.（略） n. i. tight 2. pin 3. pullover 4. pants 5. mall 6. collar 7. queue 8. button 9. sandal 10. sew in. i.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "unt"
+            "count"
           ]
         },
         {
@@ -11143,8 +10867,7 @@ const WORD_DATA = {
           "example": "I wish you told me earlier,\" I replied. “But I've been pretty busy lately and I have arranged an appointment with an extraordinary client this weekend.",
           "exampleType": "book",
           "syllables": [
-            "la",
-            "te",
+            "late",
             "ly"
           ]
         },
@@ -11156,8 +10879,8 @@ const WORD_DATA = {
           "example": "When can we arrange the interviews for the employees?",
           "exampleType": "book",
           "syllables": [
-            "arr",
-            "ange"
+            "ar",
+            "range"
           ]
         },
         {
@@ -11168,11 +10891,11 @@ const WORD_DATA = {
           "example": "I wish you told me earlier,\" I replied. “But I've been pretty busy lately and I have arranged an appointment with an extraordinary client this weekend.",
           "exampleType": "book",
           "syllables": [
-            "extr",
-            "ao",
-            "rdi",
-            "na",
-            "ry"
+            "ex",
+            "tra",
+            "or",
+            "di",
+            "nary"
           ]
         },
         {
@@ -11183,8 +10906,8 @@ const WORD_DATA = {
           "example": "I attempted to approach him 该故事巧记PET核心词汇 5 but failed in the end.",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "empt"
+            "at",
+            "tempt"
           ]
         },
         {
@@ -11195,8 +10918,8 @@ const WORD_DATA = {
           "example": "I attempted to ask for a leave but the client didn't approve of that.",
           "exampleType": "book",
           "syllables": [
-            "appr",
-            "ove"
+            "ap",
+            "prove"
           ]
         }
       ]
@@ -11211,8 +10934,7 @@ const WORD_DATA = {
           "example": "It was rainy and windy.",
           "exampleType": "book",
           "syllables": [
-            "wi",
-            "ndy"
+            "windy"
           ]
         },
         {
@@ -11223,8 +10945,7 @@ const WORD_DATA = {
           "example": "While my family were driving back home along a broad river, we got caught in a thunderstorm.",
           "exampleType": "book",
           "syllables": [
-            "br",
-            "oad"
+            "broad"
           ]
         },
         {
@@ -11246,8 +10967,7 @@ const WORD_DATA = {
           "example": "It was blowing a gale. 10.",
           "exampleType": "book",
           "syllables": [
-            "ga",
-            "le"
+            "gale"
           ]
         },
         {
@@ -11258,8 +10978,7 @@ const WORD_DATA = {
           "example": "Can you see the rise over there?",
           "exampleType": "auto",
           "syllables": [
-            "ri",
-            "se"
+            "rise"
           ]
         },
         {
@@ -11270,8 +10989,7 @@ const WORD_DATA = {
           "example": "The river rose to the height of the main road.",
           "exampleType": "book",
           "syllables": [
-            "hei",
-            "ght"
+            "height"
           ]
         },
         {
@@ -11293,8 +11011,7 @@ const WORD_DATA = {
           "example": "Finally, wish all of you a good time in London! / Day 14 I. （略） II. 1. gale 2. thunderstorm 3. bury 4. frozen 5. crash 6. lightning 7. slip 8. exhausted 9. shine 10. windscreen HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "bu",
-            "ry"
+            "bury"
           ]
         },
         {
@@ -11305,8 +11022,8 @@ const WORD_DATA = {
           "example": "The traffic stations are all within a 10-minute walk.",
           "exampleType": "book",
           "syllables": [
-            "wi",
-            "thin"
+            "with",
+            "in"
           ]
         },
         {
@@ -11317,8 +11034,7 @@ const WORD_DATA = {
           "example": "Some passengers were hurt in a bus crash.",
           "exampleType": "book",
           "syllables": [
-            "cr",
-            "ash"
+            "crash"
           ]
         },
         {
@@ -11329,8 +11045,8 @@ const WORD_DATA = {
           "example": "Our car crashed into a wall with a big hole on the windscreen.",
           "exampleType": "book",
           "syllables": [
-            "wi",
-            "ndscreen"
+            "wind",
+            "screen"
           ]
         },
         {
@@ -11352,8 +11068,7 @@ const WORD_DATA = {
           "example": "I was absolutely frozen! sentences aloud.",
           "exampleType": "book",
           "syllables": [
-            "fro",
-            "zen"
+            "frozen"
           ]
         },
         {
@@ -11377,10 +11092,8 @@ const WORD_DATA = {
           "example": "The average temperature had dropped to approximately zero degrees centigrade.",
           "exampleType": "book",
           "syllables": [
-            "ce",
-            "nti",
-            "gra",
-            "de"
+            "centi",
+            "grade"
           ]
         },
         {
@@ -11391,9 +11104,9 @@ const WORD_DATA = {
           "example": "I slipped over when I was extremely busy cleaning the farm.",
           "exampleType": "book",
           "syllables": [
-            "extr",
-            "em",
-            "ely"
+            "ex",
+            "treme",
+            "ly"
           ]
         },
         {
@@ -11405,8 +11118,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "spi",
-            "te"
+            "spite"
           ]
         },
         {
@@ -11417,9 +11129,9 @@ const WORD_DATA = {
           "example": "I will support whatever choice you make.",
           "exampleType": "book",
           "syllables": [
-            "wha",
-            "te",
-            "ver"
+            "what",
+            "ev",
+            "er"
           ]
         },
         {
@@ -11442,8 +11154,7 @@ const WORD_DATA = {
           "example": "It's an incredible chance.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "nce"
+            "chance"
           ]
         },
         {
@@ -11454,8 +11165,8 @@ const WORD_DATA = {
           "example": "A voice suddenly appeared. 11 Wow!",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "dden"
+            "sud",
+            "den"
           ]
         },
         {
@@ -11466,8 +11177,8 @@ const WORD_DATA = {
           "example": "A sudden flash of lightning lit everything up for a second.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "ghtning"
+            "light",
+            "ning"
           ]
         },
         {
@@ -11478,8 +11189,7 @@ const WORD_DATA = {
           "example": "Otherwise you may stay overnight in the mountain area. 4.",
           "exampleType": "book",
           "syllables": [
-            "ar",
-            "ea"
+            "area"
           ]
         },
         {
@@ -11491,8 +11201,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "de",
-            "cla",
-            "re"
+            "clare"
           ]
         },
         {
@@ -11503,8 +11212,7 @@ const WORD_DATA = {
           "example": "Then we heard a loud voice from a big ship saying, \"The area has been declared a disaster zone.",
           "exampleType": "book",
           "syllables": [
-            "zo",
-            "ne"
+            "zone"
           ]
         },
         {
@@ -11515,8 +11223,9 @@ const WORD_DATA = {
           "example": "We urgently request the public to assist the people who are still alive.” We kept yelling for help and fortunately, we were given a bamboo by a man of medium height.",
           "exampleType": "book",
           "syllables": [
-            "urg",
-            "ently"
+            "ur",
+            "gent",
+            "ly"
           ]
         },
         {
@@ -11527,8 +11236,8 @@ const WORD_DATA = {
           "example": "We urgently request the public to assist the people who are still alive.” We kept yelling for help and fortunately, we were given a bamboo by a man of medium height.",
           "exampleType": "book",
           "syllables": [
-            "ass",
-            "ist"
+            "as",
+            "sist"
           ]
         },
         {
@@ -11539,8 +11248,8 @@ const WORD_DATA = {
           "example": "I think it will be very suitable for you, because ifs medium-sized.",
           "exampleType": "book",
           "syllables": [
-            "me",
-            "dium"
+            "medi",
+            "um"
           ]
         },
         {
@@ -11574,8 +11283,8 @@ const WORD_DATA = {
           "example": "Q) 2. average or maximum temperature 4. a flash of lightning 6.",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "xi",
+            "max",
+            "i",
             "mum"
           ]
         },
@@ -11587,7 +11296,7 @@ const WORD_DATA = {
           "example": "Be careful not to slip! 8.",
           "exampleType": "book",
           "syllables": [
-            "slip"
+            "Slip"
           ]
         },
         {
@@ -11598,8 +11307,8 @@ const WORD_DATA = {
           "example": "Lefs approach and explore the earth together.",
           "exampleType": "book",
           "syllables": [
-            "appr",
-            "oach"
+            "ap",
+            "proach"
           ]
         },
         {
@@ -11621,9 +11330,9 @@ const WORD_DATA = {
           "example": "I was completely exhausted.",
           "exampleType": "book",
           "syllables": [
-            "exh",
-            "au",
-            "sted"
+            "ex",
+            "haust",
+            "ed"
           ]
         },
         {
@@ -11645,8 +11354,7 @@ const WORD_DATA = {
           "example": "Finally, wish all of you a good time in London! / Day 14 I. （略） II. 1. gale 2. thunderstorm 3. bury 4. frozen 5. crash 6. lightning 7. slip 8. exhausted 9. shine 10. windscreen HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "shi",
-            "ne"
+            "shine"
           ]
         },
         {
@@ -11672,8 +11380,9 @@ const WORD_DATA = {
           "example": "I chose to be the employer.",
           "exampleType": "book",
           "syllables": [
-            "empl",
-            "oyer"
+            "em",
+            "ploy",
+            "er"
           ]
         },
         {
@@ -11684,10 +11393,9 @@ const WORD_DATA = {
           "example": "These positions were really popular among the candidates.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "ndi",
-            "da",
-            "te"
+            "can",
+            "di",
+            "date"
           ]
         },
         {
@@ -11698,8 +11406,8 @@ const WORD_DATA = {
           "example": "I chose to be the employer.",
           "exampleType": "book",
           "syllables": [
-            "empl",
-            "oy"
+            "em",
+            "ploy"
           ]
         },
         {
@@ -11722,10 +11430,10 @@ const WORD_DATA = {
           "example": "Why is Jennifer's application rejected?",
           "exampleType": "book",
           "syllables": [
-            "appl",
-            "ic",
-            "at",
-            "ion"
+            "ap",
+            "pli",
+            "ca",
+            "tion"
           ]
         },
         {
@@ -11736,8 +11444,8 @@ const WORD_DATA = {
           "example": "She can't sign a contract with the company right now.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ntract"
+            "con",
+            "tract"
           ]
         },
         {
@@ -11748,8 +11456,8 @@ const WORD_DATA = {
           "example": "And I became the leader of a team.",
           "exampleType": "book",
           "syllables": [
-            "lea",
-            "der"
+            "lead",
+            "er"
           ]
         },
         {
@@ -11760,10 +11468,9 @@ const WORD_DATA = {
           "example": "She has to go to the office for conferences.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nfe",
-            "re",
-            "nce"
+            "con",
+            "fer",
+            "ence"
           ]
         },
         {
@@ -11774,8 +11481,8 @@ const WORD_DATA = {
           "example": "I am a reporter from a TV programme about employment.",
           "exampleType": "book",
           "syllables": [
-            "empl",
-            "oy",
+            "em",
+            "ploy",
             "ment"
           ]
         },
@@ -11788,9 +11495,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "te",
-            "cti",
-            "ve"
+            "tec",
+            "tive"
           ]
         },
         {
@@ -11802,9 +11508,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "su",
-            "pe",
-            "rhe",
-            "ro"
+            "per",
+            "hero"
           ]
         },
         {
@@ -11826,9 +11531,7 @@ const WORD_DATA = {
           "example": "I aimed to find a full-time director and several cameramen as the crew of the company.",
           "exampleType": "book",
           "syllables": [
-            "fu",
-            "ll-ti",
-            "me"
+            "full-time"
           ]
         },
         {
@@ -11840,8 +11543,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "di",
-            "re",
-            "ctor"
+            "rec",
+            "tor"
           ]
         },
         {
@@ -11852,9 +11555,8 @@ const WORD_DATA = {
           "example": "For example, I love acting and watching movies, so if I am a director, an actress or a cameraman when I grow up, I think the job will be fun.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "me",
-            "ra",
+            "cam",
+            "era",
             "man"
           ]
         },
@@ -11878,8 +11580,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "fe",
-            "ssion"
+            "fes",
+            "sion"
           ]
         },
         {
@@ -11890,9 +11592,9 @@ const WORD_DATA = {
           "example": "And the novelists who were good at writing sci-fi and detective novels were necessary, too.",
           "exampleType": "book",
           "syllables": [
-            "no",
-            "ve",
-            "list"
+            "nov",
+            "el",
+            "ist"
           ]
         },
         {
@@ -11903,8 +11605,8 @@ const WORD_DATA = {
           "example": "For example, I love acting and watching movies, so if I am a director, an actress or a cameraman when I grow up, I think the job will be fun.",
           "exampleType": "book",
           "syllables": [
-            "act",
-            "ress"
+            "ac",
+            "tress"
           ]
         },
         {
@@ -11915,9 +11617,7 @@ const WORD_DATA = {
           "example": "She can only work part-time. 2.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "rt-ti",
-            "me"
+            "part-time"
           ]
         },
         {
@@ -11928,8 +11628,7 @@ const WORD_DATA = {
           "example": "Sometimes attitude plays an important role in success.",
           "exampleType": "book",
           "syllables": [
-            "ro",
-            "le"
+            "role"
           ]
         },
         {
@@ -11953,10 +11652,10 @@ const WORD_DATA = {
           "example": "The possibility was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "po",
-            "ssi",
-            "bi",
-            "li",
+            "pos",
+            "si",
+            "bil",
+            "i",
             "ty"
           ]
         },
@@ -11969,8 +11668,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "si",
-            "gner"
+            "sign",
+            "er"
           ]
         },
         {
@@ -11981,9 +11680,9 @@ const WORD_DATA = {
           "example": "U n it 8 ..... 《Day 15 I. （略） n. 1. lawyer 2. accountant 3. novelist 4. director 5. actress 6. cameraman 7. hairdresser 8. guard 9. designer 10. superhero m. 1.",
           "exampleType": "book",
           "syllables": [
-            "hai",
-            "rdre",
-            "sser"
+            "hair",
+            "dress",
+            "er"
           ]
         },
         {
@@ -11994,8 +11693,8 @@ const WORD_DATA = {
           "example": "We bought a new haircut yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "hai",
-            "rcut"
+            "hair",
+            "cut"
           ]
         },
         {
@@ -12006,9 +11705,9 @@ const WORD_DATA = {
           "example": "My uncle is also an accountant.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "ou",
-            "ntant"
+            "ac",
+            "coun",
+            "tant"
           ]
         },
         {
@@ -12031,8 +11730,7 @@ const WORD_DATA = {
           "example": "I've been thinking about becoming a successful lawyer since I was a kid.",
           "exampleType": "book",
           "syllables": [
-            "la",
-            "wyer"
+            "lawyer"
           ]
         },
         {
@@ -12043,8 +11741,7 @@ const WORD_DATA = {
           "example": "In comparison, I found there were few people interested in these positions because they thought these jobs were tiring and there were always piles of work to do.",
           "exampleType": "book",
           "syllables": [
-            "pi",
-            "le"
+            "pile"
           ]
         },
         {
@@ -12055,9 +11752,7 @@ const WORD_DATA = {
           "example": "And the salary is high.",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "la",
-            "ry"
+            "salary"
           ]
         },
         {
@@ -12069,9 +11764,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "fe",
-            "ssio",
-            "nal"
+            "fes",
+            "sion",
+            "al"
           ]
         },
         {
@@ -12082,8 +11777,8 @@ const WORD_DATA = {
           "example": "But the truth is that not all people can meet the qualification of the employers5 list.",
           "exampleType": "book",
           "syllables": [
-            "qua",
-            "li",
+            "qual",
+            "i",
             "fi",
             "ca",
             "tion"
@@ -12097,8 +11792,8 @@ const WORD_DATA = {
           "example": "To be honest and easy-going.",
           "exampleType": "book",
           "syllables": [
-            "ho",
-            "nest"
+            "hon",
+            "est"
           ]
         },
         {
@@ -12109,9 +11804,7 @@ const WORD_DATA = {
           "example": "To be honest and easy-going.",
           "exampleType": "book",
           "syllables": [
-            "ea",
-            "sy",
-            "-going"
+            "easy-going"
           ]
         }
       ]
@@ -12126,10 +11819,7 @@ const WORD_DATA = {
           "example": "I became a middle-aged professor in law overnight.",
           "exampleType": "book",
           "syllables": [
-            "mi",
-            "ddle",
-            "-a",
-            "ged"
+            "middle-aged"
           ]
         },
         {
@@ -12141,8 +11831,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "po",
-            "li",
-            "ce",
+            "lice",
             "man"
           ]
         },
@@ -12165,8 +11854,7 @@ const WORD_DATA = {
           "example": "The scientist was sent to prison.",
           "exampleType": "book",
           "syllables": [
-            "pri",
-            "son"
+            "prison"
           ]
         },
         {
@@ -12177,9 +11865,8 @@ const WORD_DATA = {
           "example": "Listen and read the phrases and 1. a middle-aged policeman 3. lecturer and professor 5. quit a temporary job 7. salesman and saleswoman 9. enjoy one's wonderful retirement sentence aloud.",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "le",
-            "sman"
+            "sales",
+            "man"
           ]
         },
         {
@@ -12190,10 +11877,8 @@ const WORD_DATA = {
           "example": "Listen and read the phrases and 1. a middle-aged policeman 3. lecturer and professor 5. quit a temporary job 7. salesman and saleswoman 9. enjoy one's wonderful retirement sentence aloud.",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "le",
-            "swo",
-            "man"
+            "sales",
+            "woman"
           ]
         },
         {
@@ -12205,8 +11890,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "un",
-            "empl",
-            "oyed"
+            "em",
+            "ployed"
           ]
         },
         {
@@ -12217,8 +11902,8 @@ const WORD_DATA = {
           "example": "When he was young, he was a professional diver.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "ver"
+            "div",
+            "er"
           ]
         },
         {
@@ -12240,8 +11925,8 @@ const WORD_DATA = {
           "example": "The captain has experienced a lot.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "ptain"
+            "cap",
+            "tain"
           ]
         },
         {
@@ -12252,8 +11937,8 @@ const WORD_DATA = {
           "example": "Because the house owner couldn't afford it.",
           "exampleType": "book",
           "syllables": [
-            "ow",
-            "ner"
+            "own",
+            "er"
           ]
         },
         {
@@ -12264,8 +11949,9 @@ const WORD_DATA = {
           "example": "When can we arrange the interviews for the employees?",
           "exampleType": "book",
           "syllables": [
-            "empl",
-            "oyee"
+            "em",
+            "ploy",
+            "ee"
           ]
         },
         {
@@ -12276,9 +11962,9 @@ const WORD_DATA = {
           "example": "The accurate time for our live entertainment on Children's Day has been set.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "ur",
-            "ate"
+            "ac",
+            "cu",
+            "rate"
           ]
         },
         {
@@ -12289,8 +11975,7 @@ const WORD_DATA = {
           "example": "The exchange of goods can not only provide supplies for people in different countries, but also promote the development of business and trade.",
           "exampleType": "book",
           "syllables": [
-            "tra",
-            "de"
+            "trade"
           ]
         },
         {
@@ -12301,9 +11986,8 @@ const WORD_DATA = {
           "example": "Can you help me postpone this?",
           "exampleType": "auto",
           "syllables": [
-            "po",
-            "stpo",
-            "ne"
+            "post",
+            "pone"
           ]
         },
         {
@@ -12325,8 +12009,7 @@ const WORD_DATA = {
           "example": "One of his sons was a banker and the other one was a judge.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "nker"
+            "banker"
           ]
         },
         {
@@ -12337,8 +12020,7 @@ const WORD_DATA = {
           "example": "One of his sons was a banker and the other one was a judge.",
           "exampleType": "book",
           "syllables": [
-            "ju",
-            "dge"
+            "judge"
           ]
         },
         {
@@ -12350,8 +12032,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "li",
-            "bra",
-            "rian"
+            "brar",
+            "i",
+            "an"
           ]
         },
         {
@@ -12362,8 +12045,8 @@ const WORD_DATA = {
           "example": "Or I can be a soldier in the army.",
           "exampleType": "book",
           "syllables": [
-            "so",
-            "ldier"
+            "sol",
+            "dier"
           ]
         },
         {
@@ -12374,8 +12057,7 @@ const WORD_DATA = {
           "example": "Then he turned to be a soldier and also once worked as a porter, a postman, a taxi driver and a famous baker in Australia.",
           "exampleType": "book",
           "syllables": [
-            "po",
-            "rter"
+            "porter"
           ]
         },
         {
@@ -12386,8 +12068,8 @@ const WORD_DATA = {
           "example": "Then he turned to be a soldier and also once worked as a porter, a postman, a taxi driver and a famous baker in Australia.",
           "exampleType": "book",
           "syllables": [
-            "po",
-            "stman"
+            "post",
+            "man"
           ]
         },
         {
@@ -12409,8 +12091,8 @@ const WORD_DATA = {
           "example": "Then he turned to be a soldier and also once worked as a porter, a postman, a taxi driver and a famous baker in Australia.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "ker"
+            "bak",
+            "er"
           ]
         },
         {
@@ -12432,8 +12114,7 @@ const WORD_DATA = {
           "example": "I can act as a sailor or captain on the sea in a TV show.",
           "exampleType": "book",
           "syllables": [
-            "sai",
-            "lor"
+            "sailor"
           ]
         },
         {
@@ -12445,8 +12126,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "ti",
-            "re"
+            "tire"
           ]
         },
         {
@@ -12457,10 +12137,9 @@ const WORD_DATA = {
           "example": "They will provide professional training and temporary accommodation.",
           "exampleType": "book",
           "syllables": [
-            "te",
-            "mpo",
-            "ra",
-            "ry"
+            "tem",
+            "po",
+            "rary"
           ]
         },
         {
@@ -12483,10 +12162,9 @@ const WORD_DATA = {
           "example": "The firefighter, our lecturer, was called to perform an urgent task.",
           "exampleType": "book",
           "syllables": [
-            "fi",
-            "re",
-            "fi",
-            "ghter"
+            "fire",
+            "fight",
+            "er"
           ]
         },
         {
@@ -12497,8 +12175,9 @@ const WORD_DATA = {
           "example": "The scientist was sent to prison.",
           "exampleType": "book",
           "syllables": [
-            "scie",
-            "ntist"
+            "sci",
+            "en",
+            "tist"
           ]
         },
         {
@@ -12509,9 +12188,9 @@ const WORD_DATA = {
           "example": "The firefighter, our lecturer, was called to perform an urgent task.",
           "exampleType": "book",
           "syllables": [
-            "le",
-            "ctu",
-            "rer"
+            "lec",
+            "tur",
+            "er"
           ]
         },
         {
@@ -12523,8 +12202,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "fe",
-            "ssor"
+            "fes",
+            "sor"
           ]
         },
         {
@@ -12559,8 +12238,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "po",
-            "rter"
+            "porter"
           ]
         },
         {
@@ -12571,9 +12249,9 @@ const WORD_DATA = {
           "example": "The publisher was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "pu",
-            "bli",
-            "sher"
+            "pub",
+            "lish",
+            "er"
           ]
         },
         {
@@ -12584,8 +12262,8 @@ const WORD_DATA = {
           "example": "She felt selfish after hearing the news.",
           "exampleType": "auto",
           "syllables": [
-            "se",
-            "lfish"
+            "self",
+            "ish"
           ]
         },
         {
@@ -12596,8 +12274,8 @@ const WORD_DATA = {
           "example": "The weather must be something with magic power.",
           "exampleType": "book",
           "syllables": [
-            "po",
-            "wer"
+            "pow",
+            "er"
           ]
         },
         {
@@ -12609,8 +12287,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "ti",
-            "re",
+            "tire",
             "ment"
           ]
         },
@@ -12638,9 +12315,7 @@ const WORD_DATA = {
           "example": "She is not a celebrity or a superstar, but she is a kind woman who is always ready to help those people in need.",
           "exampleType": "book",
           "syllables": [
-            "ce",
-            "le",
-            "bri",
+            "celebri",
             "ty"
           ]
         },
@@ -12652,8 +12327,9 @@ const WORD_DATA = {
           "example": "The idols may be celebrities in the music industry , the heroes or heroines in movies, or the authors of bestsellers.",
           "exampleType": "book",
           "syllables": [
-            "ind",
-            "ustry"
+            "in",
+            "dus",
+            "try"
           ]
         },
         {
@@ -12664,8 +12340,7 @@ const WORD_DATA = {
           "example": "The brand of this bike is Hero, in black colour, which was bought one year ago.",
           "exampleType": "book",
           "syllables": [
-            "he",
-            "ro"
+            "hero"
           ]
         },
         {
@@ -12676,9 +12351,8 @@ const WORD_DATA = {
           "example": "She has much influence on me, and in my heart, she is the greatest heroine. 听力原文 m.",
           "exampleType": "book",
           "syllables": [
-            "he",
-            "roi",
-            "ne"
+            "hero",
+            "ine"
           ]
         },
         {
@@ -12689,9 +12363,8 @@ const WORD_DATA = {
           "example": "I remember it was the first bestseller that I bought.",
           "exampleType": "book",
           "syllables": [
-            "be",
-            "stse",
-            "ller"
+            "best",
+            "seller"
           ]
         },
         {
@@ -12713,8 +12386,8 @@ const WORD_DATA = {
           "example": "Who do you admire most?",
           "exampleType": "book",
           "syllables": [
-            "adm",
-            "ire"
+            "ad",
+            "mire"
           ]
         },
         {
@@ -12725,9 +12398,10 @@ const WORD_DATA = {
           "example": "An independent house usually has more space and better privacy.",
           "exampleType": "book",
           "syllables": [
-            "ind",
-            "ep",
-            "endent"
+            "in",
+            "de",
+            "pen",
+            "dent"
           ]
         },
         {
@@ -12738,8 +12412,7 @@ const WORD_DATA = {
           "example": "To set out clear aims for one's team.",
           "exampleType": "book",
           "syllables": [
-            "cl",
-            "ear"
+            "clear"
           ]
         },
         {
@@ -12761,9 +12434,9 @@ const WORD_DATA = {
           "example": "Secondly, don't wony about the admission tickets because they are free.",
           "exampleType": "book",
           "syllables": [
-            "adm",
-            "iss",
-            "ion"
+            "ad",
+            "mis",
+            "sion"
           ]
         },
         {
@@ -12785,8 +12458,8 @@ const WORD_DATA = {
           "example": "When it's your turn, there are workers who will come to inform you 参宏答案 of the time and tips you should know.",
           "exampleType": "book",
           "syllables": [
-            "inf",
-            "orm"
+            "in",
+            "form"
           ]
         },
         {
@@ -12797,8 +12470,8 @@ const WORD_DATA = {
           "example": "It is not realistic to perform well every time.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rform"
+            "per",
+            "form"
           ]
         },
         {
@@ -12810,7 +12483,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pe",
-            "riod"
+            "ri",
+            "od"
           ]
         },
         {
@@ -12821,8 +12495,7 @@ const WORD_DATA = {
           "example": "Since then I had been upset.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "nce"
+            "since"
           ]
         },
         {
@@ -12833,9 +12506,9 @@ const WORD_DATA = {
           "example": "Interviewer: Oh, really?",
           "exampleType": "book",
           "syllables": [
-            "int",
-            "erv",
-            "iew"
+            "in",
+            "ter",
+            "view"
           ]
         },
         {
@@ -12857,8 +12530,7 @@ const WORD_DATA = {
           "example": "After I entered the room, I saw a big screen playing my idols * interview in a chat show and some scenes in which they were singing in a recording studio.",
           "exampleType": "book",
           "syllables": [
-            "sce",
-            "ne"
+            "scene"
           ]
         },
         {
@@ -12869,9 +12541,8 @@ const WORD_DATA = {
           "example": "After I entered the room, I saw a big screen playing my idols * interview in a chat show and some scenes in which they were singing in a recording studio.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "co",
-            "rding"
+            "record",
+            "ing"
           ]
         },
         {
@@ -12895,8 +12566,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "gui",
-            "ta",
-            "rist"
+            "tarist"
           ]
         },
         {
@@ -12919,10 +12589,9 @@ const WORD_DATA = {
           "example": "Singing and dancing are the most common performances at parties.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rfo",
-            "rma",
-            "nce"
+            "per",
+            "for",
+            "mance"
           ]
         },
         {
@@ -12933,7 +12602,7 @@ const WORD_DATA = {
           "example": "At the end of the performance, I couldn't help but cheer and clap with the audience in the video.",
           "exampleType": "book",
           "syllables": [
-            "clap"
+            "Clap"
           ]
         },
         {
@@ -12945,8 +12614,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "au",
-            "die",
-            "nce"
+            "di",
+            "ence"
           ]
         },
         {
@@ -12957,8 +12626,8 @@ const WORD_DATA = {
           "example": "It was just like magic. “That's incredible!",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "gic"
+            "mag",
+            "ic"
           ]
         },
         {
@@ -12969,9 +12638,10 @@ const WORD_DATA = {
           "example": "It's an incredible chance.",
           "exampleType": "book",
           "syllables": [
-            "incr",
-            "ed",
-            "ible"
+            "in",
+            "cred",
+            "i",
+            "ble"
           ]
         },
         {
@@ -12982,8 +12652,7 @@ const WORD_DATA = {
           "example": "IV.（答案仅供参考） interview 4. ballet 5. guitarist 8. clap 9. scream 10. studio perform 4. interviewed 1.",
           "exampleType": "book",
           "syllables": [
-            "scr",
-            "eam"
+            "scream"
           ]
         },
         {
@@ -12994,9 +12663,9 @@ const WORD_DATA = {
           "example": "Boxing is another popular sport for the young to pursue excitement.",
           "exampleType": "book",
           "syllables": [
-            "exc",
-            "it",
-            "ement"
+            "ex",
+            "cite",
+            "ment"
           ]
         },
         {
@@ -13007,10 +12676,10 @@ const WORD_DATA = {
           "example": "There are many forms of entertainment.",
           "exampleType": "book",
           "syllables": [
-            "ent",
-            "ert",
-            "ai",
-            "nment"
+            "en",
+            "ter",
+            "tain",
+            "ment"
           ]
         },
         {
@@ -13043,8 +12712,7 @@ const WORD_DATA = {
           "example": "Tom: You do have a good voice.",
           "exampleType": "book",
           "syllables": [
-            "voi",
-            "ce"
+            "voice"
           ]
         },
         {
@@ -13055,9 +12723,10 @@ const WORD_DATA = {
           "example": "Altogether it was a great surprise party for me.",
           "exampleType": "book",
           "syllables": [
-            "alt",
-            "og",
-            "ether"
+            "al",
+            "to",
+            "geth",
+            "er"
           ]
         },
         {
@@ -13068,9 +12737,9 @@ const WORD_DATA = {
           "example": "These habits are helpful and will influence me a lot.",
           "exampleType": "book",
           "syllables": [
-            "infl",
-            "ue",
-            "nce"
+            "in",
+            "flu",
+            "ence"
           ]
         }
       ]
@@ -13085,9 +12754,9 @@ const WORD_DATA = {
           "example": "There are many forms of entertainment.",
           "exampleType": "book",
           "syllables": [
-            "ent",
-            "ert",
-            "ain"
+            "en",
+            "ter",
+            "tain"
           ]
         },
         {
@@ -13122,8 +12791,8 @@ const WORD_DATA = {
           "example": "That was a very permanent experience.",
           "exampleType": "auto",
           "syllables": [
-            "pe",
-            "rma",
+            "per",
+            "ma",
             "nent"
           ]
         },
@@ -13135,8 +12804,8 @@ const WORD_DATA = {
           "example": "Wish you all success in your performance! / Day 18 I.（略） H. 1. display 2. firework 3. headphone 4. documentary 5. review 6. series 7. folk 8. row 9. smell 10. smoke HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "splay"
+            "dis",
+            "play"
           ]
         },
         {
@@ -13147,8 +12816,7 @@ const WORD_DATA = {
           "example": "After I come to China, I will let off a few fireworks.",
           "exampleType": "book",
           "syllables": [
-            "fi",
-            "re",
+            "fire",
             "work"
           ]
         },
@@ -13160,8 +12828,8 @@ const WORD_DATA = {
           "example": "However, there are some people who always break the rules with silly behaviours, which may even cause big issues to the society.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "lly"
+            "sil",
+            "ly"
           ]
         },
         {
@@ -13172,8 +12840,8 @@ const WORD_DATA = {
           "example": "However, there are some people who always break the rules with silly behaviours, which may even cause big issues to the society.",
           "exampleType": "book",
           "syllables": [
-            "iss",
-            "ue"
+            "is",
+            "sue"
           ]
         },
         {
@@ -13185,8 +12853,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "so",
-            "cie",
-            "ty"
+            "ci",
+            "ety"
           ]
         },
         {
@@ -13197,8 +12865,9 @@ const WORD_DATA = {
           "example": "It was during the interval of a new production of King Lear.",
           "exampleType": "book",
           "syllables": [
-            "int",
-            "erval"
+            "in",
+            "ter",
+            "val"
           ]
         },
         {
@@ -13210,8 +12879,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "du",
-            "ction"
+            "duc",
+            "tion"
           ]
         },
         {
@@ -13233,9 +12902,8 @@ const WORD_DATA = {
           "example": "You can wear the headphones on your right side to listen to our podcast.",
           "exampleType": "book",
           "syllables": [
-            "hea",
-            "dpho",
-            "nes"
+            "head",
+            "phones"
           ]
         },
         {
@@ -13246,8 +12914,8 @@ const WORD_DATA = {
           "example": "You can wear the headphones on your right side to listen to our podcast.",
           "exampleType": "book",
           "syllables": [
-            "po",
-            "dcast"
+            "pod",
+            "cast"
           ]
         },
         {
@@ -13291,10 +12959,11 @@ const WORD_DATA = {
           "example": "You can turn up or down the volume based on individual needs.n I tried the first channel.",
           "exampleType": "book",
           "syllables": [
-            "ind",
-            "iv",
-            "id",
-            "ual"
+            "in",
+            "di",
+            "vid",
+            "u",
+            "al"
           ]
         },
         {
@@ -13305,11 +12974,10 @@ const WORD_DATA = {
           "example": "Documentary films on nature and animals.",
           "exampleType": "book",
           "syllables": [
-            "do",
-            "cu",
-            "me",
-            "nta",
-            "ry"
+            "doc",
+            "u",
+            "men",
+            "tary"
           ]
         },
         {
@@ -13343,8 +13011,9 @@ const WORD_DATA = {
           "example": "It was about the latest productions by the theatre: films, documentaries, TV series, soap operas, orchestra shows5 and concerts of folk music.",
           "exampleType": "book",
           "syllables": [
-            "orch",
-            "estra"
+            "or",
+            "ches",
+            "tra"
           ]
         },
         {
@@ -13366,9 +13035,8 @@ const WORD_DATA = {
           "example": "It was an interview of the performers from King Lear.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "rfo",
-            "rmer"
+            "per",
+            "former"
           ]
         },
         {
@@ -13379,8 +13047,8 @@ const WORD_DATA = {
           "example": "Indeed, it was a superb show which demanded much hard work.",
           "exampleType": "book",
           "syllables": [
-            "ind",
-            "eed"
+            "in",
+            "deed"
           ]
         },
         {
@@ -13391,8 +13059,7 @@ const WORD_DATA = {
           "example": "Immediately the kitchen was full of spicy smell.",
           "exampleType": "book",
           "syllables": [
-            "sm",
-            "ell"
+            "smell"
           ]
         },
         {
@@ -13414,8 +13081,7 @@ const WORD_DATA = {
           "example": "I changed the locks, checked the smoke alarms , covered the ground with dust sheets 5 got a dustbin 5 changed the 读故事巧记PET核心词汇 bulbs and repaired a leaking pipe.",
           "exampleType": "book",
           "syllables": [
-            "smo",
-            "ke"
+            "smoke"
           ]
         },
         {
@@ -13426,8 +13092,8 @@ const WORD_DATA = {
           "example": "Label the pictures. 2. wear the headphones 4. smell something burning 6. film production 8. come to the conclusion 10.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nclu",
+            "con",
+            "clu",
             "sion"
           ]
         },
@@ -13439,9 +13105,9 @@ const WORD_DATA = {
           "example": "With a strict inspection, they came to the conclusion that the wires underneath the carpet were turrit out due to the cigarette butt.",
           "exampleType": "book",
           "syllables": [
-            "und",
-            "ern",
-            "eath"
+            "un",
+            "der",
+            "neath"
           ]
         },
         {
@@ -13463,10 +13129,10 @@ const WORD_DATA = {
           "example": "This was the main reason why the complicated stereo system was out of order.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mpli",
-            "ca",
-            "ted"
+            "com",
+            "pli",
+            "cat",
+            "ed"
           ]
         },
         {
@@ -13477,8 +13143,8 @@ const WORD_DATA = {
           "example": "This was the main reason why the complicated stereo system was out of order.",
           "exampleType": "book",
           "syllables": [
-            "sy",
-            "stem"
+            "sys",
+            "tem"
           ]
         },
         {
@@ -13500,9 +13166,10 @@ const WORD_DATA = {
           "example": "But the man who smoked had not realised how incredibly stressed to the personnel and how dangerous to the other audience.",
           "exampleType": "book",
           "syllables": [
-            "incr",
-            "ed",
-            "ibly"
+            "in",
+            "cred",
+            "i",
+            "bly"
           ]
         },
         {
@@ -13513,8 +13180,7 @@ const WORD_DATA = {
           "example": "But the man who smoked had not realised how incredibly stressed to the personnel and how dangerous to the other audience.",
           "exampleType": "book",
           "syllables": [
-            "stre",
-            "ssed"
+            "stressed"
           ]
         },
         {
@@ -13537,8 +13203,8 @@ const WORD_DATA = {
           "example": "We bought a new network yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "ne",
-            "twork"
+            "net",
+            "work"
           ]
         },
         {
@@ -13576,8 +13242,7 @@ const WORD_DATA = {
           "example": "My dad is a director working abroad.",
           "exampleType": "book",
           "syllables": [
-            "abr",
-            "oad"
+            "abroad"
           ]
         },
         {
@@ -13588,8 +13253,8 @@ const WORD_DATA = {
           "example": "After consideration, she chose London, the capital of England, as the tourist site.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "pi",
+            "cap",
+            "i",
             "tal"
           ]
         },
@@ -13602,9 +13267,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "pa",
-            "rtu",
-            "re"
+            "par",
+            "ture"
           ]
         },
         {
@@ -13615,8 +13279,7 @@ const WORD_DATA = {
           "example": "Before departure, she got her visa, packed her luggage, and learned about the local cultural custom in advance.",
           "exampleType": "book",
           "syllables": [
-            "vi",
-            "sa"
+            "visa"
           ]
         },
         {
@@ -13627,9 +13290,8 @@ const WORD_DATA = {
           "example": "She checked in at the reception desk and put down her luggage.",
           "exampleType": "book",
           "syllables": [
-            "lu",
-            "gga",
-            "ge"
+            "lug",
+            "gage"
           ]
         },
         {
@@ -13640,9 +13302,9 @@ const WORD_DATA = {
           "example": "Before departure, she got her visa, packed her luggage, and learned about the local cultural custom in advance.",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "ltu",
-            "ral"
+            "cul",
+            "tur",
+            "al"
           ]
         },
         {
@@ -13653,8 +13315,8 @@ const WORD_DATA = {
           "example": "She hears about it from a customer. 3.",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "stom"
+            "cus",
+            "tom"
           ]
         },
         {
@@ -13665,8 +13327,8 @@ const WORD_DATA = {
           "example": "After confirming the departure time and route, she took a cab to Beijing International Airport.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nfirm"
+            "con",
+            "firm"
           ]
         },
         {
@@ -13677,8 +13339,7 @@ const WORD_DATA = {
           "example": "After confirming the departure time and route, she took a cab to Beijing International Airport.",
           "exampleType": "book",
           "syllables": [
-            "rou",
-            "te"
+            "route"
           ]
         },
         {
@@ -13700,8 +13361,7 @@ const WORD_DATA = {
           "example": "She came to the check-in desk and got her boarding pass, boarded the plane on time by following the airport signposts5 and set off for London.",
           "exampleType": "book",
           "syllables": [
-            "che",
-            "ck-in"
+            "check-in"
           ]
         },
         {
@@ -13746,8 +13406,8 @@ const WORD_DATA = {
           "example": "We bought a new signpost yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "si",
-            "gnpost"
+            "sign",
+            "post"
           ]
         },
         {
@@ -13769,9 +13429,8 @@ const WORD_DATA = {
           "example": "Thanks to technology, people can keep in touch at a distance.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sta",
-            "nce"
+            "dis",
+            "tance"
           ]
         },
         {
@@ -13793,8 +13452,7 @@ const WORD_DATA = {
           "example": "After a 16-hour long-distance trip, the plane landed in London safely.",
           "exampleType": "book",
           "syllables": [
-            "sa",
-            "fe",
+            "safe",
             "ly"
           ]
         },
@@ -13806,8 +13464,8 @@ const WORD_DATA = {
           "example": "On arrival at the airport, Mary took the underground to the hotel which was booked online.",
           "exampleType": "book",
           "syllables": [
-            "arr",
-            "ival"
+            "ar",
+            "rival"
           ]
         },
         {
@@ -13818,9 +13476,9 @@ const WORD_DATA = {
           "example": "Therefore, I think the underground is the best choice for tourists. 3.",
           "exampleType": "book",
           "syllables": [
-            "und",
-            "ergr",
-            "ound"
+            "un",
+            "der",
+            "ground"
           ]
         },
         {
@@ -13843,8 +13501,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "ce",
-            "ption"
+            "cep",
+            "tion"
           ]
         },
         {
@@ -13855,9 +13513,9 @@ const WORD_DATA = {
           "example": "On the first two days, Mary decided to be a backpacker.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "ckpa",
-            "cker"
+            "back",
+            "pack",
+            "er"
           ]
         },
         {
@@ -13868,9 +13526,8 @@ const WORD_DATA = {
           "example": "Personally, stamps are an important part of our traditional culture.",
           "exampleType": "book",
           "syllables": [
-            "cu",
-            "ltu",
-            "re"
+            "cul",
+            "ture"
           ]
         },
         {
@@ -13892,9 +13549,7 @@ const WORD_DATA = {
           "example": "She walked through the streets of London with a travel brochure to experience its culture and went to many famous places on foot, including Buckingham Palace, Big Ben, and The British Museum.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "la",
-            "ce"
+            "palace"
           ]
         },
         {
@@ -13927,8 +13582,8 @@ const WORD_DATA = {
           "example": "Shortly after they crossed a bridge, they came to the destination.",
           "exampleType": "book",
           "syllables": [
-            "de",
-            "sti",
+            "des",
+            "ti",
             "na",
             "tion"
           ]
@@ -13941,8 +13596,8 @@ const WORD_DATA = {
           "example": "On the third day, due to the long distance to the destination5 she chartered a car and had a self-driving tour.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "rter"
+            "char",
+            "ter"
           ]
         },
         {
@@ -13964,8 +13619,7 @@ const WORD_DATA = {
           "example": "What impressed me most was his programming speed.",
           "exampleType": "book",
           "syllables": [
-            "sp",
-            "eed"
+            "speed"
           ]
         },
         {
@@ -13976,9 +13630,9 @@ const WORD_DATA = {
           "example": "It was quite magnificent.",
           "exampleType": "auto",
           "syllables": [
-            "ma",
-            "gni",
-            "fi",
+            "mag",
+            "nif",
+            "i",
             "cent"
           ]
         },
@@ -13990,9 +13644,8 @@ const WORD_DATA = {
           "example": "Can you see the landscape over there?",
           "exampleType": "auto",
           "syllables": [
-            "la",
-            "ndsca",
-            "pe"
+            "land",
+            "scape"
           ]
         },
         {
@@ -14014,8 +13667,8 @@ const WORD_DATA = {
           "example": "Can you see the tunnel over there?",
           "exampleType": "auto",
           "syllables": [
-            "tu",
-            "nnel"
+            "tun",
+            "nel"
           ]
         },
         {
@@ -14026,8 +13679,7 @@ const WORD_DATA = {
           "example": "You should reach it before it's too late.",
           "exampleType": "auto",
           "syllables": [
-            "re",
-            "ach"
+            "reach"
           ]
         },
         {
@@ -14051,8 +13703,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "sea",
-            "si",
-            "de"
+            "side"
           ]
         },
         {
@@ -14063,8 +13714,8 @@ const WORD_DATA = {
           "example": "During the trip, Mary lost her credit card and ID card.",
           "exampleType": "book",
           "syllables": [
-            "cre",
-            "dit"
+            "cred",
+            "it"
           ]
         },
         {
@@ -14075,8 +13726,8 @@ const WORD_DATA = {
           "example": "Fortunately, she got help from the local embassy and found them.",
           "exampleType": "book",
           "syllables": [
-            "emb",
-            "assy"
+            "em",
+            "bassy"
           ]
         },
         {
@@ -14098,8 +13749,8 @@ const WORD_DATA = {
           "example": "Let's pay for them at the self-checkout counter. 『Day 8 I.（略） n. i. tight 2. pin 3. pullover 4. pants 5. mall 6. collar 7. queue 8. button 9. sandal 10. sew in. i.",
           "exampleType": "book",
           "syllables": [
-            "che",
-            "ckout"
+            "check",
+            "out"
           ]
         },
         {
@@ -14111,8 +13762,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "sou",
-            "ve",
-            "nir"
+            "venir"
           ]
         },
         {
@@ -14123,9 +13773,7 @@ const WORD_DATA = {
           "example": "She felt duty-free after hearing the news.",
           "exampleType": "auto",
           "syllables": [
-            "du",
-            "ty",
-            "-free"
+            "duty-free"
           ]
         }
       ]
@@ -14206,8 +13854,7 @@ const WORD_DATA = {
           "example": "I became a middle-aged professor in law overnight.",
           "exampleType": "book",
           "syllables": [
-            "ov",
-            "ernight"
+            "overnight"
           ]
         },
         {
@@ -14229,8 +13876,8 @@ const WORD_DATA = {
           "example": "I. （略） II. 1. jet 2. rail 3. crossroads 4. brake 5. sail 6. cabin 7. rocket 8. hitchhike 9. pavement 10. spaceship HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "bin"
+            "cab",
+            "in"
           ]
         },
         {
@@ -14241,11 +13888,11 @@ const WORD_DATA = {
           "example": "They will provide professional training and temporary accommodation.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "omm",
-            "od",
-            "at",
-            "ion"
+            "ac",
+            "com",
+            "mo",
+            "da",
+            "tion"
           ]
         },
         {
@@ -14256,9 +13903,8 @@ const WORD_DATA = {
           "example": "I'm here to introduce the new self-service restaurant.",
           "exampleType": "book",
           "syllables": [
-            "se",
-            "rvi",
-            "ce"
+            "ser",
+            "vice"
           ]
         },
         {
@@ -14280,8 +13926,7 @@ const WORD_DATA = {
           "example": "Maybe we can develop space tourism in the future.",
           "exampleType": "book",
           "syllables": [
-            "tou",
-            "rism"
+            "tourism"
           ]
         },
         {
@@ -14292,9 +13937,8 @@ const WORD_DATA = {
           "example": "For the area that is heavily dependent on tourism 5 it's really important to have convenient airlines or routes.",
           "exampleType": "book",
           "syllables": [
-            "ai",
-            "rli",
-            "ne"
+            "air",
+            "line"
           ]
         },
         {
@@ -14306,8 +13950,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "li",
-            "ver"
+            "liv",
+            "er"
           ]
         },
         {
@@ -14351,8 +13995,8 @@ const WORD_DATA = {
           "example": "At the border of oceans, there are coasts covered by sands, which can make us feel relaxed when lying on the shore.",
           "exampleType": "book",
           "syllables": [
-            "bo",
-            "rder"
+            "bor",
+            "der"
           ]
         },
         {
@@ -14363,8 +14007,7 @@ const WORD_DATA = {
           "example": "Goods are usually delivered via vans, lorries or rails within or out of the border, and they can also be carried through canals.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "nal"
+            "canal"
           ]
         },
         {
@@ -14400,7 +14043,8 @@ const WORD_DATA = {
           "example": "I once drove to a mountain with my family, but in the middle of the trip, the car was out of fuel, so we had to hitchhike.",
           "exampleType": "book",
           "syllables": [
-            "fuel"
+            "fu",
+            "el"
           ]
         },
         {
@@ -14411,9 +14055,8 @@ const WORD_DATA = {
           "example": "I. （略） II. 1. jet 2. rail 3. crossroads 4. brake 5. sail 6. cabin 7. rocket 8. hitchhike 9. pavement 10. spaceship HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "hi",
-            "tchhi",
-            "ke"
+            "hitch",
+            "hike"
           ]
         },
         {
@@ -14424,9 +14067,9 @@ const WORD_DATA = {
           "example": "When I was in college, I went backpacking with my friends.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "ckpa",
-            "cking"
+            "back",
+            "pack",
+            "ing"
           ]
         },
         {
@@ -14437,9 +14080,8 @@ const WORD_DATA = {
           "example": "I remember that we walked through an enormous desert.",
           "exampleType": "book",
           "syllables": [
-            "en",
-            "orm",
-            "ous"
+            "enor",
+            "mous"
           ]
         },
         {
@@ -14450,8 +14092,7 @@ const WORD_DATA = {
           "example": "And spaceships need to be parked in reserved parking spaces.",
           "exampleType": "book",
           "syllables": [
-            "spa",
-            "ce",
+            "space",
             "ship"
           ]
         },
@@ -14463,8 +14104,8 @@ const WORD_DATA = {
           "example": "Rockets will be faster and can carry more people into space in a short time.",
           "exampleType": "book",
           "syllables": [
-            "ro",
-            "cket"
+            "rock",
+            "et"
           ]
         },
         {
@@ -14475,9 +14116,9 @@ const WORD_DATA = {
           "example": "For pedestrians, when they are on the pavement, especially at the crossroads, they have to follow the traffic lights and road signs.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "de",
-            "strian"
+            "pedes",
+            "tri",
+            "an"
           ]
         },
         {
@@ -14488,8 +14129,7 @@ const WORD_DATA = {
           "example": "I. （略） II. 1. jet 2. rail 3. crossroads 4. brake 5. sail 6. cabin 7. rocket 8. hitchhike 9. pavement 10. spaceship HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "ve",
+            "pave",
             "ment"
           ]
         },
@@ -14501,8 +14141,8 @@ const WORD_DATA = {
           "example": "He saw a car crossing over at the crossroads.",
           "exampleType": "book",
           "syllables": [
-            "cro",
-            "ssroads"
+            "cross",
+            "roads"
           ]
         },
         {
@@ -14524,8 +14164,8 @@ const WORD_DATA = {
           "example": "Turning off the tap right away.",
           "exampleType": "book",
           "syllables": [
-            "tu",
-            "rning"
+            "turn",
+            "ing"
           ]
         },
         {
@@ -14536,8 +14176,8 @@ const WORD_DATA = {
           "example": "You should backwards it before it's too late.",
           "exampleType": "auto",
           "syllables": [
-            "ba",
-            "ckwards"
+            "back",
+            "wards"
           ]
         },
         {
@@ -14548,8 +14188,7 @@ const WORD_DATA = {
           "example": "I. （略） II. 1. jet 2. rail 3. crossroads 4. brake 5. sail 6. cabin 7. rocket 8. hitchhike 9. pavement 10. spaceship HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "bra",
-            "ke"
+            "brake"
           ]
         },
         {
@@ -14583,8 +14222,7 @@ const WORD_DATA = {
           "exampleType": "auto",
           "syllables": [
             "re",
-            "se",
-            "rve"
+            "serve"
           ]
         }
       ]
@@ -14599,9 +14237,8 @@ const WORD_DATA = {
           "example": "Enormous 该故事巧记PET核心词汇 spaceships and rockets can send people to outer space to explore the endless universe.",
           "exampleType": "book",
           "syllables": [
-            "un",
-            "iv",
-            "erse"
+            "uni",
+            "verse"
           ]
         },
         {
@@ -14612,8 +14249,8 @@ const WORD_DATA = {
           "example": "How much do you know about this planet?",
           "exampleType": "book",
           "syllables": [
-            "pla",
-            "net"
+            "plan",
+            "et"
           ]
         },
         {
@@ -14624,8 +14261,7 @@ const WORD_DATA = {
           "example": "I live in Yunnan, China.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "ve"
+            "live"
           ]
         },
         {
@@ -14636,8 +14272,7 @@ const WORD_DATA = {
           "example": "What should we do to protect our earth?",
           "exampleType": "book",
           "syllables": [
-            "ea",
-            "rth"
+            "earth"
           ]
         },
         {
@@ -14648,8 +14283,7 @@ const WORD_DATA = {
           "example": "Sailing in the ocean makes lands connect and helps people go around the world.",
           "exampleType": "book",
           "syllables": [
-            "oc",
-            "ean"
+            "ocean"
           ]
         },
         {
@@ -14660,8 +14294,8 @@ const WORD_DATA = {
           "example": "We bought a new continent yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "nti",
+            "con",
+            "ti",
             "nent"
           ]
         },
@@ -14673,9 +14307,9 @@ const WORD_DATA = {
           "example": "Our earth has existed for hundreds of millions of years, and there are many marvellous sceneries formed during the period, such as dense rainforests on land, caves and stones in the mountains.",
           "exampleType": "book",
           "syllables": [
-            "ma",
-            "rve",
-            "llous"
+            "mar",
+            "vel",
+            "lous"
           ]
         },
         {
@@ -14686,9 +14320,7 @@ const WORD_DATA = {
           "example": "Maybe we can ride bikes along the river to enjoy the wonderful scenery instead.",
           "exampleType": "book",
           "syllables": [
-            "sce",
-            "ne",
-            "ry"
+            "scenery"
           ]
         },
         {
@@ -14699,9 +14331,9 @@ const WORD_DATA = {
           "example": "For example, people cut down trees in the rainforest to build houses, and thus many animals lose the habitats and food.",
           "exampleType": "book",
           "syllables": [
-            "rai",
-            "nfo",
-            "rest"
+            "rain",
+            "for",
+            "est"
           ]
         },
         {
@@ -14723,8 +14355,7 @@ const WORD_DATA = {
           "example": "He and his robot friend went on a twenty-mile 214 参毒谷案 hike through the forest and found a terrible ancient cave.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "ve"
+            "cave"
           ]
         },
         {
@@ -14735,8 +14366,7 @@ const WORD_DATA = {
           "example": "Several days ago, when I was cycling, I fell down from the bike because of a stone in the way, Unfortunately, my ankles and knees were severely injured and bled a lot.",
           "exampleType": "book",
           "syllables": [
-            "sto",
-            "ne"
+            "stone"
           ]
         },
         {
@@ -14747,8 +14377,7 @@ const WORD_DATA = {
           "example": "Streams and rivers flow through valleys, and waterfalls fall down from cliffs.",
           "exampleType": "book",
           "syllables": [
-            "str",
-            "eam"
+            "stream"
           ]
         },
         {
@@ -14759,8 +14388,8 @@ const WORD_DATA = {
           "example": "I like the wonderful waterfalls, the valleys and the cliffs.",
           "exampleType": "book",
           "syllables": [
-            "va",
-            "lley"
+            "val",
+            "ley"
           ]
         },
         {
@@ -14772,8 +14401,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "wa",
-            "te",
-            "rfall"
+            "ter",
+            "fall"
           ]
         },
         {
@@ -14784,8 +14413,7 @@ const WORD_DATA = {
           "example": "I like the wonderful waterfalls, the valleys and the cliffs.",
           "exampleType": "book",
           "syllables": [
-            "cl",
-            "iff"
+            "cliff"
           ]
         },
         {
@@ -14796,8 +14424,7 @@ const WORD_DATA = {
           "example": "I also enjoy the seasides and walking along the coast.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ast"
+            "coast"
           ]
         },
         {
@@ -14819,8 +14446,7 @@ const WORD_DATA = {
           "example": "At the border of oceans, there are coasts covered by sands, which can make us feel relaxed when lying on the shore.",
           "exampleType": "book",
           "syllables": [
-            "sho",
-            "re"
+            "shore"
           ]
         },
         {
@@ -14831,9 +14457,8 @@ const WORD_DATA = {
           "example": "When I watch sunrise and sunset, I feel the peace of life. 3.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "nri",
-            "se"
+            "sun",
+            "rise"
           ]
         },
         {
@@ -14844,8 +14469,8 @@ const WORD_DATA = {
           "example": "When I watch sunrise and sunset, I feel the peace of life. 3.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "nset"
+            "sun",
+            "set"
           ]
         },
         {
@@ -14880,8 +14505,8 @@ const WORD_DATA = {
           "example": "Woman: Farming is important because it can provide food and energy for us.",
           "exampleType": "book",
           "syllables": [
-            "fa",
-            "rming"
+            "farm",
+            "ing"
           ]
         },
         {
@@ -14903,8 +14528,8 @@ const WORD_DATA = {
           "example": "Farming is the foundation because crops grown on the farmland can provide food for us and solve the problem of hunger.",
           "exampleType": "book",
           "syllables": [
-            "fa",
-            "rmland"
+            "farm",
+            "land"
           ]
         },
         {
@@ -14915,8 +14540,7 @@ const WORD_DATA = {
           "example": "Farming is the foundation because crops grown on the farmland can provide food for us and solve the problem of hunger.",
           "exampleType": "book",
           "syllables": [
-            "hu",
-            "nger"
+            "hunger"
           ]
         },
         {
@@ -14927,10 +14551,9 @@ const WORD_DATA = {
           "example": "Water is necessary for both plants and animals.",
           "exampleType": "book",
           "syllables": [
-            "ne",
-            "ce",
-            "ssa",
-            "ry"
+            "nec",
+            "es",
+            "sary"
           ]
         },
         {
@@ -14941,9 +14564,9 @@ const WORD_DATA = {
           "example": "But the seats are limited.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "mi",
-            "ted"
+            "lim",
+            "it",
+            "ed"
           ]
         },
         {
@@ -14965,9 +14588,9 @@ const WORD_DATA = {
           "example": "Therefore, we should protect freshwater from now on and save water for next generations. 3.",
           "exampleType": "book",
           "syllables": [
-            "ge",
-            "ne",
-            "ra",
+            "gen",
+            "er",
+            "a",
             "tion"
           ]
         },
@@ -14979,9 +14602,7 @@ const WORD_DATA = {
           "example": "The wildlife was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "wi",
-            "ldli",
-            "fe"
+            "wildlife"
           ]
         },
         {
@@ -14992,8 +14613,8 @@ const WORD_DATA = {
           "example": "Do you like to see historical buildings or natural sceneries?",
           "exampleType": "book",
           "syllables": [
-            "na",
-            "tu",
+            "nat",
+            "u",
             "ral"
           ]
         },
@@ -15005,9 +14626,8 @@ const WORD_DATA = {
           "example": "Without these creatures, our world will become less colourful and interesting.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "lou",
-            "rful"
+            "colour",
+            "ful"
           ]
         },
         {
@@ -15047,8 +14667,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "gi",
-            "ra",
-            "ffe"
+            "raffe"
           ]
         },
         {
@@ -15059,8 +14678,8 @@ const WORD_DATA = {
           "example": "We bought a new kangaroo yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "ka",
-            "nga",
+            "kan",
+            "ga",
             "roo"
           ]
         },
@@ -15072,8 +14691,8 @@ const WORD_DATA = {
           "example": "Unit 11 Y Day 21 I. （略） II. 1. penguin 2. sunrise 3. farmland 4. cave 5. ocean 该故事巧记PET核心词汇 6. earth 7. cliff 8. stream 9. waterfall 10. rainforest HI. 1.",
           "exampleType": "book",
           "syllables": [
-            "pe",
-            "nguin"
+            "pen",
+            "guin"
           ]
         },
         {
@@ -15085,8 +14704,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "crea",
-            "tu",
-            "re"
+            "ture"
           ]
         },
         {
@@ -15097,8 +14715,8 @@ const WORD_DATA = {
           "example": "We bought a new mosquito yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "mo",
-            "squi",
+            "mos",
+            "qui",
             "to"
           ]
         },
@@ -15110,8 +14728,7 @@ const WORD_DATA = {
           "example": "Man: Unfortunately, wild species are decreasing nowadays.",
           "exampleType": "book",
           "syllables": [
-            "spe",
-            "cies"
+            "species"
           ]
         },
         {
@@ -15123,8 +14740,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "crea",
-            "se"
+            "crease"
           ]
         },
         {
@@ -15135,10 +14751,11 @@ const WORD_DATA = {
           "example": "Environmental problems and protection.",
           "exampleType": "book",
           "syllables": [
-            "env",
-            "ir",
-            "onm",
-            "ental"
+            "en",
+            "vi",
+            "ron",
+            "men",
+            "tal"
           ]
         },
         {
@@ -15172,8 +14789,7 @@ const WORD_DATA = {
           "example": "Because it's rarely too hot in the UK.",
           "exampleType": "book",
           "syllables": [
-            "ra",
-            "re"
+            "rare"
           ]
         },
         {
@@ -15206,9 +14822,8 @@ const WORD_DATA = {
           "example": "You see this announcement in an English-language magazine.",
           "exampleType": "book",
           "syllables": [
-            "ann",
-            "ou",
-            "nce"
+            "an",
+            "nounce"
           ]
         },
         {
@@ -15241,8 +14856,8 @@ const WORD_DATA = {
           "example": "At first, Mrs Green suggested going to Tampa Bay in Florida which is located in the southeast of the United States.",
           "exampleType": "book",
           "syllables": [
-            "sou",
-            "theast"
+            "south",
+            "east"
           ]
         },
         {
@@ -15253,9 +14868,9 @@ const WORD_DATA = {
           "example": "At last, I decided to raise the salary to make these positions more attractive.",
           "exampleType": "book",
           "syllables": [
-            "attr",
-            "act",
-            "ive"
+            "at",
+            "trac",
+            "tive"
           ]
         },
         {
@@ -15277,8 +14892,7 @@ const WORD_DATA = {
           "example": "She heard that the scenery there was very attractive 5 with navy blue sea and sky merging in one colour and waves beating the shore.",
           "exampleType": "book",
           "syllables": [
-            "wa",
-            "ve"
+            "wave"
           ]
         },
         {
@@ -15301,8 +14915,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "di",
-            "re",
-            "ctly"
+            "rect",
+            "ly"
           ]
         },
         {
@@ -15313,8 +14927,8 @@ const WORD_DATA = {
           "example": "It was quite northwest.",
           "exampleType": "auto",
           "syllables": [
-            "no",
-            "rthwest"
+            "north",
+            "west"
           ]
         },
         {
@@ -15325,11 +14939,10 @@ const WORD_DATA = {
           "example": "She felt unbelievable after hearing the news.",
           "exampleType": "auto",
           "syllables": [
-            "unb",
-            "el",
-            "ie",
-            "va",
-            "ble"
+            "un",
+            "be",
+            "liev",
+            "able"
           ]
         },
         {
@@ -15386,8 +14999,8 @@ const WORD_DATA = {
           "example": "The season was autumn, so the narrow path to Mr Green's uncle's farm was covered by leaves and branches.",
           "exampleType": "book",
           "syllables": [
-            "na",
-            "rrow"
+            "nar",
+            "row"
           ]
         },
         {
@@ -15409,8 +15022,7 @@ const WORD_DATA = {
           "example": "Can you see the branch over there?",
           "exampleType": "auto",
           "syllables": [
-            "bra",
-            "nch"
+            "branch"
           ]
         },
         {
@@ -15421,8 +15033,8 @@ const WORD_DATA = {
           "example": "Shortly after they crossed a bridge, they came to the destination.",
           "exampleType": "book",
           "syllables": [
-            "sho",
-            "rtly"
+            "short",
+            "ly"
           ]
         },
         {
@@ -15433,8 +15045,7 @@ const WORD_DATA = {
           "example": "The farm is peaceful because of the low population.",
           "exampleType": "book",
           "syllables": [
-            "pea",
-            "ce",
+            "peace",
             "ful"
           ]
         },
@@ -15446,8 +15057,7 @@ const WORD_DATA = {
           "example": "It was full of lively animals like cattle, goats, donkeys and pigs on the farm.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "ve",
+            "live",
             "ly"
           ]
         },
@@ -15481,8 +15091,8 @@ const WORD_DATA = {
           "example": "For example, they learned how to take care of animals； they caught and observed ants together； they taught a parrot which was kept in a cage to repeat words together.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "rrot"
+            "par",
+            "rot"
           ]
         },
         {
@@ -15493,8 +15103,7 @@ const WORD_DATA = {
           "example": "For example, they learned how to take care of animals； they caught and observed ants together； they taught a parrot which was kept in a cage to repeat words together.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "ge"
+            "cage"
           ]
         },
         {
@@ -15505,8 +15114,7 @@ const WORD_DATA = {
           "example": "They also 该故事巧记PET核心词汇 had a nasty experience.",
           "exampleType": "book",
           "syllables": [
-            "na",
-            "sty"
+            "nasty"
           ]
         }
       ]
@@ -15532,8 +15140,8 @@ const WORD_DATA = {
           "example": "Several bees attacked them, which almost ruined their good moods.",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "ack"
+            "at",
+            "tack"
           ]
         },
         {
@@ -15544,7 +15152,8 @@ const WORD_DATA = {
           "example": "Several bees attacked them, which almost ruined their good moods.",
           "exampleType": "book",
           "syllables": [
-            "ruin"
+            "ru",
+            "in"
           ]
         },
         {
@@ -15555,8 +15164,8 @@ const WORD_DATA = {
           "example": "Fortunately, they succeeded in defeating the bees with water and got on with their great trip.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "cceed"
+            "suc",
+            "ceed"
           ]
         },
         {
@@ -15590,8 +15199,7 @@ const WORD_DATA = {
           "example": "In the evening, the whole family lay on the grass and appreciated the sparkling stars in the sky.",
           "exampleType": "book",
           "syllables": [
-            "spa",
-            "rkling"
+            "sparkling"
           ]
         },
         {
@@ -15628,8 +15236,8 @@ const WORD_DATA = {
           "example": "He often goes to the gym or exercises outside to strengthen his body and develop fitness.",
           "exampleType": "book",
           "syllables": [
-            "fi",
-            "tness"
+            "fit",
+            "ness"
           ]
         },
         {
@@ -15674,8 +15282,8 @@ const WORD_DATA = {
           "example": "We bought a new injure yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "inj",
-            "ure"
+            "in",
+            "jure"
           ]
         },
         {
@@ -15686,8 +15294,7 @@ const WORD_DATA = {
           "example": "A man slipped over and his leg started bleeding everywhere.",
           "exampleType": "book",
           "syllables": [
-            "bl",
-            "eed"
+            "bleed"
           ]
         },
         {
@@ -15698,8 +15305,7 @@ const WORD_DATA = {
           "example": "He was too painful to go to the hospital.",
           "exampleType": "book",
           "syllables": [
-            "pai",
-            "nful"
+            "painful"
           ]
         },
         {
@@ -15710,9 +15316,9 @@ const WORD_DATA = {
           "example": "He was sent to the hospital by ambulance immediately.",
           "exampleType": "book",
           "syllables": [
-            "amb",
-            "ul",
-            "ance"
+            "am",
+            "bu",
+            "lance"
           ]
         },
         {
@@ -15723,9 +15329,8 @@ const WORD_DATA = {
           "example": "When he arrived at the hospital, the doctor first used bandages to stop his bleeding.",
           "exampleType": "book",
           "syllables": [
-            "ba",
-            "nda",
-            "ge"
+            "ban",
+            "dage"
           ]
         },
         {
@@ -15736,8 +15341,7 @@ const WORD_DATA = {
           "example": "After a careful check, Tom was told that his bone was injured and he had to take a small operation.",
           "exampleType": "book",
           "syllables": [
-            "bo",
-            "ne"
+            "bone"
           ]
         },
         {
@@ -15750,8 +15354,8 @@ const WORD_DATA = {
           "syllables": [
             "op",
             "er",
-            "at",
-            "ion"
+            "a",
+            "tion"
           ]
         },
         {
@@ -15762,8 +15366,8 @@ const WORD_DATA = {
           "example": "After the operation 5 he had to sit in a wheelchair and take pills for3 months to recover.",
           "exampleType": "book",
           "syllables": [
-            "whee",
-            "lchair"
+            "wheel",
+            "chair"
           ]
         },
         {
@@ -15786,8 +15390,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "co",
-            "ver"
+            "cov",
+            "er"
           ]
         },
         {
@@ -15798,9 +15402,9 @@ const WORD_DATA = {
           "example": "It was uncomfortable for Tom to stay at home for such a long time.",
           "exampleType": "book",
           "syllables": [
-            "unc",
-            "omf",
-            "ort",
+            "un",
+            "com",
+            "fort",
             "able"
           ]
         },
@@ -15835,8 +15439,8 @@ const WORD_DATA = {
           "example": "The experience makes Jessy realise the importance of workout.",
           "exampleType": "book",
           "syllables": [
-            "wo",
-            "rkout"
+            "work",
+            "out"
           ]
         },
         {
@@ -15847,8 +15451,7 @@ const WORD_DATA = {
           "example": "This time, she had a headache and couldn't stop coughing all day long.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ugh"
+            "cough"
           ]
         },
         {
@@ -15859,8 +15462,7 @@ const WORD_DATA = {
           "example": "The next day, she began to have a fever and a sore throat.",
           "exampleType": "book",
           "syllables": [
-            "fe",
-            "ver"
+            "fever"
           ]
         },
         {
@@ -15871,8 +15473,7 @@ const WORD_DATA = {
           "example": "The next day, she began to have a fever and a sore throat.",
           "exampleType": "book",
           "syllables": [
-            "so",
-            "re"
+            "sore"
           ]
         },
         {
@@ -15883,8 +15484,7 @@ const WORD_DATA = {
           "example": "The next day, she began to have a fever and a sore throat.",
           "exampleType": "book",
           "syllables": [
-            "thr",
-            "oat"
+            "throat"
           ]
         },
         {
@@ -15906,8 +15506,8 @@ const WORD_DATA = {
           "example": "That was an embarrassing and suffering situation.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "ffer"
+            "suf",
+            "fer"
           ]
         },
         {
@@ -15918,9 +15518,8 @@ const WORD_DATA = {
           "example": "She felt ill and suffered a lot from the disease.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sea",
-            "se"
+            "dis",
+            "ease"
           ]
         },
         {
@@ -15931,8 +15530,8 @@ const WORD_DATA = {
           "example": "Her mum decided to take her to the clinic and have a check.",
           "exampleType": "book",
           "syllables": [
-            "cli",
-            "nic"
+            "clin",
+            "ic"
           ]
         },
         {
@@ -15954,8 +15553,8 @@ const WORD_DATA = {
           "example": "The doctor gave her some aspirin and other pills according to the prescriptions.",
           "exampleType": "book",
           "syllables": [
-            "asp",
-            "irin"
+            "as",
+            "pirin"
           ]
         },
         {
@@ -15967,8 +15566,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pre",
-            "scri",
-            "ption"
+            "scrip",
+            "tion"
           ]
         },
         {
@@ -15990,9 +15589,8 @@ const WORD_DATA = {
           "example": "She decides 167 该故事巧记PET核心词汇 to change her unhealthy lifestyle and take more exercise, such as jogging and yoga.",
           "exampleType": "book",
           "syllables": [
-            "unh",
-            "ea",
-            "lthy"
+            "un",
+            "healthy"
           ]
         },
         {
@@ -16014,8 +15612,8 @@ const WORD_DATA = {
           "example": "She decides 167 该故事巧记PET核心词汇 to change her unhealthy lifestyle and take more exercise, such as jogging and yoga.",
           "exampleType": "book",
           "syllables": [
-            "jo",
-            "gging"
+            "jog",
+            "ging"
           ]
         },
         {
@@ -16064,10 +15662,7 @@ const WORD_DATA = {
           "example": "Man: Absolutely J I have tried motor-racing before.",
           "exampleType": "book",
           "syllables": [
-            "mo",
-            "to",
-            "r-ra",
-            "cing"
+            "motor-racing"
           ]
         },
         {
@@ -16089,8 +15684,7 @@ const WORD_DATA = {
           "example": "High pitch and quick speed of motor-racing can make them excited.",
           "exampleType": "book",
           "syllables": [
-            "pi",
-            "tch"
+            "pitch"
           ]
         },
         {
@@ -16101,8 +15695,7 @@ const WORD_DATA = {
           "example": "I used to go there by train.",
           "exampleType": "book",
           "syllables": [
-            "tr",
-            "ain"
+            "train"
           ]
         },
         {
@@ -16113,8 +15706,9 @@ const WORD_DATA = {
           "example": "Beginners need to be trained by professional instructors, otherwise it may cause damage.",
           "exampleType": "book",
           "syllables": [
-            "instr",
-            "uctor"
+            "in",
+            "struc",
+            "tor"
           ]
         },
         {
@@ -16125,9 +15719,8 @@ const WORD_DATA = {
           "example": "Beginners need to be trained by professional instructors, otherwise it may cause damage.",
           "exampleType": "book",
           "syllables": [
-            "da",
-            "ma",
-            "ge"
+            "dam",
+            "age"
           ]
         },
         {
@@ -16138,9 +15731,9 @@ const WORD_DATA = {
           "example": "Lifeguards are needed if there is an emergency.",
           "exampleType": "book",
           "syllables": [
-            "em",
-            "erg",
-            "ency"
+            "emer",
+            "gen",
+            "cy"
           ]
         },
         {
@@ -16151,8 +15744,8 @@ const WORD_DATA = {
           "example": "Man: Do you like boxing?",
           "exampleType": "book",
           "syllables": [
-            "bo",
-            "xing"
+            "box",
+            "ing"
           ]
         },
         {
@@ -16163,9 +15756,9 @@ const WORD_DATA = {
           "example": "For championship, competitors will compete and hit each other in a boxing ring.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "mpio",
-            "nship"
+            "cham",
+            "pi",
+            "onship"
           ]
         },
         {
@@ -16176,9 +15769,8 @@ const WORD_DATA = {
           "example": "For championship, competitors will compete and hit each other in a boxing ring.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mpe",
-            "ti",
+            "com",
+            "peti",
             "tor"
           ]
         },
@@ -16190,9 +15782,8 @@ const WORD_DATA = {
           "example": "For championship, competitors will compete and hit each other in a boxing ring.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mpe",
-            "te"
+            "com",
+            "pete"
           ]
         },
         {
@@ -16203,8 +15794,8 @@ const WORD_DATA = {
           "example": "For example, we should wear helmets when biking, because they can protect us if we fall down. 4.",
           "exampleType": "book",
           "syllables": [
-            "he",
-            "lmet"
+            "hel",
+            "met"
           ]
         },
         {
@@ -16226,8 +15817,7 @@ const WORD_DATA = {
           "example": "Meanwhile, many young people are willing to join in all kinds of leagues, such as the squash league.",
           "exampleType": "book",
           "syllables": [
-            "lea",
-            "gue"
+            "league"
           ]
         },
         {
@@ -16238,8 +15828,7 @@ const WORD_DATA = {
           "example": "Meanwhile, many young people are willing to join in all kinds of leagues, such as the squash league.",
           "exampleType": "book",
           "syllables": [
-            "squ",
-            "ash"
+            "squash"
           ]
         },
         {
@@ -16262,8 +15851,8 @@ const WORD_DATA = {
           "example": "Day 24 l. （略） II. 1. helmet 2. hit 3. boxing 4. athlete 5. race track 6. swimmer 7. contest 8. breath 9. champion 10. patient JU. 1.",
           "exampleType": "book",
           "syllables": [
-            "swi",
-            "mmer"
+            "swim",
+            "mer"
           ]
         },
         {
@@ -16296,8 +15885,7 @@ const WORD_DATA = {
           "example": "They also need skills, such as controlling their breaths well under water.",
           "exampleType": "book",
           "syllables": [
-            "bre",
-            "ath"
+            "breath"
           ]
         },
         {
@@ -16308,8 +15896,9 @@ const WORD_DATA = {
           "example": "Athletics can not only make us become quicker, higher and stronger, but also make our lives colourful.",
           "exampleType": "book",
           "syllables": [
-            "athl",
-            "etics"
+            "ath",
+            "let",
+            "ics"
           ]
         },
         {
@@ -16331,8 +15920,9 @@ const WORD_DATA = {
           "example": "We will swim in the pool and the one who touches the ending point first will be the champion.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "mpion"
+            "cham",
+            "pi",
+            "on"
           ]
         },
         {
@@ -16343,8 +15933,8 @@ const WORD_DATA = {
           "example": "They have to take professional training every day.",
           "exampleType": "book",
           "syllables": [
-            "trai",
-            "ning"
+            "train",
+            "ing"
           ]
         },
         {
@@ -16355,8 +15945,8 @@ const WORD_DATA = {
           "example": "My uncle Bob, a former world high jump champion, told me that athletes need to have professional training with tracksuits every day.",
           "exampleType": "book",
           "syllables": [
-            "tra",
-            "cksuit"
+            "track",
+            "suit"
           ]
         },
         {
@@ -16367,8 +15957,7 @@ const WORD_DATA = {
           "example": "She is annoyed at the maths score. 2.",
           "exampleType": "book",
           "syllables": [
-            "sco",
-            "re"
+            "score"
           ]
         },
         {
@@ -16379,8 +15968,7 @@ const WORD_DATA = {
           "example": "When swimming, I can wear my swimwear and race with my friends.",
           "exampleType": "book",
           "syllables": [
-            "ra",
-            "ce"
+            "race"
           ]
         },
         {
@@ -16403,8 +15991,8 @@ const WORD_DATA = {
           "example": "The contest is going to start.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "ntest"
+            "con",
+            "test"
           ]
         },
         {
@@ -16415,8 +16003,8 @@ const WORD_DATA = {
           "example": "In order to obtain higher scores and honours for their country in the world tournaments or Olympic Games, professional athletes usually take training every day and try their best for championship.",
           "exampleType": "book",
           "syllables": [
-            "tou",
-            "rna",
+            "tour",
+            "na",
             "ment"
           ]
         },
@@ -16428,10 +16016,7 @@ const WORD_DATA = {
           "example": "The horse-riding was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "ho",
-            "rse",
-            "-ri",
-            "ding"
+            "horse-riding"
           ]
         },
         {
@@ -16453,8 +16038,8 @@ const WORD_DATA = {
           "example": "They decided to explode together.",
           "exampleType": "auto",
           "syllables": [
-            "expl",
-            "ode"
+            "ex",
+            "plode"
           ]
         },
         {
@@ -16465,8 +16050,7 @@ const WORD_DATA = {
           "example": "Roads and streets are filled with cars, which are likely to cause traffic jams.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "ke",
+            "like",
             "ly"
           ]
         },
@@ -16501,8 +16085,8 @@ const WORD_DATA = {
           "example": "At the same time, advocating public transport can avoid traffic jams and reduce air pollution.",
           "exampleType": "book",
           "syllables": [
-            "po",
-            "llu",
+            "pol",
+            "lu",
             "tion"
           ]
         },
@@ -16514,9 +16098,9 @@ const WORD_DATA = {
           "example": "I enjoy the happy atmosphere they create for me. 听力原文 m. 1.",
           "exampleType": "book",
           "syllables": [
-            "atm",
-            "osph",
-            "ere"
+            "at",
+            "mos",
+            "phere"
           ]
         },
         {
@@ -16527,8 +16111,8 @@ const WORD_DATA = {
           "example": "A large amount of C02 emitted by people and cars has caused severe air pollution and damages the earth's atmosphere terribly, resulting in climate change and global warming.",
           "exampleType": "book",
           "syllables": [
-            "te",
-            "rri",
+            "ter",
+            "ri",
             "bly"
           ]
         },
@@ -16562,8 +16146,7 @@ const WORD_DATA = {
           "example": "It usually lasts through September before the temperatures begin to drop sharply in October.",
           "exampleType": "book",
           "syllables": [
-            "sh",
-            "arp"
+            "sharp"
           ]
         },
         {
@@ -16574,8 +16157,7 @@ const WORD_DATA = {
           "example": "Water is necessary for both plants and animals.",
           "exampleType": "book",
           "syllables": [
-            "pl",
-            "ant"
+            "plant"
           ]
         },
         {
@@ -16586,8 +16168,7 @@ const WORD_DATA = {
           "example": "Fax gradually disappears from our sight, because data can be sent through the computer easily.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "ght"
+            "sight"
           ]
         },
         {
@@ -16598,9 +16179,8 @@ const WORD_DATA = {
           "example": "Rosy: Thafs a challenge for me too.",
           "exampleType": "book",
           "syllables": [
-            "cha",
-            "lle",
-            "nge"
+            "chal",
+            "lenge"
           ]
         },
         {
@@ -16611,8 +16191,8 @@ const WORD_DATA = {
           "example": "These have thrown great challenges to us and are signals sent by nature, telling us that we should make the world go back on track.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "gnal"
+            "sig",
+            "nal"
           ]
         },
         {
@@ -16634,8 +16214,7 @@ const WORD_DATA = {
           "example": "It's hard for them to imagine how to keep everything on track without technology.",
           "exampleType": "book",
           "syllables": [
-            "tr",
-            "ack"
+            "track"
           ]
         },
         {
@@ -16646,8 +16225,7 @@ const WORD_DATA = {
           "example": "We ought to attach importance to the concept that different rubbish needs to be thrown into different rubbish bins.",
           "exampleType": "book",
           "syllables": [
-            "ou",
-            "ght"
+            "ought"
           ]
         },
         {
@@ -16658,8 +16236,8 @@ const WORD_DATA = {
           "example": "We ought to attach importance to the concept that different rubbish needs to be thrown into different rubbish bins.",
           "exampleType": "book",
           "syllables": [
-            "att",
-            "ach"
+            "at",
+            "tach"
           ]
         },
         {
@@ -16681,8 +16259,8 @@ const WORD_DATA = {
           "example": "For instance, recycled rubbish like glass bottles should be put into a bottle bank for recycling.",
           "exampleType": "book",
           "syllables": [
-            "inst",
-            "ance"
+            "in",
+            "stance"
           ]
         },
         {
@@ -16730,8 +16308,7 @@ const WORD_DATA = {
           "example": "Bloggers are very popular nowadays.",
           "exampleType": "book",
           "syllables": [
-            "no",
-            "wa",
+            "nowa",
             "days"
           ]
         },
@@ -16755,9 +16332,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "pro",
-            "hi",
-            "bi",
-            "ted"
+            "hib",
+            "it",
+            "ed"
           ]
         },
         {
@@ -16801,11 +16378,11 @@ const WORD_DATA = {
           "example": "Some environmental protection organisations aim to protect our earth by setting up rules for people.",
           "exampleType": "book",
           "syllables": [
-            "org",
-            "an",
-            "is",
-            "at",
-            "ion"
+            "or",
+            "gan",
+            "i",
+            "sa",
+            "tion"
           ]
         },
         {
@@ -16816,8 +16393,7 @@ const WORD_DATA = {
           "example": "To ask his mum to make some rules.",
           "exampleType": "book",
           "syllables": [
-            "ru",
-            "le"
+            "rule"
           ]
         },
         {
@@ -16828,8 +16404,7 @@ const WORD_DATA = {
           "example": "I hope you're feeling better.",
           "exampleType": "book",
           "syllables": [
-            "ho",
-            "pe"
+            "hope"
           ]
         },
         {
@@ -16840,8 +16415,8 @@ const WORD_DATA = {
           "example": "We should respect each other.",
           "exampleType": "book",
           "syllables": [
-            "ot",
-            "her"
+            "oth",
+            "er"
           ]
         },
         {
@@ -16852,9 +16427,9 @@ const WORD_DATA = {
           "example": "It has access to safe and efficient transportation lines.",
           "exampleType": "book",
           "syllables": [
-            "eff",
-            "ic",
-            "ient"
+            "ef",
+            "fi",
+            "cient"
           ]
         },
         {
@@ -16865,8 +16440,7 @@ const WORD_DATA = {
           "example": "Can you share some Arithmetic methods?",
           "exampleType": "book",
           "syllables": [
-            "me",
-            "thod"
+            "method"
           ]
         },
         {
@@ -16877,8 +16451,7 @@ const WORD_DATA = {
           "example": "Can you do me a favour and run errands（跑腿）for me?” she asked. \"No problem!",
           "exampleType": "book",
           "syllables": [
-            "fa",
-            "vour"
+            "favour"
           ]
         },
         {
@@ -16889,8 +16462,8 @@ const WORD_DATA = {
           "example": "We also hope to find other efficient methods to make our earth a place in all kinds of species * favour to multiply and live.",
           "exampleType": "book",
           "syllables": [
-            "mu",
-            "lti",
+            "mul",
+            "ti",
             "ply"
           ]
         },
@@ -16914,8 +16487,9 @@ const WORD_DATA = {
           "example": "Why does our earth remain in a bad situation? 3.",
           "exampleType": "book",
           "syllables": [
-            "si",
-            "tua",
+            "sit",
+            "u",
+            "a",
             "tion"
           ]
         },
@@ -16927,8 +16501,7 @@ const WORD_DATA = {
           "example": "A smart cellphone, the latest Lego bricks, a cool mountain bike...None of these!",
           "exampleType": "book",
           "syllables": [
-            "no",
-            "ne"
+            "none"
           ]
         },
         {
@@ -16950,11 +16523,11 @@ const WORD_DATA = {
           "example": "Man: Unfortunately, wild species are decreasing nowadays.",
           "exampleType": "book",
           "syllables": [
-            "unf",
-            "ort",
             "un",
-            "at",
-            "ely"
+            "for",
+            "tu",
+            "nate",
+            "ly"
           ]
         },
         {
@@ -16965,8 +16538,8 @@ const WORD_DATA = {
           "example": "Unfortunately, we have no option but to protect the earth.",
           "exampleType": "book",
           "syllables": [
-            "opt",
-            "ion"
+            "op",
+            "tion"
           ]
         },
         {
@@ -16988,8 +16561,8 @@ const WORD_DATA = {
           "example": "It was certain that my effort paid off!",
           "exampleType": "book",
           "syllables": [
-            "eff",
-            "ort"
+            "ef",
+            "fort"
           ]
         },
         {
@@ -17000,10 +16573,10 @@ const WORD_DATA = {
           "example": "She is very independent and never bothers others if she can manage to overcome the difficulty by herself.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "ffi",
-            "cu",
-            "lty"
+            "dif",
+            "fi",
+            "cul",
+            "ty"
           ]
         },
         {
@@ -17026,8 +16599,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "oth",
-            "erw",
-            "ise"
+            "er",
+            "wise"
           ]
         }
       ]
@@ -17042,9 +16615,9 @@ const WORD_DATA = {
           "example": "Man: Normally I will do it every day if I am not on business.",
           "exampleType": "book",
           "syllables": [
-            "no",
-            "rma",
-            "lly"
+            "nor",
+            "mal",
+            "ly"
           ]
         },
         {
@@ -17055,8 +16628,8 @@ const WORD_DATA = {
           "example": "However, in some places, people intend to remove this bad habit.",
           "exampleType": "book",
           "syllables": [
-            "int",
-            "end"
+            "in",
+            "tend"
           ]
         },
         {
@@ -17068,8 +16641,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "mo",
-            "ve"
+            "move"
           ]
         },
         {
@@ -17081,8 +16653,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "qui",
-            "re"
+            "quire"
           ]
         },
         {
@@ -17104,8 +16675,8 @@ const WORD_DATA = {
           "example": "Maybe we can ride bikes along the river to enjoy the wonderful scenery instead.",
           "exampleType": "book",
           "syllables": [
-            "inst",
-            "ead"
+            "in",
+            "stead"
           ]
         },
         {
@@ -17116,8 +16687,8 @@ const WORD_DATA = {
           "example": "People usually littered around, which was harmful to our environment. 2.",
           "exampleType": "book",
           "syllables": [
-            "li",
-            "tter"
+            "lit",
+            "ter"
           ]
         },
         {
@@ -17161,8 +16732,7 @@ const WORD_DATA = {
           "example": "The following is how to sort rubbish correctly... / Day 26 I.（略） II. 1. go off 2. spoil 3. bald 4. spot 5. volunteer 6. shade 7. litter 8. remove 9. minimum 10. steep IH. 1.",
           "exampleType": "book",
           "syllables": [
-            "sp",
-            "oil"
+            "spoil"
           ]
         },
         {
@@ -17173,8 +16743,8 @@ const WORD_DATA = {
           "example": "It benefits people's health. 该故事巧记PET核心词汇 IV.",
           "exampleType": "book",
           "syllables": [
-            "be",
-            "ne",
+            "ben",
+            "e",
             "fit"
           ]
         },
@@ -17186,10 +16756,9 @@ const WORD_DATA = {
           "example": "It is definitely a special and meaningful memory in my life. 3.",
           "exampleType": "book",
           "syllables": [
-            "de",
-            "fi",
-            "ni",
-            "te",
+            "def",
+            "i",
+            "nite",
             "ly"
           ]
         },
@@ -17201,8 +16770,8 @@ const WORD_DATA = {
           "example": "Humans should make use of technology in a sensible way.",
           "exampleType": "book",
           "syllables": [
-            "se",
-            "nsi",
+            "sen",
+            "si",
             "ble"
           ]
         },
@@ -17214,8 +16783,7 @@ const WORD_DATA = {
           "example": "I think you'd better make your own schedule and follow it strictly.",
           "exampleType": "book",
           "syllables": [
-            "str",
-            "ict"
+            "strict"
           ]
         },
         {
@@ -17237,8 +16805,8 @@ const WORD_DATA = {
           "example": "Some communities also organise local people as volunteers to sort rubbish without rewards.",
           "exampleType": "book",
           "syllables": [
-            "org",
-            "an",
+            "or",
+            "gan",
             "ise"
           ]
         },
@@ -17250,9 +16818,9 @@ const WORD_DATA = {
           "example": "Do the volunteers help people sort rubbish for rewards?",
           "exampleType": "book",
           "syllables": [
-            "vo",
-            "lu",
-            "nteer"
+            "vol",
+            "un",
+            "teer"
           ]
         },
         {
@@ -17286,8 +16854,8 @@ const WORD_DATA = {
           "example": "We bought a new supply yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "su",
-            "pply"
+            "sup",
+            "ply"
           ]
         },
         {
@@ -17298,8 +16866,7 @@ const WORD_DATA = {
           "example": "The following is how to sort rubbish correctly... / Day 26 I.（略） II. 1. go off 2. spoil 3. bald 4. spot 5. volunteer 6. shade 7. litter 8. remove 9. minimum 10. steep IH. 1.",
           "exampleType": "book",
           "syllables": [
-            "st",
-            "eep"
+            "steep"
           ]
         },
         {
@@ -17310,8 +16877,7 @@ const WORD_DATA = {
           "example": "People can rest in the shade of dense trees.",
           "exampleType": "book",
           "syllables": [
-            "sha",
-            "de"
+            "shade"
           ]
         },
         {
@@ -17323,8 +16889,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "re",
-            "ga",
-            "rding"
+            "gard",
+            "ing"
           ]
         },
         {
@@ -17357,8 +16923,8 @@ const WORD_DATA = {
           "example": "I will support whatever choice you make.",
           "exampleType": "book",
           "syllables": [
-            "su",
-            "pport"
+            "sup",
+            "port"
           ]
         },
         {
@@ -17380,8 +16946,8 @@ const WORD_DATA = {
           "example": "The following is how to sort rubbish correctly... / Day 26 I.（略） II. 1. go off 2. spoil 3. bald 4. spot 5. volunteer 6. shade 7. litter 8. remove 9. minimum 10. steep IH. 1.",
           "exampleType": "book",
           "syllables": [
-            "mi",
-            "ni",
+            "min",
+            "i",
             "mum"
           ]
         },
@@ -17393,10 +16959,9 @@ const WORD_DATA = {
           "example": "However, as long as they suppo the policy and keep environmental protection in their mind to make the damage of rubbish to our environment, they can hopefully gain unexpected results.",
           "exampleType": "book",
           "syllables": [
-            "ho",
-            "pe",
-            "fu",
-            "lly"
+            "hope",
+            "ful",
+            "ly"
           ]
         },
         {
@@ -17419,8 +16984,9 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "un",
-            "exp",
-            "ected"
+            "ex",
+            "pect",
+            "ed"
           ]
         },
         {
@@ -17446,9 +17012,9 @@ const WORD_DATA = {
           "example": "The computer is another great invention for humans.",
           "exampleType": "book",
           "syllables": [
-            "inv",
-            "ent",
-            "ion"
+            "in",
+            "ven",
+            "tion"
           ]
         },
         {
@@ -17459,8 +17025,8 @@ const WORD_DATA = {
           "example": "A hundred years ago, the telephone and fax were invented to make our communication more efficient.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "mmu",
+            "com",
+            "mu",
             "ni",
             "ca",
             "tion"
@@ -17474,9 +17040,9 @@ const WORD_DATA = {
           "example": "The connection was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "co",
-            "nne",
-            "ction"
+            "con",
+            "nec",
+            "tion"
           ]
         },
         {
@@ -17509,8 +17075,8 @@ const WORD_DATA = {
           "example": "Video calls that use webcams were invented later.",
           "exampleType": "book",
           "syllables": [
-            "inv",
-            "ent"
+            "in",
+            "vent"
           ]
         },
         {
@@ -17534,7 +17100,8 @@ const WORD_DATA = {
           "syllables": [
             "op",
             "er",
-            "ator"
+            "a",
+            "tor"
           ]
         },
         {
@@ -17545,7 +17112,8 @@ const WORD_DATA = {
           "example": "At that time, some operators were in charge of dialing telephone numbers.",
           "exampleType": "book",
           "syllables": [
-            "dial"
+            "di",
+            "al"
           ]
         },
         {
@@ -17556,8 +17124,8 @@ const WORD_DATA = {
           "example": "Because telephone lines were limited, when the lines were engaged, they had to wait for a long time, which was time-consuming.",
           "exampleType": "book",
           "syllables": [
-            "eng",
-            "aged"
+            "en",
+            "gaged"
           ]
         },
         {
@@ -17591,9 +17159,8 @@ const WORD_DATA = {
           "example": "What did Tom realise after the injury?",
           "exampleType": "book",
           "syllables": [
-            "rea",
-            "li",
-            "se"
+            "re",
+            "alise"
           ]
         },
         {
@@ -17615,9 +17182,9 @@ const WORD_DATA = {
           "example": "Woman: Man: Woman: What kind of electronic devices do you use to study?",
           "exampleType": "book",
           "syllables": [
-            "el",
-            "ectr",
-            "onic"
+            "elec",
+            "tron",
+            "ic"
           ]
         },
         {
@@ -17628,8 +17195,8 @@ const WORD_DATA = {
           "example": "It has access to safe and efficient transportation lines.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "ess"
+            "ac",
+            "cess"
           ]
         },
         {
@@ -17641,7 +17208,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "we",
-            "bcam"
+            "b",
+            "cam"
           ]
         },
         {
@@ -17652,9 +17220,8 @@ const WORD_DATA = {
           "example": "At first, the computer was of large volume and slow, which was used as a calculator.",
           "exampleType": "book",
           "syllables": [
-            "vo",
-            "lu",
-            "me"
+            "vol",
+            "ume"
           ]
         },
         {
@@ -17665,8 +17232,8 @@ const WORD_DATA = {
           "example": "At first, the computer was of large volume and slow, which was used as a calculator.",
           "exampleType": "book",
           "syllables": [
-            "ca",
-            "lcu",
+            "cal",
+            "cu",
             "la",
             "tor"
           ]
@@ -17679,9 +17246,8 @@ const WORD_DATA = {
           "example": "With the hardware and server updated, the computer became smaller and faster.",
           "exampleType": "book",
           "syllables": [
-            "ha",
-            "rdwa",
-            "re"
+            "hard",
+            "ware"
           ]
         },
         {
@@ -17692,8 +17258,8 @@ const WORD_DATA = {
           "example": "With the hardware and server updated, the computer became smaller and faster.",
           "exampleType": "book",
           "syllables": [
-            "se",
-            "rver"
+            "serv",
+            "er"
           ]
         },
         {
@@ -17716,8 +17282,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "ma",
-            "chi",
-            "ne"
+            "chine"
           ]
         },
         {
@@ -17728,8 +17293,8 @@ const WORD_DATA = {
           "example": "Sailing in the ocean makes lands connect and helps people go around the world.",
           "exampleType": "book",
           "syllables": [
-            "co",
-            "nnect"
+            "con",
+            "nect"
           ]
         }
       ]
@@ -17744,8 +17309,9 @@ const WORD_DATA = {
           "example": "Can you see the argument over there?",
           "exampleType": "auto",
           "syllables": [
-            "arg",
-            "ument"
+            "ar",
+            "gu",
+            "ment"
           ]
         },
         {
@@ -17768,9 +17334,9 @@ const WORD_DATA = {
           "example": "C 3. discussion 8. unpleasant 4.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "scu",
-            "ssion"
+            "dis",
+            "cus",
+            "sion"
           ]
         },
         {
@@ -17781,8 +17347,8 @@ const WORD_DATA = {
           "example": "We bought a new advise yesterday.",
           "exampleType": "auto",
           "syllables": [
-            "adv",
-            "ise"
+            "ad",
+            "vise"
           ]
         },
         {
@@ -17804,10 +17370,10 @@ const WORD_DATA = {
           "example": "Their explanations are that robots may replace humans one day and increase unemployment rates.",
           "exampleType": "book",
           "syllables": [
-            "expl",
-            "an",
-            "at",
-            "ion"
+            "ex",
+            "pla",
+            "na",
+            "tion"
           ]
         },
         {
@@ -17818,8 +17384,8 @@ const WORD_DATA = {
           "example": "It is hard to accept unemployment for some workers, but in the long run, people are freed from simple and boring work and are likely to have more opportunities to do what brings them great pleasure.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "ept"
+            "ac",
+            "cept"
           ]
         },
         {
@@ -17831,8 +17397,7 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "plea",
-            "su",
-            "re"
+            "sure"
           ]
         },
         {
@@ -17843,9 +17408,8 @@ const WORD_DATA = {
           "example": "On the other hand, some people disagree with this opinion because they think the advantages of robots weigh more than the disadvantages.",
           "exampleType": "book",
           "syllables": [
-            "di",
-            "sa",
-            "gree"
+            "dis",
+            "agree"
           ]
         },
         {
@@ -17856,8 +17420,9 @@ const WORD_DATA = {
           "example": "The reality is that robots are widely used in our life.",
           "exampleType": "book",
           "syllables": [
-            "rea",
-            "li",
+            "re",
+            "al",
+            "i",
             "ty"
           ]
         },
@@ -17869,9 +17434,10 @@ const WORD_DATA = {
           "example": "Robots can be their friends and accompany them.",
           "exampleType": "book",
           "syllables": [
-            "acc",
-            "omp",
-            "any"
+            "ac",
+            "com",
+            "pa",
+            "ny"
           ]
         },
         {
@@ -17884,8 +17450,8 @@ const WORD_DATA = {
           "syllables": [
             "re",
             "la",
-            "tio",
-            "nship"
+            "tion",
+            "ship"
           ]
         },
         {
@@ -17908,8 +17474,7 @@ const WORD_DATA = {
           "example": "Their relationships rely on mutual trust and they keep in close contact with each other through daily activities.",
           "exampleType": "book",
           "syllables": [
-            "tr",
-            "ust"
+            "trust"
           ]
         },
         {
@@ -17954,8 +17519,7 @@ const WORD_DATA = {
           "example": "A 4. 9. robot relax 5. delivery 10. joke （略） 1. parcel 6. secret 1.",
           "exampleType": "book",
           "syllables": [
-            "jo",
-            "ke"
+            "joke"
           ]
         },
         {
@@ -17978,10 +17542,8 @@ const WORD_DATA = {
           "example": "They can even tell a joke to help their owners relax when they recognise that they are experiencing something unpleasant.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "co",
-            "gni",
-            "se"
+            "recog",
+            "nise"
           ]
         },
         {
@@ -17992,9 +17554,9 @@ const WORD_DATA = {
           "example": "C 3. discussion 8. unpleasant 4.",
           "exampleType": "book",
           "syllables": [
-            "unpl",
-            "ea",
-            "sant"
+            "un",
+            "pleas",
+            "ant"
           ]
         },
         {
@@ -18005,9 +17567,9 @@ const WORD_DATA = {
           "example": "More and more household robots are recommended to ordinary people.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "co",
-            "mmend"
+            "rec",
+            "om",
+            "mend"
           ]
         },
         {
@@ -18018,8 +17580,8 @@ const WORD_DATA = {
           "example": "Household robots can do housework, such as cleaning the untidy room and even unpacking parcels.",
           "exampleType": "book",
           "syllables": [
-            "unt",
-            "idy"
+            "un",
+            "tidy"
           ]
         },
         {
@@ -18030,8 +17592,8 @@ const WORD_DATA = {
           "example": "Household robots can do housework, such as cleaning the untidy room and even unpacking parcels.",
           "exampleType": "book",
           "syllables": [
-            "unp",
-            "ack"
+            "un",
+            "pack"
           ]
         },
         {
@@ -18042,8 +17604,8 @@ const WORD_DATA = {
           "example": "A 4. 9. robot relax 5. delivery 10. joke （略） 1. parcel 6. secret 1.",
           "exampleType": "book",
           "syllables": [
-            "pa",
-            "rcel"
+            "par",
+            "cel"
           ]
         },
         {
@@ -18054,8 +17616,8 @@ const WORD_DATA = {
           "example": "They can play music out loudly when the owners want to listen to music.",
           "exampleType": "book",
           "syllables": [
-            "lou",
-            "dly"
+            "loud",
+            "ly"
           ]
         },
         {
@@ -18067,9 +17629,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "de",
-            "li",
-            "ve",
-            "ry"
+            "liv",
+            "ery"
           ]
         },
         {
@@ -18102,8 +17663,8 @@ const WORD_DATA = {
           "example": "They update robots to recover bugs on a regular basis.",
           "exampleType": "book",
           "syllables": [
-            "re",
-            "gu",
+            "reg",
+            "u",
             "lar"
           ]
         },
@@ -18115,9 +17676,8 @@ const WORD_DATA = {
           "example": "Can you help me persuade this?",
           "exampleType": "auto",
           "syllables": [
-            "pe",
-            "rsua",
-            "de"
+            "per",
+            "suade"
           ]
         },
         {
@@ -18128,8 +17688,8 @@ const WORD_DATA = {
           "example": "The unknown was exactly what we needed.",
           "exampleType": "auto",
           "syllables": [
-            "unk",
-            "nown"
+            "un",
+            "known"
           ]
         },
         {
@@ -18152,9 +17712,8 @@ const WORD_DATA = {
           "exampleType": "book",
           "syllables": [
             "rea",
-            "so",
-            "na",
-            "bly"
+            "son",
+            "ably"
           ]
         },
         {
@@ -18165,8 +17724,8 @@ const WORD_DATA = {
           "example": "But we should not ignore the disadvantages.",
           "exampleType": "book",
           "syllables": [
-            "ign",
-            "ore"
+            "ig",
+            "nore"
           ]
         },
         {
@@ -18177,9 +17736,9 @@ const WORD_DATA = {
           "example": "It was quite unlikely.",
           "exampleType": "auto",
           "syllables": [
-            "unl",
-            "ik",
-            "ely"
+            "un",
+            "like",
+            "ly"
           ]
         },
         {
@@ -18190,8 +17749,9 @@ const WORD_DATA = {
           "example": "They decided to interrupt together.",
           "exampleType": "auto",
           "syllables": [
-            "int",
-            "errupt"
+            "in",
+            "ter",
+            "rupt"
           ]
         }
       ]
