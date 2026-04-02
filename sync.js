@@ -23,18 +23,16 @@ async function loginUser(name, className) {
     const result = await resp.json();
     if (result.success && result.data) {
       const data = result.data;
-      // 比较服务器和本地数据的时间，用更新的那份
-      const serverTime = data.lastSync || '';
+      // 本地有数据且更新 → 保留本地；否则用服务器数据
       const localProgress = LS.get('pet_progress', {});
       const localTime = localStorage.getItem('pet_last_sync') || '';
+      const serverTime = data.lastSync || '';
       const localHasData = Object.keys(localProgress).length > 0;
 
-      if (localHasData && localTime > serverTime) {
-        // 本地数据更新，保留本地数据并上传到服务器
+      if (localHasData && localTime && localTime > serverTime) {
         cloudSynced = true;
         await syncToCloud();
       } else {
-        // 服务器数据更新，用服务器数据覆盖本地
         Object.keys(progress).forEach(k => delete progress[k]);
         Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
         Object.keys(stageProgress).forEach(k => delete stageProgress[k]);
@@ -48,6 +46,7 @@ async function loginUser(name, className) {
         LS.set('pet_daily_stats', dailyStats);
         LS.set('pet_streak', streak);
         LS.set('pet_stage_progress', stageProgress);
+        localStorage.setItem('pet_last_sync', serverTime);
         cloudSynced = true;
       }
     } else {
@@ -86,8 +85,9 @@ async function syncToCloud() {
   }
 }
 
-function logoutUser() {
-  syncToCloud().catch(() => {});
+async function logoutUser() {
+  // 退出前先同步，必须等待完成
+  try { await syncToCloud(); } catch (e) {}
   currentUser = null;
   cloudSynced = false;
   localStorage.removeItem('pet_user');
@@ -96,6 +96,7 @@ function logoutUser() {
   localStorage.removeItem('pet_streak');
   localStorage.removeItem('pet_stage_progress');
   localStorage.removeItem('pet_settings');
+  localStorage.removeItem('pet_last_sync');
   Object.keys(progress).forEach(k => delete progress[k]);
   Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
   Object.keys(stageProgress).forEach(k => delete stageProgress[k]);

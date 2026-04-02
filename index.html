@@ -2241,7 +2241,7 @@ function renderSettings() {
         <div style="font-size:15px;font-weight:700">${user.name}</div>
         <div style="font-size:12px;color:var(--text-secondary)">${user.className}</div>
       </div>
-      <button class="btn btn-outline btn-sm" onclick="if(confirm('确定退出登录？')){logoutUser();showLogin();}">退出登录</button>
+      <button class="btn btn-outline btn-sm" onclick="if(confirm('确定退出登录？')){logoutUser().then(()=>showLogin());}">退出登录</button>
     </div>` : '';
   document.getElementById('page-settings').innerHTML = `
     <div style="font-size:22px;font-weight:800;margin-bottom:20px;letter-spacing:-0.02em">设置</div>
