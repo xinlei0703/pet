@@ -231,13 +231,18 @@ body {
   font-size: 16px; line-height: 2.2; word-spacing: 1px;
   letter-spacing: 0.01em;
 }
+.story-text.fs-small { font-size: 14px; line-height: 2; }
+.story-text.fs-large { font-size: 20px; line-height: 2.4; }
+.story-cn { font-size: 16px; }
+.story-cn.fs-small { font-size: 14px; }
+.story-cn.fs-large { font-size: 20px; }
 .story-text .hw {
   color: var(--primary); font-weight: 700; cursor: pointer;
   border-bottom: 2px dashed var(--primary); position: relative;
   transition: all 0.2s; padding: 0 1px;
 }
 .story-text .hw-mastered {
-  color: inherit; font-weight: inherit; cursor: pointer;
+  color: inherit; font-weight: 700; cursor: pointer;
   position: relative;
 }
 .story-text .hw:hover {
@@ -276,6 +281,31 @@ body {
   padding: 4px 0;
 }
 /* 统计数字 */
+/* 课文填空 */
+.cloze-text { font-size: 16px; line-height: 2.4; word-spacing: 1px; }
+.cloze-blank {
+  display: inline-block; min-width: 80px; border-bottom: 2px dashed var(--primary);
+  text-align: center; padding: 2px 6px; margin: 0 2px; cursor: pointer;
+  font-weight: 700; color: var(--primary); transition: all 0.2s;
+}
+.cloze-blank.correct { border-color: var(--success); color: var(--success); background: rgba(34,197,94,0.08); }
+.cloze-blank.wrong { border-color: var(--danger); color: var(--danger); background: rgba(239,68,68,0.08); }
+.cloze-blank.active { border-color: var(--primary); background: var(--primary-light); }
+.cloze-options { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding: 16px 0; }
+.cloze-opt {
+  padding: 8px 16px; border-radius: var(--radius-sm); border: 2px solid var(--border);
+  background: var(--card); font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s;
+}
+.cloze-opt:hover { border-color: var(--primary); }
+.cloze-opt.used { opacity: 0.3; pointer-events: none; }
+.cloze-input {
+  border: none; border-bottom: 2px dashed var(--primary); background: transparent;
+  text-align: center; padding: 2px 4px; margin: 0 2px; font-size: inherit;
+  font-weight: 700; color: var(--primary); outline: none; font-family: inherit;
+}
+.cloze-input:focus { border-color: var(--primary); background: var(--primary-light); }
+.cloze-input.correct { border-color: var(--success); color: var(--success); background: rgba(34,197,94,0.08); }
+.cloze-input.wrong { border-color: var(--danger); color: var(--danger); background: rgba(239,68,68,0.08); }
 .stat-num {
   font-size: 28px; font-weight: 800; letter-spacing: -0.02em;
   line-height: 1.2;
@@ -627,8 +657,6 @@ body {
   100% { transform: scale(1) rotate(0); }
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/firebase@10.12.0/firebase-app-compat.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/firebase@10.12.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 <!-- 登录页 -->
@@ -662,6 +690,7 @@ body {
 <div id="page-syllable" class="page"></div>
 <div id="page-spell" class="page"></div>
 <div id="page-quiz" class="page"></div>
+<div id="page-cloze" class="page"></div>
 <div id="page-stages" class="page"></div>
 <div id="page-minigame" class="page"></div>
 <div id="page-stats" class="page"></div>
@@ -707,7 +736,7 @@ const WORD_IMAGES = {
 </script>
 <script src="word_roots.js"></script>
 <script src="word_phrases.js"></script>
-<script src="firebase-sync.js"></script>
+<script src="sync.js"></script>
 <script>
 /* ===== 全局状态与工具函数 ===== */
 const LS = {
@@ -726,10 +755,10 @@ function saveAll() {
   LS.set('pet_daily_stats', dailyStats);
   LS.set('pet_streak', streak);
   LS.set('pet_stage_progress', stageProgress);
-  // 防抖2秒同步到 Firebase
+  // 防抖2秒同步到本地服务器
   clearTimeout(syncTimer);
   syncTimer = setTimeout(() => {
-    syncToFirestore().catch(err => console.warn('同步失败:', err));
+    syncToCloud().catch(err => console.warn('同步失败:', err));
   }, 2000);
 }
 function getStars(correct, total) {
@@ -1056,10 +1085,18 @@ function renderHome() {
       </div>
       <div class="stage-map" id="stage-map">${renderStageMap(curDay)}</div>
     </div>
-    <button class="btn btn-primary btn-block btn-lg" onclick="startDayLearn('${curDay}')" style="margin-bottom:16px">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      学习 ${curDay}
-    </button>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+      <button class="btn btn-primary btn-block btn-lg" onclick="startDayLearn('${curDay}')" style="flex-direction:column;gap:6px;padding:18px 12px">
+        <span style="font-size:22px">⚔️</span>
+        <span style="font-size:14px;font-weight:700">闯关模式</span>
+        <span style="font-size:11px;opacity:0.85">${curDay}</span>
+      </button>
+      <button class="btn btn-block btn-lg" onclick="showUnitMenu('wordlist','${curDay}')" style="flex-direction:column;gap:6px;padding:18px 12px;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:white;border:none">
+        <span style="font-size:22px">📝</span>
+        <span style="font-size:14px;font-weight:700">自由练习</span>
+        <span style="font-size:11px;opacity:0.85">${curDay}</span>
+      </button>
+    </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <button class="btn btn-outline btn-block" onclick="navigate('units')" style="padding:18px 12px;flex-direction:column;gap:6px">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
@@ -2112,6 +2149,7 @@ function showUnitMenu(section, unit) {
     <button class="btn btn-outline btn-block" style="margin-bottom:10px" onclick="this.closest('.modal-overlay').remove();startLearnSession(getUnitWords('${section}','${unit}'))">认识 / 不认识</button>
     <button class="btn btn-outline btn-block" style="margin-bottom:10px" onclick="this.closest('.modal-overlay').remove();startSyllableSession('${section}','${unit}')">音节拼接</button>
     <button class="btn btn-outline btn-block" style="margin-bottom:10px" onclick="this.closest('.modal-overlay').remove();startSpellSession('${section}','${unit}')">拼写练习</button>
+    ${hasStory ? `<button class="btn btn-outline btn-block" style="margin-bottom:10px" onclick="this.closest('.modal-overlay').remove();startCloze('${unit}')">课文填空</button>` : ''}
     <button class="btn btn-block" style="color:var(--text-secondary);margin-top:4px" onclick="this.closest('.modal-overlay').remove()">取消</button>
   </div>`;
   document.body.appendChild(modal);
@@ -2255,6 +2293,169 @@ function exportData() {
 let storyUtterance = null;
 let storyAudio = null;
 let currentStoryDay = null;
+/* ===== 课文填空 ===== */
+let clozeState = {};
+function startCloze(day) {
+  const story = STORY_DATA[day];
+  if (!story) return;
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay';
+  modal.onclick = e => { if (e.target === modal) modal.remove(); };
+  modal.innerHTML = `<div class="modal-sheet">
+    <h3 style="font-size:18px;font-weight:800;margin-bottom:20px">${day} · 课文填空</h3>
+    <button class="btn btn-primary btn-block" style="margin-bottom:10px" onclick="this.closest('.modal-overlay').remove();initCloze('${day}','select')">选择模式<span style="font-weight:400;opacity:0.8;margin-left:6px">从选项中选词</span></button>
+    <button class="btn btn-outline btn-block" style="margin-bottom:10px" onclick="this.closest('.modal-overlay').remove();initCloze('${day}','input')">输入模式<span style="font-weight:400;opacity:0.8;margin-left:6px">手动拼写单词</span></button>
+    <button class="btn btn-block" style="color:var(--text-secondary);margin-top:4px" onclick="this.closest('.modal-overlay').remove()">取消</button>
+  </div>`;
+  document.body.appendChild(modal);
+}
+function initCloze(day, mode) {
+  const story = STORY_DATA[day];
+  const words = WORD_DATA.wordlist[day]?.words || [];
+  const candidates = words.filter(w => !w.word.includes(' ')).sort(() => Math.random() - 0.5);
+  const blanks = candidates.slice(0, Math.min(Math.max(8, Math.floor(candidates.length * 0.4)), 12));
+  const blankWords = blanks.map(w => w.word);
+  const sorted = blankWords.sort((a, b) => b.length - a.length);
+  const escaped = sorted.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const regex = new RegExp('\\b(' + escaped.join('|') + ')\\b', 'gi');
+  let idx = 0;
+  const answers = [];
+  const clozeHtml = story.en.replace(regex, (match) => {
+    const i = idx++;
+    answers.push(match.toLowerCase());
+    const w = blanks.find(b => b.word.toLowerCase() === match.toLowerCase());
+    const hint = w ? w.meaning : '';
+    if (mode === 'input') {
+      return `<input class="cloze-input" data-idx="${i}" data-hint="${hint}" placeholder="..." onfocus="showClozeHint(${i})" style="width:${Math.max(match.length * 10, 60)}px">`;
+    }
+    return `<span class="cloze-blank" data-idx="${i}" data-hint="${hint}" onclick="selectClozeBlank(${i})">&nbsp;</span>`;
+  });
+  const usedSet = new Set(blankWords.map(w => w.toLowerCase()));
+  const distractors = words.filter(w => !usedSet.has(w.word.toLowerCase()) && !w.word.includes(' '));
+  const extras = distractors.sort(() => Math.random() - 0.5).slice(0, Math.min(4, distractors.length)).map(w => w.word);
+  const options = [...blankWords, ...extras].sort(() => Math.random() - 0.5);
+  clozeState = { day, mode, answers, filled: new Array(answers.length).fill(null), total: answers.length, done: false };
+  navigate('cloze');
+  if (mode === 'select') renderClozeSelect(day, clozeHtml, options);
+  else renderClozeInput(day, clozeHtml);
+}
+function renderClozeSelect(day, clozeHtml, options) {
+  const optHtml = options.map(w =>
+    `<span class="cloze-opt" data-word="${w.toLowerCase()}" onclick="pickClozeOption(this)">${w}</span>`
+  ).join('');
+  document.getElementById('page-cloze').innerHTML = `
+    <div class="top-bar">
+      <button class="close-btn" onclick="navigate('home')">✕</button>
+      <div style="flex:1;font-weight:700;font-size:18px;text-align:center">${day} · 选择填空</div>
+      <div style="width:36px"></div>
+    </div>
+    <div class="card" style="margin-bottom:8px">
+      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:8px">点击空格，再点击下方单词填入</div>
+      <div class="cloze-text">${clozeHtml}</div>
+    </div>
+    <div style="height:200px"></div>
+    <div style="position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--border);padding:10px 12px;z-index:50;box-shadow:0 -2px 12px rgba(0,0,0,0.08)">
+      <div id="cloze-hint" style="text-align:center;font-size:13px;color:var(--text-secondary);min-height:18px;margin-bottom:6px"></div>
+      <div class="cloze-options" id="cloze-options" style="padding:0 0 8px">${optHtml}</div>
+      <div style="display:flex;gap:10px;justify-content:center">
+        <button class="btn btn-primary" onclick="checkCloze()">检查答案</button>
+        <button class="btn btn-outline" onclick="startCloze('${day}')">重新开始</button>
+      </div>
+    </div>`;
+  clozeState.selectedBlank = null;
+}
+function renderClozeInput(day, clozeHtml) {
+  document.getElementById('page-cloze').innerHTML = `
+    <div class="top-bar">
+      <button class="close-btn" onclick="navigate('home')">✕</button>
+      <div style="flex:1;font-weight:700;font-size:18px;text-align:center">${day} · 拼写填空</div>
+      <div style="width:36px"></div>
+    </div>
+    <div class="card" style="margin-bottom:8px">
+      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:8px">在空格中输入正确的单词</div>
+      <div class="cloze-text">${clozeHtml}</div>
+    </div>
+    <div id="cloze-hint" style="text-align:center;font-size:13px;color:var(--text-secondary);min-height:20px;margin-bottom:8px"></div>
+    <div style="display:flex;gap:10px;justify-content:center">
+      <button class="btn btn-primary" onclick="checkCloze()">检查答案</button>
+      <button class="btn btn-outline" onclick="startCloze('${day}')">重新开始</button>
+    </div>
+    <div id="cloze-result" style="margin-top:12px"></div>`;
+}
+function showClozeHint(idx) {
+  const el = document.querySelector(`.cloze-input[data-idx="${idx}"]`);
+  if (el) document.getElementById('cloze-hint').textContent = el.dataset.hint ? '提示：' + el.dataset.hint : '';
+}
+function selectClozeBlank(idx) {
+  document.querySelectorAll('.cloze-blank').forEach(el => el.classList.remove('active'));
+  const el = document.querySelector(`.cloze-blank[data-idx="${idx}"]`);
+  if (el) {
+    el.classList.add('active');
+    clozeState.selectedBlank = idx;
+    document.getElementById('cloze-hint').textContent = el.dataset.hint ? '提示：' + el.dataset.hint : '';
+    if (clozeState.filled[idx]) {
+      const old = clozeState.filled[idx];
+      clozeState.filled[idx] = null;
+      el.innerHTML = '&nbsp;';
+      el.classList.remove('correct', 'wrong');
+      const opt = document.querySelector(`.cloze-opt[data-word="${old}"]`);
+      if (opt) opt.classList.remove('used');
+    }
+  }
+}
+function pickClozeOption(optEl) {
+  const idx = clozeState.selectedBlank;
+  if (idx === null || idx === undefined) return;
+  const word = optEl.dataset.word;
+  const blank = document.querySelector(`.cloze-blank[data-idx="${idx}"]`);
+  if (!blank) return;
+  clozeState.filled[idx] = word;
+  blank.textContent = word;
+  blank.classList.remove('active');
+  optEl.classList.add('used');
+  const next = clozeState.filled.findIndex((v, i) => i > idx && v === null);
+  if (next !== -1) selectClozeBlank(next);
+  else { clozeState.selectedBlank = null; document.getElementById('cloze-hint').textContent = ''; }
+}
+function checkCloze() {
+  if (clozeState.done) return;
+  let correct = 0;
+  if (clozeState.mode === 'input') {
+    clozeState.answers.forEach((ans, i) => {
+      const input = document.querySelector(`.cloze-input[data-idx="${i}"]`);
+      if (!input) return;
+      const val = input.value.trim().toLowerCase();
+      if (val === ans) { input.classList.add('correct'); correct++; }
+      else { input.classList.add('wrong'); input.title = '正确答案: ' + ans; }
+      input.disabled = true;
+    });
+  } else {
+    clozeState.answers.forEach((ans, i) => {
+      const blank = document.querySelector(`.cloze-blank[data-idx="${i}"]`);
+      if (!blank) return;
+      if (clozeState.filled[i] === ans) { blank.classList.add('correct'); correct++; }
+      else { blank.classList.add('wrong'); blank.title = '正确答案: ' + ans; }
+    });
+  }
+  clozeState.done = true;
+  const total = clozeState.total;
+  const pct = Math.round(correct / total * 100);
+  const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '💪';
+  const resultHtml = `<div style="text-align:center;padding:8px 0">
+    <span style="font-size:20px;margin-right:6px">${emoji}</span>
+    <span style="font-size:16px;font-weight:800">${correct}/${total} 正确 (${pct}%)</span>
+    <span style="font-size:12px;color:var(--text-secondary);margin-left:8px">悬停红色空格查看答案</span>
+  </div>`;
+  const resultEl = document.getElementById('cloze-result');
+  if (resultEl) resultEl.innerHTML = resultHtml;
+  // 选择模式：替换吸底栏内容为结果
+  const hintEl = document.getElementById('cloze-hint');
+  if (hintEl && clozeState.mode === 'select') {
+    hintEl.innerHTML = resultHtml;
+    const optBox = document.getElementById('cloze-options');
+    if (optBox) optBox.style.display = 'none';
+  }
+}
 function renderStory(day) {
   const story = STORY_DATA[day];
   if (!story) return;
@@ -2275,6 +2476,11 @@ function renderStory(day) {
       <div style="display:flex;gap:8px;width:100%">
         <button class="btn btn-primary" style="padding:8px 16px;font-size:14px" id="story-play-btn" onclick="toggleStoryAudio()">▶ 播放课文</button>
         <button class="btn btn-outline" style="padding:8px 16px;font-size:14px" onclick="toggleStoryCn()">中文译文</button>
+        <div style="margin-left:auto;display:flex;gap:4px">
+          <button class="btn btn-outline" style="padding:6px 10px;font-size:12px" onclick="setStoryFontSize('small')" id="fs-small">小</button>
+          <button class="btn btn-outline" style="padding:6px 10px;font-size:14px;font-weight:700;border-color:var(--primary);color:var(--primary)" onclick="setStoryFontSize('')" id="fs-medium">中</button>
+          <button class="btn btn-outline" style="padding:6px 10px;font-size:16px" onclick="setStoryFontSize('large')" id="fs-large">大</button>
+        </div>
       </div>
       <div id="audio-progress-wrap" style="display:none;width:100%">
         <div style="display:flex;align-items:center;gap:10px">
@@ -2293,6 +2499,7 @@ function renderStory(day) {
       <h3 style="font-size:15px;margin-bottom:8px;color:var(--primary)">参考译文</h3>
       <div class="story-cn">${story.cn}</div>
     </div>`;
+  setStoryFontSize(storyFontSize);
   storyAudio = new Audio(audioSrc);
   storyAudio.addEventListener('loadedmetadata', () => {
     document.getElementById('audio-time-total').textContent = fmtTime(storyAudio.duration);
@@ -2305,6 +2512,24 @@ function renderStory(day) {
   });
   storyAudio.addEventListener('ended', () => {
     document.getElementById('story-play-btn').textContent = '▶ 播放课文';
+  });
+}
+let storyFontSize = LS.get('pet_story_fs', '');
+function setStoryFontSize(size) {
+  storyFontSize = size;
+  LS.set('pet_story_fs', size);
+  const cls = size ? 'fs-' + size : '';
+  document.querySelectorAll('.story-text, .story-cn').forEach(el => {
+    el.classList.remove('fs-small', 'fs-large');
+    if (cls) el.classList.add(cls);
+  });
+  ['small', '', 'large'].forEach(s => {
+    const btn = document.getElementById('fs-' + (s || 'medium'));
+    if (btn) {
+      btn.style.borderColor = s === size ? 'var(--primary)' : '';
+      btn.style.color = s === size ? 'var(--primary)' : '';
+      btn.style.fontWeight = s === size ? '700' : '';
+    }
   });
 }
 function highlightWords(text, sortedWords, wordMap) {
@@ -2442,8 +2667,8 @@ async function handleLogin() {
 function fixJarvisData() {
   const user = getLoggedInUser();
   if (!user || user.name !== 'Jarvis' || user.className !== '1') return;
-  if (localStorage.getItem('pet_jarvis_fixed')) return;
-  const days = ['Day 1', 'Day 2', 'Day 3'];
+  if (localStorage.getItem('pet_jarvis_fixed_v2')) return;
+  const days = ['Day 1', 'Day 2', 'Day 3', 'Day 4'];
   days.forEach(day => {
     const words = WORD_DATA.wordlist[day]?.words || [];
     words.forEach(w => {
@@ -2464,7 +2689,7 @@ function fixJarvisData() {
     stageProgress[day].spell = Math.max(stageProgress[day].spell, 3);
   });
   saveAll();
-  localStorage.setItem('pet_jarvis_fixed', '1');
+  localStorage.setItem('pet_jarvis_fixed_v2', '1');
 }
 // 启动
 (async function init() {
@@ -2477,8 +2702,8 @@ function fixJarvisData() {
       await Promise.race([loginPromise, timeout]);
     } catch (e) {
       console.warn('云端同步跳过，使用本地数据:', e);
-      // 后台继续等待同步，成功后刷新整个页面
       loginPromise.then(() => {
+        fixJarvisData();
         location.reload();
       }).catch(() => {});
     }
