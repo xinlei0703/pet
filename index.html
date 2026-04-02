@@ -659,28 +659,6 @@ body {
 </style>
 </head>
 <body>
-<!-- 登录页 -->
-<div id="page-login" class="page" style="display:none">
-  <div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px">
-    <div style="font-size:48px;margin-bottom:8px">📖</div>
-    <h1 style="font-size:24px;font-weight:800;margin-bottom:4px">读故事背单词</h1>
-    <p style="color:var(--text-secondary);margin-bottom:32px;font-size:14px">输入姓名和班级开始学习</p>
-    <div class="card" style="width:100%;max-width:360px">
-      <div style="margin-bottom:16px">
-        <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px">姓名</label>
-        <input id="login-name" type="text" placeholder="请输入你的姓名"
-          style="width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:15px;background:var(--bg);color:var(--text);outline:none;box-sizing:border-box">
-      </div>
-      <div style="margin-bottom:24px">
-        <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px">班级</label>
-        <input id="login-class" type="text" placeholder="例如：三年级1班"
-          style="width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:15px;background:var(--bg);color:var(--text);outline:none;box-sizing:border-box">
-      </div>
-      <button class="btn btn-primary btn-block btn-lg" onclick="handleLogin()">开始学习</button>
-      <p id="login-error" style="color:var(--danger);font-size:13px;margin-top:12px;text-align:center;display:none"></p>
-    </div>
-  </div>
-</div>
 <!-- 页面容器 -->
 <div id="page-home" class="page active"></div>
 <div id="page-units" class="page"></div>
@@ -755,11 +733,8 @@ function saveAll() {
   LS.set('pet_daily_stats', dailyStats);
   LS.set('pet_streak', streak);
   LS.set('pet_stage_progress', stageProgress);
-  // 防抖2秒同步到本地服务器
-  clearTimeout(syncTimer);
-  syncTimer = setTimeout(() => {
-    syncToCloud().catch(err => console.warn('同步失败:', err));
-  }, 2000);
+  // 立刻同步到本地服务器
+  syncToCloud().catch(err => console.warn('同步失败:', err));
 }
 function getStars(correct, total) {
   if (total === 0) return 3;
@@ -2234,18 +2209,8 @@ function renderStats() {
 }
 function renderSettings() {
   const dailyOptions = [10, 15, 20, 30, 50];
-  const user = getLoggedInUser();
-  const userHtml = user ? `
-    <div class="card" style="display:flex;align-items:center;justify-content:space-between">
-      <div>
-        <div style="font-size:15px;font-weight:700">${user.name}</div>
-        <div style="font-size:12px;color:var(--text-secondary)">${user.className}</div>
-      </div>
-      <button class="btn btn-outline btn-sm" onclick="if(confirm('确定退出登录？')){logoutUser().then(()=>showLogin());}">退出登录</button>
-    </div>` : '';
   document.getElementById('page-settings').innerHTML = `
     <div style="font-size:22px;font-weight:800;margin-bottom:20px;letter-spacing:-0.02em">设置</div>
-    ${userHtml}
     <div class="card">
       <div style="font-size:15px;font-weight:700;margin-bottom:14px">每日新词数量</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -2605,62 +2570,11 @@ function migrateOldProgress() {
 }
 
 function showApp() {
-  document.getElementById('page-login').style.display = 'none';
   document.querySelector('.nav-bar').style.display = '';
   document.documentElement.setAttribute('data-theme', settings.theme);
   migrateOldProgress();
   fixJarvisData();
   navigate('home');
-}
-
-function showLogin() {
-  document.getElementById('page-login').style.display = 'block';
-  document.querySelector('.nav-bar').style.display = 'none';
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-login').classList.add('active');
-  // 回填上次登录的姓名和班级
-  const last = localStorage.getItem('pet_last_user');
-  if (last) {
-    try {
-      const u = JSON.parse(last);
-      document.getElementById('login-name').value = u.name || '';
-      document.getElementById('login-class').value = u.className || '';
-    } catch {}
-  }
-}
-
-async function handleLogin() {
-  const name = document.getElementById('login-name').value.trim();
-  const className = document.getElementById('login-class').value.trim();
-  const errEl = document.getElementById('login-error');
-  const btn = document.querySelector('#page-login .btn-primary');
-  if (!name || !className) {
-    errEl.textContent = '请填写姓名和班级';
-    errEl.style.display = 'block';
-    return;
-  }
-  errEl.style.display = 'none';
-  localStorage.setItem('pet_last_user', JSON.stringify({ name, className }));
-  btn.textContent = '登录中...';
-  btn.disabled = true;
-  // 先保存登录状态，确保一定能进入
-  currentUser = { name, className, userId: getUserId(name, className) };
-  localStorage.setItem('pet_user', JSON.stringify(currentUser));
-  // 尝试云端同步，5秒超时
-  const loginPromise = loginUser(name, className);
-  try {
-    const timeout = new Promise((_, reject) => setTimeout(() => reject('timeout'), 5000));
-    await Promise.race([loginPromise, timeout]);
-  } catch (e) {
-    console.warn('云端同步跳过:', e);
-    // 后台继续等待同步，成功后刷新整个页面
-    loginPromise.then(() => {
-      location.reload();
-    }).catch(() => {});
-  }
-  btn.textContent = '开始学习';
-  btn.disabled = false;
-  showApp();
 }
 
 // 一次性数据修复：Jarvis用户Day1-3标记为已学完
@@ -2694,23 +2608,13 @@ function fixJarvisData() {
 // 启动
 (async function init() {
   document.querySelector('.nav-bar').style.display = 'none';
-  const savedUser = getLoggedInUser();
-  if (savedUser) {
-    const loginPromise = loginUser(savedUser.name, savedUser.className);
-    try {
-      const timeout = new Promise((_, reject) => setTimeout(() => reject('timeout'), 3000));
-      await Promise.race([loginPromise, timeout]);
-    } catch (e) {
-      console.warn('云端同步跳过，使用本地数据:', e);
-      loginPromise.then(() => {
-        fixJarvisData();
-        location.reload();
-      }).catch(() => {});
-    }
-    showApp();
-  } else {
-    showLogin();
+  try {
+    await loadUserData();
+  } catch (e) {
+    console.warn('数据加载跳过:', e);
   }
+  fixJarvisData();
+  showApp();
 })();
 </script>
 </body>

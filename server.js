@@ -56,6 +56,10 @@ function serveStatic(res, filePath) {
 }
 
 const server = http.createServer(async (req, res) => {
+  // 请求日志
+  if (req.url.startsWith('/api/')) {
+    console.log(`[${new Date().toLocaleTimeString()}] ${req.method} ${req.url}`);
+  }
   // CORS 预检
   if (req.method === 'OPTIONS') {
     res.writeHead(204, {
