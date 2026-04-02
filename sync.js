@@ -23,26 +23,39 @@ async function loginUser(name, className) {
     const result = await resp.json();
     if (result.success && result.data) {
       const data = result.data;
-      Object.keys(progress).forEach(k => delete progress[k]);
-      Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
-      Object.keys(stageProgress).forEach(k => delete stageProgress[k]);
-      if (data.pet_progress) Object.assign(progress, data.pet_progress);
-      if (data.pet_daily_stats) Object.assign(dailyStats, data.pet_daily_stats);
-      if (data.pet_streak) Object.assign(streak, data.pet_streak);
-      if (data.pet_stage_progress) Object.assign(stageProgress, data.pet_stage_progress);
-      if (data.pet_settings) Object.assign(settings, data.pet_settings);
-      LS.set('pet_settings', settings);
-      LS.set('pet_progress', progress);
-      LS.set('pet_daily_stats', dailyStats);
-      LS.set('pet_streak', streak);
-      LS.set('pet_stage_progress', stageProgress);
-      cloudSynced = true;
+      // 比较服务器和本地数据的时间，用更新的那份
+      const serverTime = data.lastSync || '';
+      const localProgress = LS.get('pet_progress', {});
+      const localTime = localStorage.getItem('pet_last_sync') || '';
+      const localHasData = Object.keys(localProgress).length > 0;
+
+      if (localHasData && localTime > serverTime) {
+        // 本地数据更新，保留本地数据并上传到服务器
+        cloudSynced = true;
+        await syncToCloud();
+      } else {
+        // 服务器数据更新，用服务器数据覆盖本地
+        Object.keys(progress).forEach(k => delete progress[k]);
+        Object.keys(dailyStats).forEach(k => delete dailyStats[k]);
+        Object.keys(stageProgress).forEach(k => delete stageProgress[k]);
+        if (data.pet_progress) Object.assign(progress, data.pet_progress);
+        if (data.pet_daily_stats) Object.assign(dailyStats, data.pet_daily_stats);
+        if (data.pet_streak) Object.assign(streak, data.pet_streak);
+        if (data.pet_stage_progress) Object.assign(stageProgress, data.pet_stage_progress);
+        if (data.pet_settings) Object.assign(settings, data.pet_settings);
+        LS.set('pet_settings', settings);
+        LS.set('pet_progress', progress);
+        LS.set('pet_daily_stats', dailyStats);
+        LS.set('pet_streak', streak);
+        LS.set('pet_stage_progress', stageProgress);
+        cloudSynced = true;
+      }
     } else {
       cloudSynced = true;
       await syncToCloud();
     }
   } catch (e) {
-    console.warn('数据加载失败:', e);
+    console.warn('数据加载失败，使用本地数据:', e);
     cloudSynced = true;
   }
   return currentUser;
@@ -51,6 +64,7 @@ async function loginUser(name, className) {
 async function syncToCloud() {
   if (!currentUser) return;
   if (!cloudSynced) return;
+  const now = new Date().toISOString();
   try {
     await fetch(API_BASE + encodeURIComponent(currentUser.userId), {
       method: 'POST',
@@ -58,7 +72,7 @@ async function syncToCloud() {
       body: JSON.stringify({
         name: currentUser.name,
         className: currentUser.className,
-        lastSync: new Date().toISOString(),
+        lastSync: now,
         pet_settings: JSON.parse(JSON.stringify(settings)),
         pet_progress: JSON.parse(JSON.stringify(progress)),
         pet_daily_stats: JSON.parse(JSON.stringify(dailyStats)),
@@ -66,6 +80,7 @@ async function syncToCloud() {
         pet_stage_progress: JSON.parse(JSON.stringify(stageProgress))
       })
     });
+    localStorage.setItem('pet_last_sync', now);
   } catch (e) {
     console.warn('同步失败:', e);
   }
