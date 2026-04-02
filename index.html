@@ -867,7 +867,7 @@ function scheduleNext(dim, result) {
     const next = new Date(); next.setDate(next.getDate() + days);
     dim.next = next.toISOString().slice(0, 10);
   } else {
-    dim.wrong++; dim.level = Math.max(0, Math.floor(dim.level / 2));
+    dim.wrong++; dim.level = Math.max(dim.wrong >= 2 ? 1 : 0, Math.floor(dim.level / 2));
     dim.next = d;
   }
   saveAll();
